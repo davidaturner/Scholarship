@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p id="example">Hello, World</p>
+
+    <!-- 'Everything' in JS is an object -->
+    <script>
+        console.log("Hello, World!");
+        console.log("Hello, World".toLowerCase());
+        console.log("Hello, World".toUpperCase());
+        console.log("Hello, World".length);
+
+        let helloworld = "Hello, World!";
+        console.log(helloworld.bold());
+        console.log(helloworld.charAt(1));
+        console.log(helloworld.concat(" Hello!"));
+
+        // prototype
+        console.log(helloworld.__proto__);
+
+        // add to prototype
+        var person = {
+            getname: function () {
+                console.log(this.name); // Must use this
+            }
+        }
+        console.log(person);
+        var joe = {
+            name: 'Joe'
+        }
+        console.log(joe);
+
+        joe.__proto__ = person;
+        joe.getname();
+
+    </script>
+</body>
+</html>
