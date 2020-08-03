@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM exercises</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Crimson Text', serif;
+            background-color: #fff7e6;
+            color: #996600;
+        }
+        h1 {
+            font-size: 3.4em;
+            background-color: #ffdd99;
+        }
+        p{
+            font-size: 1.5em;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Heading 1</h1>
+        <h4>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac mauris sit
+            amet turpis rhoncus mollis mattis eu mi. Vivamus ex nisl, scelerisque eget dapibus
+            placerat, venenatis non odio. Sed eget mollis nibh, ac efficitur dui.
+        </h4>
+
+        <p>
+            Morbi ultrices
+            nulla id sapien blandit, et lobortis velit pellentesque. Aenean dui sapien, posuere
+            sit amet fermentum non, hendrerit vitae diam. Sed nec venenatis turpis. Nulla et mi
+            nec sapien cursus porttitor. Maecenas porttitor, turpis eget dapibus aliquet, tortor
+            ante auctor turpis, tempor volutpat felis nisl vel est. Suspendisse tortor justo,
+            vehicula et sollicitudin vitae, dapibus a enim.
+        </p>
+        <p>
+            Vestibulum non tortor turpis. Nam condimentum mauris nisi. Donec commodo augue vitae 
+            ultricies bibendum. Donec vehicula elementum lorem vel aliquam. Curabitur dignissim 
+            urna vitae elit ornare viverra. Aenean sit amet ex vitae orci porta semper eu in sapien. 
+            Donec auctor orci id arcu finibus, et condimentum est sodales. Fusce nec eleifend leo, 
+            aliquam pharetra eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis 
+            ultrices condimentum massa, quis consequat elit vestibulum a.
+        </p>
+        
+        <p>Aliquam ac arcu quam. 
+            Pellentesque quam lectus, suscipit a congue vel, facilisis vel purus. Vestibulum aliquet 
+            lectus in augue fermentum, nec sollicitudin mauris convallis. Maecenas ligula ligula, 
+            lacinia id elementum nec, tincidunt iaculis lorem. Quisque quam justo, vulputate ut tempus 
+            vitae, dignissim et erat.
+        </p>
+        </div>
+        <script>
+            // Event functions MUST come before ADDING element to DOM (ie button)
+            function displaymessage(message) {
+                console.log(message)
+                let btn = document.querySelector('button');
+                btn.innerHTML = "Thanks!"
+            }
+
+            // Create an element
+            var btn = document.createElement('button');
+            var text = document.createTextNode('Bite Me!');
+            btn.appendChild(text);
+
+            btn.style.background = '#ffdd99'
+            btn.style.width = '25%'
+            btn.style.marginLeft = '35%'
+            btn.style.marginRight = '35%'
+            btn.style.padding = '10px'
+            // Way 1 in adding events: build a function.
+//            btn.addEventListener('click', function () {
+//                console.log("click");
+//            });
+            // Way 2: call a function.
+            btn.addEventListener('click', function () {
+                displaymessage('mustard')
+            })
+            // Way 3: use onclick
+//            btn.onclick = function () {
+//                displaymessage('click')
+//            }
+            document.body.appendChild(btn)
+            console.log(btn);
+            console.log(btn.innerHTML);
+
+            // Way4: use can add AFTER appending child to DOM
+
+        </script>
+</body>
+</html>

@@ -67,7 +67,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="favicon.ico" />
+    <Content Include="snippets\snippet13.js" />
+    <Content Include="snippets\snippet12.js" />
+    <Content Include="snippets\snippet11.js" />
+    <Content Include="snippets\snippet10.js" />
+    <Content Include="snippets\snippet09.js" />
+    <Content Include="snippets\snippet08.js" />
+    <Content Include="snippets\snippet07.js" />
+    <Content Include="snippets\snippet06.js" />
+    <Content Include="snippets\snippet05.js" />
     <Content Include="index.html" />
+    <Content Include="snippets\snippet04.js" />
+    <Content Include="snippets\snippet03.js" />
+    <Content Include="snippets\snippet02.js" />
+    <Content Include="snippets\snippet01.js" />
     <Content Include="main.js" />
     <Content Include="Web.config" />
   </ItemGroup>

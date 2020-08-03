@@ -86,6 +86,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="snippets\snippet05.ts" />
+    <TypeScriptCompile Include="snippets\snippet04.ts" />
+    <TypeScriptCompile Include="snippets\snippet03.ts" />
+    <TypeScriptCompile Include="snippets\snippet02.ts" />
+    <TypeScriptCompile Include="snippets\snippet01.ts" />
     <TypeScriptCompile Include="main.ts" />
   </ItemGroup>
   <ItemGroup>
