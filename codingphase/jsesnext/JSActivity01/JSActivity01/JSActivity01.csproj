@@ -69,6 +69,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="favicon.ico" />
     <Content Include="index.html" />
     <Content Include="main.js" />
     <Content Include="Web.config" />
@@ -92,6 +93,9 @@
     <TypeScriptCompile Include="snippets\snippet02.ts" />
     <TypeScriptCompile Include="snippets\snippet01.ts" />
     <TypeScriptCompile Include="main.ts" />
+    <TypeScriptCompile Include="snippets\snippet06.ts" />
+    <TypeScriptCompile Include="snippets\snippet07.ts" />
+    <TypeScriptCompile Include="snippets\snippet08.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
