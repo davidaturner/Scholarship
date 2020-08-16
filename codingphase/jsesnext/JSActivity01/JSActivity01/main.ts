@@ -19,19 +19,13 @@ var users = [
 //});
 //console.log(filtered[0].name);
 
-// Javascript has a find; Typescript DOES NOT.
-//var myNameIs = users.find((user) => {
-//    return (user.name == 'Bonn');
-//});
-//console.log(`My Name is ${myNameIs}`);
+// Promises
+var products = [{
+    id: 1,
+    title: 'Sneakers',
+    price: 300
+}];
 
-var boolMeetingAge = users.every((user) => user.age > 7);
-console.log(boolMeetingAge);
+const getProducts = new Promise(resolve, reject) {
 
-var meetingAgef = (user) => user.age > 50;
-
-boolMeetingAge = users.every(meetingAgef);
-console.log(boolMeetingAge);
-
-boolMeetingAge = users.some(meetingAgef);
-console.log(boolMeetingAge);
+}
