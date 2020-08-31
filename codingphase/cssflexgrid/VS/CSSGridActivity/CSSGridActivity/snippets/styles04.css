@@ -1,0 +1,34 @@
+﻿body {
+    background-color: #5742f5;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+/*    grid-template-rows: 100px 250px 400px; */
+    grid-auto-rows: minmax(200px, auto);
+}
+
+.box1 {
+    background-color: red;
+}
+.box2 {
+    background-color: yellow;
+}
+.box3 {
+    background-color: greenyellow;
+}
+.box4 {
+    background-color: deepskyblue;
+    grid-column: 1 /2;
+    grid-row: 1 / 2;
+}
+.box5 {
+    background-color: orange;
+    grid-row: 2 / 4;
+}
+.box6 {
+    background-color: mediumpurple;
+    color: white;
+}
+

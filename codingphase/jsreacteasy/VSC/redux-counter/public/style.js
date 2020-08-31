@@ -1,5 +1,5 @@
-export const background = {
+export const std25_box = {
   backgroundColor: "#ffffcc",
   width: "25%",
-  textAlign: "center",
+  padding: "25px",
 };
