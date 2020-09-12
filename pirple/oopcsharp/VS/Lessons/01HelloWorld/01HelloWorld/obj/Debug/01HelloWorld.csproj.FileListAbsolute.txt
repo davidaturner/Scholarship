@@ -1,0 +1,6 @@
+C:\Users\Turner\source\repos\Scholarship\pirple\oopcsharp\VS\Lessons\01HelloWorld\01HelloWorld\bin\Debug\01HelloWorld.exe.config
+C:\Users\Turner\source\repos\Scholarship\pirple\oopcsharp\VS\Lessons\01HelloWorld\01HelloWorld\bin\Debug\01HelloWorld.exe
+C:\Users\Turner\source\repos\Scholarship\pirple\oopcsharp\VS\Lessons\01HelloWorld\01HelloWorld\bin\Debug\01HelloWorld.pdb
+C:\Users\Turner\source\repos\Scholarship\pirple\oopcsharp\VS\Lessons\01HelloWorld\01HelloWorld\obj\Debug\01HelloWorld.csproj.CoreCompileInputs.cache
+C:\Users\Turner\source\repos\Scholarship\pirple\oopcsharp\VS\Lessons\01HelloWorld\01HelloWorld\obj\Debug\01HelloWorld.exe
+C:\Users\Turner\source\repos\Scholarship\pirple\oopcsharp\VS\Lessons\01HelloWorld\01HelloWorld\obj\Debug\01HelloWorld.pdb
