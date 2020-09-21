@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="snippets\snippet05.html" />
     <Content Include="snippets\snippet04.html" />
     <Content Include="snippets\snippet03.html" />
     <Content Include="index.html" />
@@ -75,6 +76,7 @@
     <Content Include="snippets\snippet02.css" />
     <Content Include="snippets\snippet03.css" />
     <Content Include="snippets\snippet04.css" />
+    <Content Include="snippets\snippet05.css" />
     <Content Include="styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
