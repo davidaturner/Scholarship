@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JSON and Javascript Object Literal</title>
+    <script>
+        //Javascript object
+        // var person = new Object();
+        // person.firstName = "John";
+        // person.lastName = "Smith";
+
+        // Javascript object literal(s)
+        // var person = { firstName: "John", lastName: "Smith" };
+        var person = { "firstName": "John", "lastName": "Smith" };
+
+        //JSON (string) - must be a string/text based for easier interchange by client servers.
+        // Do NOT Run -- firstName and lastName, in this case is undefined.
+        // var person = '{ "firstName" : "John", "lastName": "Smith" }';
+
+        alert(person.firstName + " " + person.lastName);
+    </script>
+</head>
+<body>
+    <!-- Differences
+        JSON
+            Need to enclose names of keys within dbl quotes
+
+            Should not use single quotes to enclose key names:
+                Valid: 'firstName' or "first name"
+                Invalid: 'first name'
+
+        Javascript Object
+            Not needed to enclose names of keys with (dbl) quotes
+
+            Can use single quotes to enclose key name.
+        
+        
+        
+        
+        -->
+    <h1>Hello, World!</h1>
+</body>
+</html>
