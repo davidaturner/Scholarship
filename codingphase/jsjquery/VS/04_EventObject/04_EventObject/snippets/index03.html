@@ -1,0 +1,90 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>eventObject demo</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            width: 95%;
+            margin: auto;
+        }
+        .box {
+            width: 20em;
+            height: 12em;
+            border: 1px solid #e0e0d1;
+            padding-left: 2.0em;
+            display: flex;
+            flex-direction: row;
+        }
+        .button {
+            padding: 1.0em;
+            color: white;
+            background-color: black;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            <div>
+                <p>Box1</p>
+                <div>
+                    <a href="left.html">Left</a>
+                    <a href="right.html">Right</a>
+                </div>
+            </div>
+        </div>
+        <div class="box" id="box2">
+            <div>
+                <p>Box2</p>
+                <div>
+                    <div class="button">BUTTON</div><br/>
+                    <span class="button">SPAN</span>
+                </div>
+            </div>
+        </div>
+        <div class="box" id="box3">
+            <p>Box3</p>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            // #box1 example
+            $('#box1').on('click', function (e) {
+                e.preventDefault()
+                console.log(e.target)
+                $('#box3').css({
+                    backgroundColor : 'purple'
+                })
+            })
+
+            //#box2 example
+            $('#box2').on('click', function () {
+                $('#box3').css({
+                    backgroundColor: 'green'
+                })
+            })
+            $('.button').on('click', function (e) {
+                e.stopPropagation()
+
+                if (e.target.nodeName == 'DIV') {
+                    console.log(e.target)
+                    $('#box3').css({
+                        backgroundColor: 'red'
+                    })
+                }
+                else {
+                    console.log(e.target)
+                    $('#box3').css({
+                        backgroundColor: 'orange'
+                    })
+                }
+            })
+        })
+    </script>
+</body>
+</html>

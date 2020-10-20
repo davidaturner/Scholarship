@@ -44,7 +44,7 @@ $(function () {
        .mouseenter(function () {
             $('body').css({ background: "blue" });
         })
-        .mouseout(function () {
+        .mouseleave(function () {
             $('body').css({ background: "orange" });
         });
 

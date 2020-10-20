@@ -1,0 +1,78 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Jquery example - Form Events</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .box {
+            width: 300px;
+            height: 150px;
+            border: 1px solid gray;
+            margin: 2px 5px;
+            padding: 5px;
+        }
+
+        .sortoptions {
+            margin: 10px 20px;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            Box 1<br/>
+            <form class="selectoptions" action="index.html">
+                <select name="state">
+                    <option value="CA">california - CA</option>
+                    <option value="NY">new york - NY</option>
+                    <option value="OR">oregon - OR</option>
+                    <option value="PA">pennsylvania - PA</option>
+                </select>
+                <input type="text" id="touchchange"/>
+            </form>        
+        </div>
+        <div class="box" id="box2">Box 2<br/>
+        </div>
+        <div class="box" id="box3">Box 3<br/></div>
+    </div>
+
+    <script>
+        $(function () {
+            // Example 1
+            $('.selectoptions').change(function () {
+                console.log('Changed value')
+            })
+
+            // Example 2
+            $('#touchchange').change(function (e) {
+                $('#box3').html('<h4>' + e.target.value + '</h4>')
+            })
+                .focusin(function () {
+                    $('#box2').css({backgroundColor:'orange'})
+                })
+                .focusout(function () {
+                    $('#box3').css({backgroundColor: 'yellow'})
+                })
+
+        });
+    </script>
+
+</body>
+</html>
