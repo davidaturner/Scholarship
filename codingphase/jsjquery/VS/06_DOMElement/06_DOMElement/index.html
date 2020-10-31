@@ -15,12 +15,16 @@
     <div class="container">
         <h1>Hello, World!</h1>
         <div class="flex">
-            <div class="box" id="box1"><p>Box 1</p></div>
+            <div class="box" id="box1">
+                <p class="line">Box 1</p>
+                <p class="line" style="color:green">Marco</p>
+                <p class="line1">Polo</p>
+            </div>
             <div class="box" id="box2">
                 <p>Box 2</p>
                 <div>
                     <div class="button" id="firstb">Button</div>
-                    <div class="button">Button</div>
+                    <div class="button" id="lastb">Button</div>
                 </div>
             </div>
             <div class="box" id="box3"><p>Box 3</p></div>
@@ -28,25 +32,19 @@
     </div>
     <script>
         $(function () {
-            /* addClass */
-            $('.button').addClass('active');
-            /* hasClass */
-            console.log($('.button').hasClass('active'))
-
-            $('.button').on('click', function () {
-                /* first() */
-                if ($('.button').first().hasClass('active')) {
-                    console.log('deactivate first')
-                    /* removeClass */
-                    $('.button').first().removeClass('active')
-                }
-                else {
-                    console.log('toggle two buttons')
-                    /* toggleClass */
-                    $('.button').toggleClass('active')
-                }
+            var box;
+            console.log('DOM replace')
+            $('#firstb').on('click', function () {
+                /* replaceWith element */
+                $('p.line1').replaceWith('<p>Hello World!</p>');
             })
-        })
+            $('#lastb').on('click', function () {
+                var box;
+                box = $('#box3').detach();
+                box.insertAfter('#box1 p.line');
+            })
+
+         })
     </script>
 </body>
 </html>
