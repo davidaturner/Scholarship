@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #660099;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li a {
+  padding: 1em;
+}
+
+a.menu:hover {
+  background-color: darken(#660099, 10%);
+}
