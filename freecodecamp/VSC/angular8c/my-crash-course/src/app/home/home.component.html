@@ -12,11 +12,23 @@
 
   </p>
 </div>
-
+<!--
+Style method #1
 <div class="play-container" [style.background-color]="clickCounter > 4 ? 'yellow' : 'lightgray'">
+-->
+<!-- Style method #2
+  <div class="play-container" [ngStyle]="{
+    'background-color': clickCounter > 4 ? 'yellow' :'lightgray',
+    'border': clickCounter > 4 ? '4px solid black' : 'none'
+  }">
+-->
+  <!-- Style method #3. See css file-->
+  <div class="play-container" [class.active]="clickCounter > 4" >
+
   <ng-template [ngIf]="clickCounter > 4" [ngIfElse]="none">
     <p>The clickCounter is <strong>GREATER</strong> than 4.</p>
   </ng-template>
+
   <ng-template #none>
     <p>The clickCounter is <strong>NOT GREATER</strong> than 4.</p>
   </ng-template>

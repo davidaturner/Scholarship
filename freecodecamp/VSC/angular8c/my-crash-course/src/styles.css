@@ -36,6 +36,7 @@ nav ul li a {
   padding: 1em;
 }
 
-a.menu:hover {
-  background-color: darken(#660099, 10%);
+.active {
+  background-color: yellow;
+  border: 4px solid black !important;
 }
