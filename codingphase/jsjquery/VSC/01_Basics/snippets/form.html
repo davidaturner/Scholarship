@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hello, World!</h1>
+
+        <div class="box box1">
+            <p>This is box1</p>
+        </div>
+
+        <!-- <div class="box box1">
+            <p>This is also box1</p>
+        </div>
+ -->
+        <div class="box" id="box2">
+            <form action="form.html" method="post">
+                State: <br />
+                <select id="selectoptions" name="state">
+                    <option value="">Select</option>
+                    <option value="NY">New York</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="VA">Virginia</option>
+                    <option value="OH">Ohio</option>
+                </select><br />
+                Enter: <br />
+                <input type="text" id="myname" name="Name" />
+            </form>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            $('#selectoptions').change(function() {
+                alert('Changed value detected!')
+            })
+
+            //Can chain them
+            $('#myname')
+            .focusin(function() {
+                $('#myname').css({background : 'yellow'})
+            })
+            .focusout(function() {
+                $('#myname').css({background: 'pink'})
+            })
+
+            $('#myname').change(function() {
+                $('.box1').html('<i>' + event.target.value+ "</i>")
+            })
+        })
+
+    </script>
+</body>
+
+</html>

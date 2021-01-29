@@ -1,13 +1,75 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+form {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+img {
+  width: 100px;
+  height: 100px;
+}
+header {
+  background-color: #1f004d;
+  padding-top: 10px;
+  width: 30%;
+  margin: auto;
+  height: 150px;
+  color: white;
+  font-family: "Roboto";
+  font-size: 32px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.rand-img-section {
+  outline: 2px solid red;
+  position: relative;
+  width: 550px;
+  margin: auto;
+}
+
+.rand-img-section-img {
+  width: 550px;
+  height: 550px;
+  position: relative;
+  margin: auto;
+  z-index: 1;
+}
+
+.rand-img-section-toptext {
+  font-size: 48px;
+  position: absolute;
+  top: 0;
+  left: 65px;
+  z-index: 10;
+  margin: auto;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.rand-img-section-bottext {
+  font-size: 48px;
+  position: absolute;
+  bottom: 0;
+  left: 85px;
+  z-index: 10;
+  margin: auto;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }

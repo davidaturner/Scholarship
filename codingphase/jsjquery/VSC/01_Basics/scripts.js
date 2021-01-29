@@ -1,51 +1,18 @@
 console.log('Hello from console.log')
-// Events
-$(function() {
+// Event Object
+$(function () {
 
-    // Will not error
-    // $(document).on('click', '.box1', function() {
+    //Check box1 background...
+    $('#box2').on('click', function(event) {
+        event.preventDefault()
 
-    //     $('.box1').css({
-    //         background : 'darkgrey', 
-    //         color: 'white'
-    //     })
+        $('.box1').css('background', 'purple')
+
+    })
+
+    // Show mouse location...
+    // $('#box2').on('mousemove', function(event) {
+    //         event.preventDefault()
+    //         $('#box2').text("EventX: " + event.pageX + " EventY: " + event.pageY)
     // })
-
-    // May cause error if .box1 is not currently in DOM
-    $('.box1').on('click', function() {
-
-        $('.box1').css({
-            background : 'darkgrey', 
-            color: 'white'
-        })
-    })
-
-    $('#box2').on({
-        click: function() {
-
-            $('#box2').css({
-                background: 'purple',
-                color: 'white'
-            })
-        },
-         mouseenter: function() {
-
-            $('#box2').css({
-                background: 'brown',
-                color: 'white'
-            })
-        },
-        mouseleave: function() {
-
-            $('#box2').css({
-                background: 'blue',
-                color: 'white'
-            })
-        }
-
-    })
-
-
-
-
 })
