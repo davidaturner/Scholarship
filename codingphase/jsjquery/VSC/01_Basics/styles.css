@@ -17,6 +17,7 @@ p {
   margin: auto;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .box {
@@ -24,4 +25,9 @@ p {
   height: 180px;
   background: red;
   margin-bottom: 25px;
+}
+
+.active {
+  background: purple;
+  color: white;
 }

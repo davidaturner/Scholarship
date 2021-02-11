@@ -5,31 +5,37 @@
         <title>Document</title>
     </head>
     <body>
-        <form action="site.php" method="post">
-
-            First : <input type="number" name="first_number"><br />
-            Second : <input type="number" name="second_number"><br />
-            Op: <input type="text" name="op"><br /><br>
-
-            <input type="submit" />
-        </form>
-
-        <?php 
-            $first_number = $_POST["first_number"];
-            $second_number = $_POST["second_number"];
-            $op = $_POST["op"];
-
-            if ($op == "+") {
-                echo $first_number + $second_number;
-            } elseif ($op == "-") {
-                echo $first_number - $second_number;
-            } elseif ($op == "*") {
-                echo $first_number * $second_number;
-            } elseif ($op == "/" and $second_number != 0) {
-                echo $first_number / $second_number;
-            } else {
-                echo "Op not found!";
+        <?php
+            class Chef {
+                function makeChicken () {
+                    echo "The Chef makes a chicken dish.";
+                }
+                function makeSalad () {
+                    echo "<p>The Chef makes a salad.</p>";
+                }
+                function makeSpecial () {
+                    echo "<p>The Chef makes a bbq ribs dish.</p>";
+                }
             }
+
+            class ItalianChef extends Chef {
+                function makeSpecial () {
+                    echo "<p>The Chef makes a chicken parm.</p>";                    
+                }
+                function makePasta () {
+                    echo "<p>The Chef makes a pasta dish.</p>";
+                }
+            }
+            $chef = new ItalianChef();
+            $chef->makeChicken();
+            $chef->makeSalad();
+            $chef->makeSpecial();
+            $chef->makePasta();
+
+            $chef = new Chef();
+            $chef->makeSpecial();
+
+
         ?>
     </body>
 </html>

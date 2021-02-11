@@ -1,0 +1,28 @@
+header {
+  background: #2e354f;
+  padding: 45px 0;
+  color: #fff;
+}
+
+/* Make img responsive*/
+/* Specify a Height OR a Weight (not Both) */
+img {
+  /* width: 100%; */
+  width: 90%; /* Looks slightly better on smaller screens. */
+}
+
+section {
+  padding: 45px 0;
+}
+
+.container {
+  /* width: 620px; */
+  width: 50%;
+  margin: 0 auto;
+  outline: 1px solid magenta;
+}
+
+.section-two {
+  background: #2e354f;
+  color: #fff;
+}

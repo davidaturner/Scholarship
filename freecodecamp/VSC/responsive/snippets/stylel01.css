@@ -1,0 +1,25 @@
+header {
+  background: #2e354f;
+  padding: 45px 0;
+  color: #fff;
+}
+
+/* Make img responsive*/
+img {
+  width: 100%;
+}
+
+section {
+  padding: 45px 0;
+}
+
+.container {
+  width: 620px;
+  margin: 0 auto;
+  outline: 1px solid magenta;
+}
+
+.section-two {
+  background: #2e354f;
+  color: #fff;
+}

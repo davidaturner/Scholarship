@@ -36,8 +36,8 @@ class Memgen extends Component {
     }
     render() {
         return(
-            <div>
-                <form onSubmit={this.handleSubmit}>
+            <div className="container">
+                <form class="form-section" onSubmit={this.handleSubmit}>
                     <input type="text" 
                             name="topText"
                             placeholder="topText"
@@ -56,11 +56,14 @@ class Memgen extends Component {
                     <img className="rand-img-section-img" 
                         src={this.state.randomImg} 
                         alt="No random?" />
-                    <p className="rand-img-section-toptext">{this.state.topText}</p>
-                    <p className="rand-img-section-bottext">{this.state.bottomText}</p>
+                    <p className="rand-img-section-text rand-img-section-text-toptext">
+                        {this.state.topText}</p>
+                    <p className="rand-img-section-text rand-img-section-text-bottext">
+                        {this.state.bottomText}</p>
                 </div>
             </div>
         )
     }
 }
+
 export default Memgen

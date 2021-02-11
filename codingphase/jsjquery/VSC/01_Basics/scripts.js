@@ -1,18 +1,20 @@
 console.log('Hello from console.log')
 // Event Object
+const runToggle = true;
 $(function () {
 
-    //Check box1 background...
-    $('#box2').on('click', function(event) {
-        event.preventDefault()
-
-        $('.box1').css('background', 'purple')
-
+    $('#box2').click(function () {
+        $('#box2').remove();
     })
 
-    // Show mouse location...
-    // $('#box2').on('mousemove', function(event) {
-    //         event.preventDefault()
-    //         $('#box2').text("EventX: " + event.pageX + " EventY: " + event.pageY)
+    // Replaces box1 with box2.
+    // NOTE: It 'moves' box2, not'clones' box2.
+    // $('.box1:first').click(function () {
+    //     $('#box2').replaceAll('.box1:first');
     // })
+
+   $('.box1:first').click(function () {
+        $('<div><p>Welcome to NewAnger</p></div>').replaceAll('.box1');
+    })
+
 })
