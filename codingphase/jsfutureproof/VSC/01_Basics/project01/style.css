@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark-grey: #060c21;
+  --lemongrass: #89ff00;
+  --mossgreen: #00b33c;
+  --neonblue: #00bcd4;
+  --light-grey: #f5f5f0;
+  --just-grey: #999966;
+  --uh-grey: #e6e6e6;
+}
+
+body {
+  /* background: black;
+  color: white; */
+  background: var(--light-grey);
+  font-family: "Poppins", sans-serif;
+}
+
+/* div,
+header {
+  border: 1px solid white;
+} */
+
+header {
+  padding-top: 30px;
+  color: var(--just-grey);
+}
+
+button {
+  width: 300px;
+  height: 40px;
+  padding: 10px;
+  background: var(--mossgreen);
+  color: var(--light-grey);
+  font-weight: 300;
+  font-size: 1em;
+}
+
+form {
+  height: 550px;
+}
+
+.container {
+  width: 90%;
+  margin: 15px auto;
+  position: relative;
+}
+
+.app-instructions {
+  width: 65%;
+  margin: auto;
+  text-align: center;
+}
+
+.app-albums {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 75px;
+}
+
+.app-album {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+}
+
+.addborder {
+  border: 1px solid var(--dark-grey);
+}
+.app-album-url {
+  width: 240px;
+  padding: 15px 10px 5px 10px;
+  background-color: white;
+  color: brown;
+}
+
+.app-controls {
+  width: 65%;
+  margin: auto;
+  text-align: center;
+}
+
+.album-title {
+  margin: 0;
+  font-size: 1.6em;
+  background: white;
+  color: brown;
+}
+
+.album-artist {
+  margin: 0 0 10px 0;
+  font-size: 0.9em;
+  background: white;
+  color: black;
+  opacity: 0.6;
+}
+
+.notification {
+  width: 20%;
+  margin: 2px;
+  padding: 10px;
+  background-color: var(--uh-grey);
+  color: var(--mossgreen);
+
+  /* display: flex; */
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  border-radius: 5px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  display: none;
+}
+
+.note-check {
+  width: 15%;
+}
+.note-textbox {
+  width: 65%;
+}
+.active {
+  display: flex;
+}
+.note-textbox-msg {
+  font-size: 0.9em;
+}
+.note-textbox-items {
+  font-size: 0.8em;
+}
+.selected::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  background: #fff;
+  z-index: -1;
+}
+.selected::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(40px);
+  border: 0;
+}
+.selected::before,
+.selected::after {
+  background: linear-gradient(
+    235deg,
+    var(--lemongrass),
+    var(--dark-grey),
+    var(--neonblue)
+  );
+}
+.content {
+  padding: 20px;
+  color: #fff;
+}

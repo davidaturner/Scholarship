@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gradient Border Effects</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" 
+        rel="stylesheet">
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            :root {
+                --dark-grey: #060c21;
+                --lemongrass: #89ff00;
+                --neonblue: #00bcd4;
+            }
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background: var(--dark-grey);
+                font-family: 'Poppins', sans-serif;
+            }
+            .box {
+                position: relative;
+                height: 300px;
+                width: 400px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: var(--dark-grey);
+            }
+            .addborder {
+                border: 2px solid #fff;
+            }
+            /* : - pseudo class :: - pseudo element */
+            .selected::before {
+                content: '';
+                position: absolute;
+                top: -2px;
+                right: -2px;
+                bottom: -2px;
+                left: -2px;
+                background: #fff;
+                z-index: -1;
+            }
+            .selected::after {
+                content: '';
+                position: absolute;
+                top: -2px;
+                right: -2px;
+                bottom: -2px;
+                left: -2px;
+                background: #fff;
+                z-index: -2;
+                filter: blur(40px);
+                border: 0;
+            }
+            .selected::before,
+            .selected::after {
+                background: linear-gradient(235deg,
+                                    var(--lemongrass), 
+                                    var(--dark-grey), 
+                                    var(--neonblue));
+            }
+            .content {
+                padding: 20px;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box addborder">
+            <div class="content">
+                <h1>Glowing Border</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non ultricies turpis. Curabitur vitae luctus sem. Nulla et
+                lectus dolor. Phasellus sit amet luctus est.</p>
+            </div>
+        </div>
+    </body>
+</html>

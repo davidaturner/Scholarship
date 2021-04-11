@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Task Manager!</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="./style.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        .task-container {
+            width: 30%;
+            height: 90%;
+            border: 1px solid brown;
+            position: relative;
+            background-color: #fff;
+        }
+
+        .list-header {
+            position: relative;
+            height: 20%;
+            border: 1px solid grey;
+            background: var(--navy-blue);
+        }
+
+        .list-header-img {
+            opacity: 0.4;
+        }
+
+        .list-header-logo {
+            width: 100%;
+            position: absolute;
+            top: 24%;
+            left: 0;
+            font-size: 1.0em;
+            background-color: transparent;
+            text-align: left;
+            padding: 15px 10px;
+            color: #fff;
+        }
+
+        .list-header-info {
+            width: 100%;
+            position: absolute;
+            bottom: 15%;
+            right: 0;
+            font-size: 0.5em;
+            background-color: transparent;
+            text-align: right;
+            padding: 15px 10px;
+            color: #fff;
+        }
+
+        .number {
+            font-size: 1.4em;
+            display: inline-block;
+            color: var(--torquoise-blue);
+        }
+
+        .add-circle {
+            background: var(--off-white);
+            position: absolute;
+            right: 5%;
+            top: 16%;
+            border-radius: 50%;
+            padding: 2px 6px 2px 5px;
+        }
+
+            .add-circle .fa {
+                color: var(--torquoise-blue);
+                font-size: 60px;
+            }
+
+        .list-content {
+            padding-top: 40px;
+            height: 80%;
+        }
+
+        .task {
+            position: relative;
+            width: 95%;
+            margin: 20px auto;
+            background: #fff;
+            color: var(--darker-yellow);
+            font-size: 0.5em;
+            padding: 20px;
+            border-bottom: 2px solid var(--navy-blue);
+        }
+
+        .title {
+            font-size: 1.2em;
+        }
+
+        .created {
+            font-size: 0.8em;
+        }
+
+        .checkcompleted {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+        }
+
+            .checkcompleted .fa {
+                color: green;
+            }
+
+        /* Edit page */
+        .edit-alltasks-container {
+            width: 30%;
+            height: 80%;
+            border: 1px solid brown;
+        }
+
+        .add-task-label {
+            color: var(--off-white);
+            width: 50%;
+            padding: 5px 7px;
+            margin: 20px auto;
+        }
+        .clickadd {
+            position: absolute;
+            top: 18%;
+            left: 6%;
+        }
+
+        .task-edit-form {
+            background: var(--navy-blue);
+            color: var(--off-white);
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform: translate(0, 120%);
+            transition: transform 0.6s ease-in;
+            overflow: hidden;
+        }
+
+         .active {
+            transform: translate(0, 0);
+         }
+
+        form {
+            position: relative;
+        }
+
+        .form-group {
+            position: relative;
+            height: 125px;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 5px;
+
+        }
+        .form-group label {
+            font-size: 22px;
+        }
+        .form-group input[type='text'], textarea {
+            background: var(--off-white-faded);
+            border: none;
+            border-bottom: 2px solid var(--off-white);
+            color: var(--sunshine-yellow);
+            font-size: 22px;
+        }
+        .form-group textarea {
+            height: auto;
+        }
+        .form-group button {
+            background-color: var(--torquoise-blue);
+            color: var(--off-white);
+            font-size: 0.6em;
+            width: 100%;
+            margin: auto;
+            padding: 10px;
+        }
+        .close-btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: auto;
+        }
+
+        /* Fonts */
+        .openSans {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .megrim {
+            font-family: 'Megrim', cursive;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    <div class="container">
+        <div class="img">This is an image</div>
+        <div class="box openSans offwhite">Box1</div>
+        <div class="box megrim navy">Box2</div>
+        <div class="box openSans torquoise">Box3</div>
+        <div class="box megrim">Box4</div>
+        <div class="box carter sunshine">Box5</div>
+    </div>
+        -->
+    <div class="container">
+        <div class="task-container" id="listalltasks">
+            <header class="list-header">
+                <div class="list-header-img img"></div>
+                <div class="list-header-logo megrim">TaskManager</div>
+                <div class="list-header-info">
+                    <div class="number" id="tasks">12</div>&nbsp;tasks<br />
+                    <div class="number" id="completed">5</div>&nbsp;completed
+                </div>
+            </header>
+            <section class="list-content offwhite">
+                <div class="task">
+                    <div class="title">Brush Teeth</div>
+                    <div class="created">Created: April 9 2021</div>
+                    <div class="checkcompleted"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></div>
+                </div>
+                <div class="task">
+                    <div class="title">Shower</div>
+                    <div class="created">Created: April 9 2021</div>
+                    <div class="checkcompleted"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></div>
+                </div>
+                <div class="task">
+                    <div class="title">Have Breakfast</div>
+                    <div class="created">Created: April 9 2021</div>
+                </div>
+                <div class="task">
+                    <div class="title">Put on a Suit</div>
+                    <div class="created">Created: April 9 2021</div>
+                </div>
+                <div class="task">
+                    <div class="title">Pick up Coffee</div>
+                    <div class="created">Created: April 9 2021</div>
+                </div>
+            </section>
+            <div class="add-circle"><i class="fa fa-plus-circle" aria-hidden="true"></i></div>
+        </div>
+        <div class="task-container" id="edittask">
+            <p class="clickadd"><<< Click to Add Task!</p>
+            <section class="task-edit-form">
+                <div class="close-btn"><i class="fa fa-times" aria-hidden="true"></i></div>
+                <div class="add-task-label">Add a Task!</div>
+                <form>
+                    <div class="form-group">
+                        <label for="title">Title:</label>
+                        <input type="text" name="title" id="title" size="18" value="Add Task Title" /><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Category:</label>
+                        <input type="text" name="category" id="category" size="18" value="Select Category"><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Notes:</label>
+                        <textarea name="notes" id="notes" value="Add Notes"></textarea><br>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Add</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+    <!-- scripts-->
+    <script src="./script.js"></script>
+</body>
+</html>

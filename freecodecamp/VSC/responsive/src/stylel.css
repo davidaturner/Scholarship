@@ -4,11 +4,9 @@ header {
   color: #fff;
 }
 
-/* Make img responsive*/
-/* Specify a Height OR a Weight (not Both) */
 img {
   /* width: 100%; */
-  width: 90%; /* Looks slightly better on smaller screens. */
+  width: 90%;
 }
 
 section {
@@ -16,8 +14,12 @@ section {
 }
 
 .container {
-  /* width: 620px; */
   width: 50%;
+  /* width: 620px; */
+  /* Max width means original may contract
+    but it will not stretch beyond specified/original
+    size. What then does Min-width do?? */
+  max-width: 620px;
   margin: 0 auto;
   outline: 1px solid magenta;
 }
@@ -25,4 +27,15 @@ section {
 .section-two {
   background: #2e354f;
   color: #fff;
+  /* Make font here 150% the size of the
+  parent font (body - 18px). */
+  /* rem - font is relative to the ROOT
+  of the document, not parent. More consistent. */
+
+  /* Rule of thumb
+      font-size: use rem
+      padding or margin: use em
+      widths: em or percentage, or pixels */
+
+  font-size: 1.5em;
 }

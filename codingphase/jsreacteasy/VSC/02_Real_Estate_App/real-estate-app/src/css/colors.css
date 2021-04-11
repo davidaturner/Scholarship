@@ -1,0 +1,42 @@
+/* Basic colors */
+.darkpurple {
+  background: #1d0066;
+  color: #fff;
+}
+
+.cdarkpurple {
+  color: #1d0066;
+}
+
+.blightgrey {
+  background: #faf7f5;
+}
+
+.clightgrey {
+  color: #faf7f5;
+}
+
+.boffwhite {
+  background: #fffeff;
+}
+
+.coffwhite {
+  color: #fffeff;
+}
+
+.pink {
+  background: #ff718e;
+  color: #fff;
+}
+
+.cpink {
+  color: #ff718e;
+}
+
+.bdarkgrey {
+  background: #adabaa;
+}
+
+.cdarkgrey {
+  color: #adabaa;
+}

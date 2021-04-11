@@ -1,20 +1,48 @@
-console.log('Hello from console.log')
-// Event Object
-const runToggle = true;
 $(function () {
-
-    $('#box2').click(function () {
-        $('#box2').remove();
+    $('#box2').on('click', function() {
+    var request = $.ajax({
+        url: 'http://jsonplaceholder.com.typicode.com/todos',
+        method: 'GET',
+        // data: { id: menuId },
+        // datatype: "html"
     })
-
-    // Replaces box1 with box2.
-    // NOTE: It 'moves' box2, not'clones' box2.
-    // $('.box1:first').click(function () {
-    //     $('#box2').replaceAll('.box1:first');
-    // })
-
-   $('.box1:first').click(function () {
-        $('<div><p>Welcome to NewAnger</p></div>').replaceAll('.box1');
     })
-
 })
+
+function getPostsAjaxDoneFail () {     
+    var request = $.ajax({
+        url: 'http://jsonplaceholder.com.typicode.com/todos',
+        method: 'GET',
+        // data: { id: menuId },
+        // datatype: "html"
+    })
+
+    request.done(function( data ) {
+        console.log(data)
+    })
+
+    request.fail(function( jqXHR, errmsg) {
+        alert('Request failed: '+ errmsg)
+    })
+}
+
+function getPostsAjaxThen() {
+    // var target = 'https://jsonplaceholder.com.typicode.com/todos'
+    var target = 'https://google.com'
+    $.ajax(target, {
+        method: 'GET'
+    }).then(function(data) {
+        console.log(data)
+    })
+}
+
+// $(function () {
+
+//     var target = 'https://jsonplaceholder.com.typicode.com/posts'
+
+//     $.ajax(target, {
+//         method: 'GET'
+//     }).then(function(data) {
+//         console.log(data)
+//     })
+// })
