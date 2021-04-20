@@ -6,15 +6,20 @@
     <title>Real Estate Candidate</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=New+Tegomin&family=Yatra+One&family=Open+Sans:wght@400:700&display=swap" 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=New+Tegomin&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Yatra+One&display=swap" 
           rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link href="./style.css" rel="stylesheet" />
+    <link href="./style1.css" rel="stylesheet" />
+    <link href="./style2.css" rel="stylesheet" />
     <style>
         .test-body {
             width: 1200px;
             max-height: 840px;
             margin: auto;
         }
+
         .test-container {
             background-color: gainsboro;
             display: flex;
@@ -26,210 +31,178 @@
             margin: 20px auto;
             font-size: 30px;
         }
+
+        .test-container2 {
+            position: relative;
+            background-color: gainsboro;
+            width: 95%;
+            height: 565px;
+            margin: 20px auto;
+            font-size: 30px;
+
+        }
+        .column-box {
+            position: relative;
+            width: 30%;
+            height: 100%;
+            float: left;
+            margin: auto;
+            overflow: auto;
+        }
+        .listing-box {
+            position: relative;
+            width: 70%;
+            height: 100%;
+            float: right;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            overflow: auto;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <p class="logo-1">pararius<span class="tegomin">.nl</span></p>
-            <p class="logo-2">hourwagonne</p>
-        </div>
-        <nav>
-            <a href="#">Create Ads</a>
-            <a href="#">About Us</a>
-            <a href="#">Log In</a>
-            <a href="#">Register</a>
-        </nav>
-    </header>
-    <!--
     <div class="test-body">
-        <h1 style="padding: 10px 0 0 10px;" class="yatraone">Hello World!</h1>
-        <div class="test-container">
-            <div class="box cinzel deep-purple">Box1</div>
-            <div class="box opensans grey">Box2</div>
-            <div class="box tegomin pink-purple">Box3</div>
-            <div class="box yatraone pink">Box4</div>
-            <div class="box opensans grey-white">Box5</div>
+        <div class="test-container2">
+            <h1 style="padding: 15px 10px;font-size:1.2em;color: violet" class="cinzel">Hello World!</h1>
+            <div class="column-box">
+                <div class="box" style="background: orange;">Box</div>
+                <div class="box" style="background: orange;">Box</div>
+                <div class="box" style="background: orange;">Box</div>
+                <div class="box" style="background: orange;">Box</div>
+            </div>
+            <div class="listing-box">
+                <div class="box" style="background: pink; margin: 5px;">Box</div>
+                <div class="box" style="background: pink; margin: 5px;">Box</div>
+                <div class="box" style="background: pink; margin: 5px;">Box</div>
+                <div class="box" style="background: pink; margin: 5px;">Box</div>
+                <div class="box" style="background: pink; margin: 5px;">Box</div>
+                <div class="box" style="background: pink; margin: 5px;">Box</div>
+                <div class="box" style="background: pink; margin: 5px;">Box</div>
+            </div>
         </div>
     </div>
-        -->
     <!--
-    <div class="container">
-        <header class="header yatraone">
+        <header>
             <div class="logo">
                 <p class="logo-1">pararius<span class="tegomin">.nl</span></p>
                 <p class="logo-2">hourwagonne</p>
             </div>
-            <div class="navbar">
-                <ul>
-                    <li>Create Ads</li>
-                    <li>About Us</li>
-                    <li>Log In</li>
-                    <li><span class="register">Register</span></li>
-                </ul>
-            </div>
+            <nav>
+                <a href="#" class="btn">Create Ads</a>
+                <a href="#" class="btn">About Us</a>
+                <a href="#" class="btn">Log In</a>
+                <a href="#" class="btn register-btn">Register</a>
+            </nav>
         </header>
-        <div class="content">
-            <div class="thiscolumnblank bgrey"></div>
-            <div class="side-controls">
-                <p class="side-label">Filter</p>
-                <input type="text" value="Neighborhood" />
-                <input type="text" value="Type of house" />
-                <input type="text" value="Interior" />
-                <p class="side-label">Price</p>
-                <input type="text" value="Price" />
-                <p class="side-label">Floor Space</p>
-                <input type="text" value="Floor space" />
-                <p class="side-label">Radius</p>
-                <input type="text" value="Radius" />
-                <p class="side-label">Facilities</p>
-                <p class="side-label-minor">Elevator</p>
-                <input type="text" value="Elevator" />
-                <p class="side-label-minor">Storage</p>
-                <input type="text" value="Storage" />
-                <p class="side-label-minor">Bathtub</p>
-                <input type="text" value="Bathtub" />
-                <p class="side-label-minor">Separate Shower</p>
-                <input type="text" value="Separate shower" />
-                <p class="side-label-minor">Fireplace</p>
-                <input type="text" value="Fireplace" />
-                <p class="side-label-minor">Swimming Pool</p>
-                <input type="text" value="Swimming pool" />
+        <section class="content-area">
+            <section id="filter-area">
+                <div class="filter-area-container">
+                    <div class="filter-title">Filter</div>
+                    <select name="neighborhood" class="neighborhood-select">
+                        <option value="0">Select</option>
+                        <option value="1">Mt Lebanon</option>
+                        <option value="2">Monroeville</option>
+                        <option value="3">Allison Park</option>
+                    </select>
+                    <select name="housetype" class="housetype-select">
+                        <option value="0">Select</option>
+                        <option value="1">Townhouse</option>
+                        <option value="2">Ranch</option>
+                        <option value="3">Duplex</option>
+                    </select>
+                    <select name="bedrooms" class="bedrooms-select">
+                        <option value="0">Select</option>
+                        <option value="1">1 BR</option>
+                        <option value="2">2 BR with Base</option>
+                        <option value="3">2 BR with Garage</option>
+                    </select>
+                    <label for=" price">Price</label>
+                    <div name="price" class="input-filter-min-max">
+                        <input type="text" name="min-price" value="min-price" />
+                        <input type="text" name="max-price" value="max-price" />
+                    </div>
+                    <label for="floorspace">Floor Space</label>
+                    <div name="floorspace" class="input-filter-min-max">
+                        <input type="text" name="min-floorspace" value="min-floorspace" />
+                        <input type="text" name="max-floorspace" value="max-floorspace" />
+                    </div>
+                    <label for="extras">Extras</label>
+                    <div name="extras" class="extras-options">
+                        <div class="option">Elevator<input type="checkbox" name="extras" value="elevator-extra" /></div>
+                        <div class="option">Swimming Pool<input type="checkbox" name="extras" value="swimmingpool-extra" /></div>
+                        <div class="option">Finished Basement<input type="checkbox" name="extras" value="finishedbase-extra" /></div>
+                        <div class="option">In Home Gym<input type="checkbox" name="extras" value="gym-extra" /></div>
+                    </div>
+                </div>
+            </section>
+            <section class="search-area">
+                <div class="search-area-container">
+                    <input type="text" name="search-input" />
+                </div>
+            </section>
+            <section class="listings-area">
+                <div class="listings-sortby">
+                    <div>390 Results Returned</div>
+                    <select class="sort-by-select">
+                        <option value="price-asc">Highest Price</option>
+                        <option value="price-dsc">Lowest Price</option>
+                    </select>
+                    <div><i class="fa fa-th-list" aria-hidden="true"></i></div>
+                    <div><i class="fa fa-th" aria-hidden="true"></i></div>
+                </div>
+                <div class="listings-results">
+                    <div class="listing">
+                        <div class="listing-img">
+                            <div class="listing-img-addr">Addr</div>
+                            <div class="listing-img-info">
+                                <div class="user-img"></div>
+                                <div class="user-details">
+                                    Nina Smite
+                                    05/05/2021
+                                </div>
+                                <div class="other-details">
+                                    100 ft&sup2;
+                                    <div><i class="fa fa-square-o" aria-hidden="true"></i></div>
+                                    <div><i class="fa fa-bed" aria-hidden="true"></i>
+                                        3 Bedrooms
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listing-info">
+                            $3000 / month
+                            <div><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                            Pittburgh, PA
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <ul>
+                            <li>Previous</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>Next</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                Footer
+            </footer>
+        </section>
+    -->
+    <!--
+        <div class="test-body">
+            <h1 style="padding: 10px 0 0 10px;" class="yatraone">Hello World!</h1>
+            <div class="test-container">
+                <div class="box cinzel deep-purple">Box1</div>
+                <div class="box opensans grey">Box2</div>
+                <div class="box tegomin pink-purple">Box3</div>
+                <div class="box yatraone pink">Box4</div>
+                <div class="box opensans grey-white">Box5</div>
             </div>
-            <div class="listing">
-                <div class="listing-control cinzel">Short Stay</div>
-                <div class="listing-row">
-                    <div class="row-box">
-                        <div class="box-photo">
-                            <div class="box-photo-data">
-                                <p style="color: white;">Home 1</p>
-                            </div>
-                        </div>
-                        <div class="box-detail">
-                            <p>Rental price</p>
-                            <p>Area</p>
-                        </div>
-                    </div>
-                    <div class="row-box">
-                        <div class="box-photo">
-                            <div class="box-photo-data">
-                                <p style="color: white;">Home 2</p>
-                            </div>
-                        </div>
-                        <div class="box-detail">
-                            <p>Rental price</p>
-                            <p>Area</p>
-                        </div>
-                    </div>
-                    <div class="row-box">
-                        <div class="box-photo">
-                            <div class="box-photo-data">
-                                <p style="color: white;">Home 3</p>
-                            </div>
-                        </div>
-                        <div class="box-detail">
-                            <p>Rental price</p>
-                            <p>Area</p>
-                        </div>
-                    </div>
-                    <!--
-    <div class="row-box">
-        <div class="box-photo">
-            <div class="box-photo-data"></div>
         </div>
-        <div class="box-detail">
-            <p>Rental price</p>
-            <p>Area</p>
-        </div>
-    </div>
-    <div class="row-box">
-        <div class="box-photo">
-            <div class="box-photo-data"></div>
-        </div>
-        <div class="box-detail">
-            <p>Rental price</p>
-            <p>Area</p>
-        </div>
-    </div>
-    <div class="row-box">
-        <div class="box-photo">
-            <div class="box-photo-data"></div>
-        </div>
-        <div class="box-detail">
-            <p>Rental price</p>
-            <p>Area</p>
-        </div>
-    </div>
-    <div class="row-box">
-        <div class="box-photo">
-            <div class="box-photo-data"></div>
-        </div>
-        <div class="box-detail">
-            <p>Rental price</p>
-            <p>Area</p>
-        </div>
-    </div>
-    <div class="row-box">
-        <div class="box-photo">
-            <div class="box-photo-data"></div>
-        </div>
-        <div class="box-detail">
-            <p>Rental price</p>
-            <p>Area</p>
-        </div>
-    </div>
-    <div class="row-box">
-        <div class="box-photo">
-            <div class="box-photo-data"></div>
-        </div>
-        <div class="box-detail">
-            <p>Rental price</p>
-            <p>Area</p>
-        </div>
-    </div>
-    <div class="row-box">
-        <div class="box-photo">
-            <div class="box-photo-data"></div>
-        </div>
-        <div class="box-detail">
-            <p>Rental price</p>
-            <p>Area</p>
-        </div>
-    </div>
-    <div class="row-box">
-        <div class="box-photo">
-            <div class="box-photo-data"></div>
-        </div>
-        <div class="box-detail">
-            <p>Rental price</p>
-            <p>Area</p>
-        </div>
-    </div>
-    <div class="row-box">
-        <div class="box-photo">
-            <div class="box-photo-data"></div>
-        </div>
-        <div class="box-detail">
-            <p>Rental price</p>
-            <p>Area</p>
-        </div>
-    </div>
-    <div class="row-box">
-        <div class="box-photo">
-            <div class="box-photo-data"></div>
-        </div>
-        <div class="box-detail">
-            <p>Rental price</p>
-            <p>Area</p>
-        </div>
-    </div>
-
-    </div>
-    </div>
-    <div class="thiscolumnblank bwhite"></div>
-    </div>
-    <footer class="footer">Footer</footer>
-    </div>
     -->
     <!-- script -->
     <script src="./script.js"></script>

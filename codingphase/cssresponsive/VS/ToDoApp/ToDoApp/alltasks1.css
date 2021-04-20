@@ -1,0 +1,50 @@
+﻿/* Custom */
+.number {
+    font-size: 1.4em;
+    display: inline-block;
+    color: var(--torquoise-blue);
+}
+
+.add-circle {
+    background: var(--off-white);
+    position: absolute;
+    right: 5%;
+    top: 16%;
+    border-radius: 50%;
+    padding: 2px 6px 2px 5px;
+}
+
+    .add-circle .fa {
+        color: var(--torquoise-blue);
+        font-size: 60px;
+    }
+
+/* Content */
+.task {
+    position: relative;
+    width: 95%;
+    margin: 20px auto;
+    background: #fff;
+    color: var(--darker-yellow);
+    font-size: 0.5em;
+    padding: 20px;
+    border-bottom: 2px solid var(--navy-blue);
+}
+
+.title {
+    font-size: 1.2em;
+}
+
+.created {
+    font-size: 0.8em;
+}
+
+.checkcompleted {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+    .checkcompleted .fa {
+        color: green;
+    }

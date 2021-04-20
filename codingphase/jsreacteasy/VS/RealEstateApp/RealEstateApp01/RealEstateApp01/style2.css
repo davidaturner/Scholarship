@@ -1,0 +1,58 @@
+﻿label {
+    font-size: 1.2em;
+    padding: 30px 0;
+}
+.content-area {
+    font-size: 16px;
+}
+#filter-area {
+    background: var(--grey);
+    color: var(--deep-grey);
+    width: 28%;
+    position: relative;
+}
+.filter-area-container {
+    width: 60%;
+    margin-left: 105px;
+    display: flex;
+    flex-direction: column;
+}
+.filter-area-container input, select {
+    background-color: var(--grey);
+    color: var(--deep-grey);
+    border-color: var(--deep-grey);
+    padding: 10px 8px;
+    font-size: 0.8em;
+}
+.filter-area-container select {
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+.filter-title {
+    color: var(--deep-purple);
+    padding: 20px 0;
+    font-size: 1.4em;
+    margin-bottom: 30px;
+}
+.input-filter-min-max input[type="text"] {
+    width: 47%;
+    margin-right: 3px;   
+}
+.extras-options {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+}
+.option {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    font-size: 0.8em;
+    border-bottom: 2px solid var(--deep-grey);
+    padding-top: 7px;
+    padding-bottom: 20px;
+}
+
