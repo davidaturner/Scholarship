@@ -1,0 +1,24 @@
+﻿/* Attribute selector */
+
+/* all with exact attribute*/
+h1[class=laughin] {
+    border: 1px solid pink;
+}
+img[src="skyline.jpg"] {
+    border: 5px solid orange;
+}
+
+/* all beginning with attribute */
+p[class^=tor] {
+    border: 2px solid red;
+}
+
+/* all ending with attribute */
+p[class*=laughlin] {
+    border: 3px solid black;
+}
+/*
+img[src*=jpg] {
+    border: 5px solid orange;
+}
+    */

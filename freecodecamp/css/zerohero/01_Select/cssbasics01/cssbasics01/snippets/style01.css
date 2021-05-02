@@ -1,0 +1,13 @@
+﻿/* Specificity */
+/* least */
+p {
+    color: yellow;
+}
+
+.paragreen {
+    color: green;
+}
+
+#parablue {
+    color: blue;
+}
