@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Is Document Ready?</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 24px;
+        }
+        .container {
+            width: 80%;
+            height: 620px;
+            background-color: gainsboro;
+            margin: 10px;
+            padding: 10px;
+        }
+        .box {
+            width: 150px;
+            height: 150px;
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello, World!</h1>
+        <div class="box" id="box1" style="background-color:red">
+            <p>Box 1</p>
+        </div>
+        <div class="box" id="box2" style="background-color:red">
+            <p>Box 2</p>
+        </div>
+        <div class="box" id="box3" style="background-color:red">
+            <p>Box 3</p>
+        </div>
+    </div>
+
+    <!-- Put the script last as not all variables have been defined. -->
+    <script>
+        // Document is not ready. No 'Hello World!'
+        alert('Document NOT Ready!')
+
+        // Document displayed. 'Hello World!'
+        $(function () {
+            alert('Document is NOW Ready!')
+        })
+    </script>
+</body>
+</html>

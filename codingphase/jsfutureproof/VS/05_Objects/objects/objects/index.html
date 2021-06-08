@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Object examples</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <script>
+        document.write('Object examples');
+
+        var students = [
+            {
+                name: 'Joe',
+                age: 59,
+                car: {
+                    name: 'gle',
+                    year: 2017,
+                    price: 80000,
+                    style: 'sport'
+                },
+                grade: 'B+'
+            },
+            {
+                name: 'Tom',
+                age: 29,
+                car: {
+                    name: 'chevrolet',
+                    year: 2017,
+                    price: 80000,
+                    style: 'sport'
+                },
+                grade: 'A'
+            },
+            {
+                name: 'Frank',
+                age: 19,
+                car: {
+                    name: 'ford',
+                    year: 2017,
+                    price: 80000,
+                    style: 'sport'
+                },
+                grade: 'C+'
+            },
+            {
+                name: 'Marva',
+                age: 39,
+                car: {
+                    name: 'ford',
+                    year: 2018,
+                    price: 80000,
+                    style: 'sport'
+                },
+                grade: 'A'
+            }
+        ];
+
+        students[0].mygrade = function (i) {
+            console.log(students[i].name + "'s grade is " + students[i].grade);
+        }
+        var i;
+        for (i = 0; i < students.length; i++) {
+            students[i].graduated = 'graduated!';
+            students[i].car.transmission = 'automatic';
+            console.log(students[i]);
+            students[0].mygrade(i);
+            console.log('===========================================');
+        }
+
+    </script>
+</body>
+</html>

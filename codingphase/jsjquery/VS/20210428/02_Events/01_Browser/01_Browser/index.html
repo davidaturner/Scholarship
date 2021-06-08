@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Browser Events</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 24px;
+        }
+        .container {
+            width: 80%;
+            height: 620px;
+            background-color: gainsboro;
+            margin: 10px;
+            padding: 10px;
+        }
+        .box {
+            width: 150px;
+            height: 150px;
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello, World!</h1>
+        <div class="box" id="box1" style="background-color:red">
+            <p>Box 1</p>
+        </div>
+        <div class="box" id="box2" style="background-color:red">
+            <p>Box 2</p>
+        </div>
+        <div class="box" id="box3" style="background-color:red">
+            <p>Box 3</p>
+        </div>
+    </div>
+
+
+    <script>
+        $(function () {
+            $(window).resize(function () {
+                // why are we limited to 980?
+                if ($(window).width() > 1300) {
+                    $('body').css({ backgroundColor: 'white' })
+                } else if ($(window).width() > 992) {
+                    $('body').css({ backgroundColor: 'yellow' })
+                } else {
+                    $('body').css({ backgroundColor: 'orangered' })
+                }
+                console.log($(window).width())
+            })
+        })
+    </script>
+</body>
+</html>

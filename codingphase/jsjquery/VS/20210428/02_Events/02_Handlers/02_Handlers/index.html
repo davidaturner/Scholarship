@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Event Handlers</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 24px;
+        }
+        .container {
+            width: 80%;
+            height: 620px;
+            background-color: gainsboro;
+            margin: 10px;
+            padding: 10px;
+        }
+        .box {
+            width: 150px;
+            height: 150px;
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello, World!</h1>
+        <div class="box" id="box1" style="background-color:red">
+            <p>Box 1</p>
+        </div>
+        <div class="box" id="box2" style="background-color:red">
+            <p>Box 2</p>
+        </div>
+        <div class="box" id="box3" style="background-color:red">
+            <p>Box 3</p>
+        </div>
+    </div>
+
+
+    <script>
+        $(function () {
+
+            // Document Event Handler
+            // Useful if click occurs before element is defined.
+            $(document).on('click', '#box1', function () {
+                $('#box1').css({
+                    backgroundColor: 'green'
+                })
+            })
+
+            // Single Event Handler
+            $('#box2').click(function () {
+                $('#box2').css({
+                    backgroundColor: 'blue'
+                })
+            })
+
+            // Multiple Event Handler
+            $('#box3').on({
+                // click is superceded by mouseleave. why?
+                click: function () {
+                    $('#box3').css({
+                        backgroundColor: 'yellow'
+                    })
+                },
+                mouseenter: function () {
+                    $('#box3').css({
+                        backgroundColor: 'orangered'
+                    })
+                },
+                mouseleave: function () {
+                    $('#box3').css({
+                        backgroundColor: 'purple'
+                    })
+                }
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Operators</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Hello, World</h1>
+    <script>
+        greywrite((5 === 5) ? "yep" : "nope");
+
+        // logical
+        var joesantos = {
+            name: 'Joe Santos',
+            age: 39
+        }
+
+        var username1 = 'Joe Santos';
+        var userage = 39;
+        var userage2 = 41;
+
+        var username2 = 'Brian Carpenter';
+        if (username1 == joesantos.name) {
+            greywrite("Hello, " + username1 + "!");
+        } else {
+            greywrite("User does not have access!");
+        }
+        if (username2 == joesantos.name) {
+            greywrite("User has access!");
+        } else {
+            greywrite("User does not have access!");
+        }
+        if (username2 != joesantos.name) {
+            greywrite("Register for access, " + username2 + "...");
+        } else {
+            greywrite("Hello, " + username2 + "!");
+        }
+        if (username1 == joesantos.name && userage == joesantos.age) {
+            greywrite("User has access!");
+        } else {
+            greywrite("User does not have access!");
+        }
+        if (username1 == joesantos.name && userage2 == joesantos.age) {
+            greywrite("User has access!");
+        } else {
+            greywrite("User does not have access!");
+        }
+        if (username1 || username2 == joesantos.name) {
+            greywrite("User has access!");
+        } else {
+            greywrite("User does not have access!");
+        }
+
+        greywrite(typeof 2);
+        greywrite(typeof username1);
+
+        greywrite(username1 instanceof String);
+
+        var username3 = new String('Carl Marcus');
+        greywrite(username3)
+        greywrite(typeof username3)
+        greywrite(username3 instanceof String);
+
+        greywrite(joesantos instanceof Object);
+    </script>
+</body>
+</html>
