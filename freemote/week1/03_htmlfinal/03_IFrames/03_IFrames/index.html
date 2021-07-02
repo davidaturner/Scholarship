@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Elements</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            font-size: 24px;
+        }
+        .container {
+            width: 97%;
+            height: 780px;
+            padding: 15px;
+            margin: 10px;
+
+        }
+        .background {
+            height: 780px;
+            background-color: lightsalmon;
+        }
+        .front {
+            height: 500px;
+            background-color: salmon;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- An HTML iframe is used to display a web page within a web page.-->
+    <div class="container background">
+        <h1 style="color: mediumvioletred">Hello, World!</h1>
+        <iframe src="https://www.w3schools.com/colors/colors_picker.asp"
+                height="200" width="300" title="W3Color Schools"></iframe>
+        <iframe src="a.html"
+                height="200" width="300" title="A Page"></iframe>
+        <iframe src="b.html"
+                height="200" width="300" title="B Page"></iframe>
+        <iframe height="200" width="300" src="http://www.bbc.com" 
+                style="transform='scale(0.5)'"></iframe>>
+        <!--
+    <iframe width="1097" height="617" src="https://www.youtube.com/embed/_rNfdhUpg3g"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+            encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+    -->
+        <iframe height="200" width="300" src="https://www.youtube.com/embed/_rNfdhUpg3g"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</body>
+</html>

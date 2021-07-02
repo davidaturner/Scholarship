@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Remove Has Class Examples</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+          rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 32px;
+        }
+
+        article {
+            width: 90%;
+            height: 600px;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+        }
+
+        p {
+            margin: 5px;
+        }
+
+        .root {
+            --grey1: #f2f2f2;
+        }
+
+        .container {
+            width: 95%;
+            margin: 20px auto;
+            position: relative;
+            padding: 20px;
+        }
+
+        .page {
+            width: 48%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            font-size: 0.5em;
+            padding: 15px;
+            border: 1px solid black;
+        }
+
+        .ad {
+            width: 100%;
+            height: 30%;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            background-color: #f2f2f2;
+            color: mediumpurple;
+        }
+
+        .active {
+            background-color: purple;
+            border: 2px solid black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color:fuchsia; width: 60%; margin: 0 auto">Hello, World!</h1>
+        <article>
+            <div class="page">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac tempus
+                    purus, et commodo tortor. Donec blandit imperdiet commodo. Fusce leo est, vestibulum et
+                    interdum id, rutrum eget ante. Mauris at pretium ex. Sed vel mauris non felis vestibulum
+                    malesuada sed ut justo. Nunc accumsan auctor ultricies. Praesent at laoreet sapien. Ut ut nisl
+                    vel enim congue dignissim. Integer sed sapien a risus convallis sagittis nec vitae libero. In
+                    hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis
+                    sit amet elit turpis.
+                </p>
+                <p>
+                    Vivamus eu orci id nibh consectetur convallis. Sed urna leo, tempor eu nisi in, sodales lobortis
+                    turpis. Nunc ut quam sollicitudin ex sodales sodales et ut magna. Donec mattis volutpat lectus at
+                    volutpat. Mauris egestas
+                </p>
+            </div>
+            <div class="page">
+                <p>
+                    augue sed tempor dignissim. Praesent commodo justo in congue dapibus.
+                    Integer libero arcu, eleifend sed lectus eu, tristique elementum diam. Maecenas at justo est.
+                    Maecenas egestas aliquam bibendum.
+                </p>
+                <p>
+                    Pellentesque vulputate pulvinar velit eu varius. Mauris pretium nisl scelerisque velit iaculis,
+                    id euismod metus rhoncus. Aliquam pellentesque risus at lectus tempus eleifend. Morbi egestas
+                    quis ex vitae pharetra. Fusce iaculis arcu vitae metus interdum convallis.
+                </p>
+                <div class="ad">
+                    <h1 style="color:fuchsia; width: 20%; margin: 20px auto">Ad</h1>
+                    <p style="padding: 7px 7px">Phasellus ac tempus purus, et commodo tortor.</p>
+                </div>
+            </div>
+        </article>
+    </div>
+    <script>
+        // toggleClass
+        $(function () {
+            $('.ad').on('click', function () {
+                $(this).toggleClass('active')
+                if ($('.ad').hasClass('active')) {
+                    console.log('Ad has been activated.')
+                } else {
+                    console.log('Ad has been de-activated.')
+                }
+            })
+            if ($('.ad').hasClass('active') == false) {
+                console.log('Ad has not been yet activated')
+            }
+        })
+    </script>
+</body>
+</html>

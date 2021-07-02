@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Freemote Html Practice 2 from CodePen">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Just me">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freemote Html Practice 2</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-size: 24px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: olivedrab;
+        }
+
+        button {
+            font-size: 0.7em;
+            width: 20px;
+            padding: 10px;
+            margin: 25px 100px;
+            color: olivedrab;
+        }
+
+        label {
+            font-size: 0.7em;
+            color: olivedrab;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        select {
+            padding: 3px;
+            margin-bottom: 5px;
+        }
+
+        .container {
+            width: 25%;
+            height: 310px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: gainsboro;
+            border: 5px solid olivedrab;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Page</h2>
+        <form action="https://www.success.com/" method="post">
+            <div>
+                <label for "username">Username: </label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div>
+                <label for "password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div>
+                <div>
+                    <label for "gender">Gender: </label>
+                    <select id="gender" name="gender">
+                        <option selected disabled>Select</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Nonbinary</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <button>Submit</button>
+        </form>
+    </div>
+    <!--scripts-->
+    <script>
+        $(function () {
+            console.log("Ready")
+        })
+    </script>
+</body>
+</html>

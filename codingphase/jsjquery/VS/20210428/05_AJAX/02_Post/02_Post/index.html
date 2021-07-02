@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A page's description, usually one or two sentences." />
+    <meta name="keywords" content="banana, banana facts" />
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Rock Salt', cursive;
+            font-size: 24px;
+        }
+        h1 {
+            font-size: 2.8em;
+            color: green;
+        }
+        button {
+            width: 35px;
+            padding: 10px;
+            margin: 30px;
+
+            font-family: 'Rock Salt', cursive;
+            font-size: 1.4em;
+        }
+        div {
+            border: 1px solid darkseagreen;
+        }
+        .container {
+            width: 95%;
+            height: 720px;
+            position: relative;
+            background-color: gainsboro;
+            margin: 30px auto;
+            font-size: 0.8em;
+            padding: 20px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello, World!</h1>
+        <div>
+            <button id="post">Post</button>
+            <script>
+                $(function () {
+                    $('#post').on('click', function () {
+                        var request = $.ajax({
+                            method: "POST",
+                            url: "https://jsonplaceholder.typicode.com/todos",
+                            data: {
+                                userId: 12,
+                                id: 1,
+                                title: "boogy dicta totam qui explicabo doloribus qui dignissimos",
+                                completed: false
+                            },
+                            // dataType: "html"
+                        })
+                            .done(function(data){
+                                console.log(data)
+                            })
+                            .fail(function (jqXHR, textStatus, error) {
+                                console.log("Request failed: " + testStatus, + " " + error);
+                            })
+                    })
+                })
+            </script>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Elements</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            font-size: 24px;
+        }
+        .container {
+            width: 97%;
+            height: 780px;
+            padding: 10px;
+            margin: 10px;
+            background-color: gainsboro;
+        }
+        .background {
+            height: 780px;
+        }
+        .front {
+            height: 500px;
+        }
+        header, nav, footer {
+            width: 95%;
+            margin: 5px auto;
+            padding: 10px;
+            border: 5px double gainsboro;
+        }
+        header {
+            height: 10%;
+            background-color: lightpink;
+            border: 12px double gainsboro;
+        }
+        nav {
+            height: 10%;
+            background-color: orange;
+            border: 12px double gainsboro;
+        }
+        /* A section is a thematic grouping of content, typically with a heading.*/
+        section {
+            width: 49%;
+            height: 48%;
+            background-color: yellow;
+            position: absolute;
+            top: 0;
+            left: 1.7%;
+            padding: 10px;
+            border: 12px double gainsboro;
+        }
+        /*
+            An article should make sense on its own, and it should be possible to 
+            distribute it independently from the rest of the web site.
+        */
+        article {
+            width: 49%;
+            height: 49%;
+            background-color: greenyellow;
+            position: absolute;
+            top: 50%;
+            left: 1.7%;
+            padding: 10px;
+            border: 12px double gainsboro;
+        }
+        /*
+            An aside element defines some content aside from the content it is placed in (like a sidebar).
+
+            An aside content should be indirectly related to the surrounding content.
+        */
+        aside {
+            width: 48%;
+            height: 99%;
+            background-color: aquamarine;
+            position: absolute;
+            top: 0;
+            right: 0.5%;
+            padding: 10px;
+            border: 12px double gainsboro;
+        }
+        footer {
+            height: 10%;
+            background-color: violet;
+            border: 12px double gainsboro;
+        }
+    </style>
+</head>
+<body>
+    <div class="container background">
+        <header>Header</header>
+        <nav>Nav</nav>
+        <div class="container front" style="position:relative">
+            <section>Section</section>
+            <article>Article</article>
+            <aside>Aside</aside>
+        </div>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrapping Elements</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+          rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Merriweather', serif;
+            font-size: 32px;
+        }
+
+        article {
+            font-size: 0.75em;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .container {
+            width: 95%;
+            height: 750px;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .article {
+            font-size: 1.0em;
+            column-count: 3;
+            column-rule: 1px solid orangered;
+            column-gap: 50px;
+        }
+
+        .grey {
+            background-color: gainsboro;
+        }
+
+        .yellow {
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="container grey">
+        <div class="article">
+            <article>
+                <span id="label" style="background-color: orangered; color: white">
+                    <span style="width:40%; margin: 0 27%">Hello, World!</span>
+                </span><br /><br />               
+                <p id="firstp">
+                    <i>Lorem ipsum</i> dolor sit amet, consectetur adipiscing elit. Etiam euismod, quam varius cursus volutpat,
+                    tortor orci pretium libero, at dignissim mi orci id ex. Etiam vel ipsum lobortis, venenatis enim in,
+                    ullamcorper nisl. Integer feugiat et neque sit amet venenatis. Suspendisse ligula felis, elementum nec
+                    sem rutrum, sodales sollicitudin nulla. Ut commodo neque quis dui tincidunt commodo. Vestibulum at commodo
+                    ante. Maecenas faucibus ut tellus a fringilla. Donec vestibulum laoreet neque quis dignissim. Duis finibus
+                    est nec metus posuere euismod. Nunc dictum iaculis tortor vel feugiat. Duis et odio vestibulum, tristique
+                    sem a, efficitur orci.
+                </p>
+                <p id="secondp">
+                    Mauris eget odio non lectus commodo tempus. Curabitur tincidunt ut lectus sed commodo. Proin purus est,
+                    condimentum quis feugiat ut, aliquam non augue. Quisque eu lorem sed est pellentesque consequat. Nullam
+                    consectetur elit quis dolor gravida sodales. Ut id ullamcorper purus, nec semper ex. Maecenas molestie dolor
+                    maximus, venenatis ex ac, tempus dui. Praesent sollicitudin auctor auctor. In urna tellus, feugiat ac accumsan
+                    consequat, eleifend a lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed laoreet
+                    porttitor lectus.
+                </p>
+                <p id="thirdp">
+                    Cras sed neque tortor. Sed leo ligula, iaculis at magna vitae, vehicula lacinia turpis. Vivamus id porta
+                    mauris. Quisque id molestie lectus. Maecenas maximus fermentum risus, id semper felis efficitur in. 
+                </p>
+            </article>
+        </div>
+        <script>
+            // append, appendTo, prepend, prependTo
+            $(function () {
+                $('article p:first').append('<p style="color:green">Hello, World! Append</p>');
+
+                $('<p style="color:purple">Hello, World! AppendTo</p>').appendTo('article p');
+
+                $('article p:first').prepend('<p style="color: green">Hello, World! Prepend</p>');
+
+                $('<p style="color: brown">Hello, World! PrependTo</p>').prependTo('#thirdp');
+
+            })
+        </script>
+    </div>
+</body>
+</html>

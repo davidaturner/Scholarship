@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Freemote Html Practice 2 from CodePen">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Just me">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freemote Html Practice 2</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-size: 24px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: olivedrab;
+        }
+
+        button {
+            font-size: 0.7em;
+            width: 20px;
+            padding: 10px;
+            margin: 25px 100px;
+            color: olivedrab;
+        }
+
+        label {
+            font-size: 0.7em;
+            color: olivedrab;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        select {
+            padding: 3px;
+            margin-bottom: 5px;
+        }
+
+        .container {
+            width: 25%;
+            height: 700px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: gainsboro;
+            border: 5px solid olivedrab;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Survey</h2>
+        <!-- form is the preferred way to gather user input-->
+        <form action="#">
+            <!-- text -->
+            <div>
+                <!-- label allows for clicking on the input-->
+                <!-- without having to click on the input itself-->
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" />
+            </div>
+            <!-- select -->
+            <div>
+                <!-- select, disabled, selected -->
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option disabled selected>Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="dontsay">Don't wish to say</option>
+                </select>
+            </div>
+            <!-- checkbox -->
+            <div>
+                <!-- checked -->
+                <label>Amenities:</label>
+                <div>
+                    <input type="checkbox" name="amen" value="home" checked />
+                    <span>Home</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="amen" value="job" checked/>
+                    <span>Job</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="amen" value="volunteer"/>
+                    <span>Volunteer</span>
+                </div>
+            </div>
+            <!-- radio-->
+            <div>
+                <label>Age</label>
+                <div>
+                    <input type="radio" name="age" value="18-20"/>
+                    <span>18 - 20</span>
+                </div>
+                <div>
+                    <input type="radio" name="age" value="21-34" checked />
+                    <span>21 - 34</span>
+                </div>
+                <div>
+                    <input type="radio" name="age" value="35-64"/>
+                    <span>35 - 64</span>
+                </div>
+                <div>
+                    <input type="radio" name="age" value="65-"/>
+                    <span>65 -</span>
+                </div>
+            </div>
+            <!-- textarea -->
+            <div>
+                <!-- textarea cols rows-->
+                <label for="comments">Comments</label>
+                <br />
+                <textarea id="comments" name="comments" cols="30" rows="6"></textarea>
+            </div>
+            <!-- create a query string and display -->
+            <div><button>Submit</button></div>
+        </form>
+    </div>
+    <!--scripts-->
+    <script>
+        $(function () {
+            console.log("Ready")
+        })
+    </script>
+</body>
+</html>

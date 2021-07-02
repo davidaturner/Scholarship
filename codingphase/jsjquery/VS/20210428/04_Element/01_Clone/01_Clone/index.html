@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Mate SC', serif;
+            font-size: 32px;
+        }
+
+        .container {
+            width: 95%;
+            height: 700px;
+            margin: 15px;
+            padding: 15px;
+            background-color: gainsboro;
+        }
+
+        #boxset {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .box1 {
+            background-color: red;
+        }
+
+        .box2 {
+            background-color: darkolivegreen;
+            color: white;
+        }
+    </style>
+</head>
+    <body>
+        <div class="container">
+            <h1>Hello, World!</h1>
+            <div id="boxset">
+                <div class="box box1">Box 1</div>
+                <div class="box box2">Box 2</div>
+            </div>
+        </div>
+
+        <script>
+            // Click Box1 then Box2.
+            $(function () {
+                $('.box1').on('click', function () {
+                    $('.box1').clone().appendTo('#boxset')
+                })
+                $('.box2').on('click', function () {
+                    $('.box').clone().appendTo('#boxset')
+                })
+            })
+        </script>
+    </body>
+</html>
