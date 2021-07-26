@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Create Element a Button</title>
+    <script>
+        function greywrite(msg) {
+            document.write("<h1 style='color: gainsboro'>" + msg + "</h1>")
+        }
+    </script>
+</head>
+<body>
+    <h1 style="color: orangered">Hello, World!</h1>
+    <div id="btn"></div>
+    <div id="root"></div>
+
+    <script>
+        function createButton(msg, background, color) {
+            var btn = document.createElement('button');
+            if (background != undefined) {
+                btn.style.background = background;
+            }
+            if (background != undefined) {
+                btn.style.color = color;
+            }
+            btn.style.marginRight = "5px";
+            var t = document.createTextNode(msg);
+            btn.appendChild(t);
+            // append button to btn.
+            var root = document.getElementById('btn');
+            root.appendChild(btn);
+            console.log(btn)
+        }
+
+        console.log('Ready')
+        greywrite('Hello, World!')
+
+        // create header
+        var h1 = document.createElement('h1');
+        h1.setAttribute("style", "color : orangered");
+        var h1t = document.createTextNode('Hello, World!');
+        h1.appendChild(h1t);
+        document.body.appendChild(h1);
+        console.log(h1);
+
+        // create buttons, 'Click Me!' and 'Or not'.
+        createButton("Click Me!", "purple", "white");
+        createButton("Or not");
+
+        // create unordered list, add items 'Apples', 'Oranges', 'Lemons'
+        var ul = document.createElement('ul');
+        // append 'Apples'
+        var applesli = document.createElement('li');
+        var appleslit = document.createTextNode('Apples');
+        applesli.appendChild(appleslit);
+        ul.appendChild(applesli);
+        // append 'Oranges'
+        var orangesli = document.createElement('li');
+        var orangeslit = document.createTextNode('Oranges');
+        orangesli.appendChild(orangeslit);
+        ul.appendChild(orangesli);
+        // append 'Lemons'
+        var lemonsli = document.createElement('li');
+        var lemonslit = document.createTextNode('Lemons');
+        lemonsli.appendChild(lemonslit);
+        ul.appendChild(lemonsli);
+        // append ul to #root
+        var root = document.getElementById('root');
+        root.appendChild(ul);
+        console.log(ul);
+
+    </script>
+</body>
+</html>

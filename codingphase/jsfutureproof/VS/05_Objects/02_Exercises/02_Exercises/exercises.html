@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Object exercises</title>
+</head>
+<body>
+    <!-- A. Create 'student' object having the properties, name, age, occupation.-->
+    <!-- B. Add property birthdate. -->
+    <!-- C. Add array of education institutions with the properties of name, yearsinschool, and graduationdate-->
+    <h1>Hello, World!</h1>
+    <script>
+        function publish(student) {
+            console.log(student);
+            console.log('===========================================');
+        }
+        document.write('<h2 style="color:grey">Exercises</h2>');   
+
+        var mystudent = {
+            name: 'Joe',
+            age: 27,
+            occupation:'web developer'
+        }
+        publish(mystudent);
+
+        mystudent["birthdate"] = "05/11/1933";
+        mystudent["education"] = [
+            {
+                name: 'I.S.93',
+                yearsinschool: 3,
+                graduationdate: '06/13/81'
+            },
+            {
+                name: 'Grover Cleveland High School',
+                yearsinschool: 2,
+                graduationdate: '06/02/83'
+            }
+        ];
+        publish(mystudent);
+        console.log(mystudent.education[1].name);
+    </script>  
+</body>
+</html>

@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- Emojis only work if utf8 charset is specified-->
+    <meta charset="utf-8" />
+    <title>Emoji Exercises</title>
+    <style>
+        h1 {
+            color: orangered;
+        }
+            h1::before {
+                /*
+                content: "🍔";
+                    */
+                content: "\01F354";
+            }
+            h1::after {
+                content: "\01F354";
+            }
+        h2 {
+            color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, Hamburger!</h1>
+    <h2>"Cut and Paste" from Emojipedia - 🍔</h2>
+
+    <br />
+    <!-- Codepoint U+1F354-->
+    <h2>"Codepoint" - &#x1F354</h2>
+
+    <br/>
+    <div class="hamburger"></div>
+    <div id="hamburger"></div>
+
+    <script>
+        console.log("Ready!");
+
+        var hamb = document.querySelector(".hamburger");
+        hamb.innerText = "1🍔";
+
+        var hamb2 = document.getElementById("hamburger");
+        hamb2.innerHTML = '<p>2' + String.fromCodePoint(0x1F354) + '</p>';
+    </script>
+</body>
+</html>

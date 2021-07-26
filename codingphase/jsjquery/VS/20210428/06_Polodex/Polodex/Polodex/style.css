@@ -1,0 +1,55 @@
+﻿* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --pokered: #ff0066;
+    --pokeblue: #86bdff;
+    --pokegreen: #33cb67;
+    --pokegold: #ffcb67;
+    --pokegrey: #58595a;
+}
+body {
+    font-size: 24px;
+}
+img { 
+    height: 700px;
+}
+.container {
+    width: 98%;
+    height: 2500px;
+    padding: 30px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.carterone {
+    font-family: 'Carter One', cursive;
+}
+.forum {
+    font-family: 'Forum', cursive;
+}
+.pressstart2p {
+    font-family: 'Press Start 2P', cursive;
+}
+.rye {
+    font-family: 'Rye', cursive;
+}
+.yomogi {
+    font-family: 'Yomogi', cursive;
+}
+
+.pictureside {
+    width: 650px;
+    height: 685px;
+    margin: 10px;
+    background-color: var(--pokered);
+}
+.detailsside {
+    width: 575px;
+    height: 615px;
+    margin-top: 80px;
+    background-color: var(--pokered);
+}

@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Function examples</title>
+    <script>
+        function greywrite(msg) {
+            if (msg == undefined) {
+                document.write("<br />")
+            } else {
+                document.write("<h2 style='color:gainsboro'>" + msg + "</h2>")
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <script>
+        document.write("<h2 style='color: gold'>Examples</h2>");
+        greywrite("Start here...");
+        greywrite();
+
+        // json presumably from database or api
+        let joesantosdb = {
+            firstName: 'Joe',
+            lastName: 'Santos',
+            age: 32
+        }
+
+        // function 1 can be called anywhere. hoisted
+        writeJSON(joesantosdb);
+        console.log(joesantosdb);
+
+        // function 1: 
+        function writeJSON(json) {
+            greywrite("");
+            greywrite("F1 firstName: " + json.firstName);
+            greywrite("F1 lastName: " + json.lastName);
+            greywrite("F1 age: " + json.age);
+        }
+
+        // function 2:
+        let getFredFlintstone = function () {
+            return {
+                firstName: "Fred",
+                lastName: "Flintstone",
+                age: 44
+            }
+        }
+        greywrite();
+        let fredFlintstone = getFredFlintstone();
+        greywrite("F2 fullname with age: " + fredFlintstone.firstName + " " + fredFlintstone.lastName + 
+            ", " + fredFlintstone.age);
+        console.log(fredFlintstone);
+
+        // function 3:
+        let getUser = function (db) {
+            var fullName = db.firstName + " " + db.lastName;
+            return {
+                firstName: db.firstName,
+                lastName: db.lastName,
+                age: db.age,
+                fullName: fullName
+            }
+        }
+        greywrite();
+        let joeSantos = getUser(joesantosdb);
+        greywrite("F3 fullname with age: " + joeSantos.firstName + " " + joeSantos.lastName +
+            ", " + joeSantos.age);
+        console.log(joeSantos);
+
+        // function 4:
+        function getFullName(db) {
+            return {
+                fullName: db.firstName + " " + db.lastName,
+                age: db.age
+            }
+        }
+        greywrite();
+        let joe = getFullName(joesantosdb);
+        greywrite("F4 fullname with age: " + joe.fullName + ", " + joeSantos.age);
+        console.log(joe);
+
+    </script>
+</body>
+</html>

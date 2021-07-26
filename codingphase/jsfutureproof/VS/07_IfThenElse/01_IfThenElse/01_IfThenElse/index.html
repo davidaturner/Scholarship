@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>If Then Else</title>
+    <script>
+        function colorwrite(msg, color) {
+            if (msg == undefined) {
+                document.write("<br />")
+            } else {
+                if (color == undefined) {
+                    document.write("<h2 style='color : gainsboro'>" + msg + "</h2>");
+                } else {
+                    document.write("<h2 style='color : " + color + "'>" + msg + "</h2>");
+                }
+                console.log(msg);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <script>
+        var toby = {
+            name: "Toby",
+            age: 12,
+            likes: 500
+        }
+        var elle = {
+            name: "Elle",
+            age: 17,
+            likes: 200
+        }
+        var carmen = {
+            name: "Carmen",
+            age: 18,
+            likes: 2
+        }
+        var joe = {
+            name: "Joe",
+            age: 38,
+            likes: 18
+        }
+
+        function checkAge(user) {
+            if (user.age >= 18) {
+                colorwrite("You are of age.", "gold")
+            } else if (user.age == 17) {
+                colorwrite("Next year buddy!", "yellowgreen");
+            } else {
+                colorwrite("Sorry, you are too young.", "orangered");
+            }
+        }
+
+        checkAge(toby);
+        checkAge(elle);
+        checkAge(carmen);
+        checkAge(joe);
+        colorwrite();
+
+        function checkLikes(user) {
+            if (user.likes > 400) {
+                colorwrite("Hi Toby!", "yellowgreen");
+            } else if (user.likes > 100) {
+                colorwrite("Hi Elle!", "pink")
+            } else if (user.likes > 10) {
+                colorwrite("Hi Joe!", "red")
+            } else {
+                colorwrite("I don't even want to know you.");
+            }
+        }
+
+        checkLikes(toby);
+        checkLikes(elle);
+        checkLikes(carmen);
+        checkLikes(joe);
+        colorwrite();
+    </script>
+</body>
+</html>

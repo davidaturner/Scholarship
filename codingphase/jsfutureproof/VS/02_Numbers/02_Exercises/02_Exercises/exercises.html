@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function greywrite(msg) {
+            document.write('<h2 style="color:grey">' + msg + '</h2>');
+            console.log(msg);
+        }
+    </script>
+</head>
+<body>
+    <h1>Santos Exercises</h1>
+    <script>
+        // A. Describe a variable that equal to 5 times 20.
+        // B. If Charley has 16 apples, loses two, a friend then gives him
+        //      the number of apples equal to the remaining apples he has
+        //      in his hands, HOW MANY apples will he keep when he
+        //      splits up the apples, in equal amounts between his three brothers.
+        // C. Multiple the two variables from parts A. and B.
+
+        var hundred = 5 * 20;
+        var applessplit = ((16 - 2) + (16 - 2)) / (3 + 1);
+        var applesleft = ((16 - 2) * 2) % 4;
+        var result = hundred * applessplit;
+
+        greywrite('hundred: 5 * 20 = ' + hundred);
+        greywrite('applesleft: ' + applesleft + ' apples left w/ each brother getting ' + applessplit + ' apples.');
+        greywrite('result: 100 * applessplit: ' + result);
+
+    </script>
+</body>
+</html>

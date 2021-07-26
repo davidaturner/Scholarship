@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>DOM selection</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        function greywrite(msg) {
+            document.write('<h2 style="color : gainsboro">' + msg + '</h2>')
+        }
+    </script>
+
+</head>
+<body>
+    <h2>Hello, World!</h2>
+    <h2>Starting here</h2>
+    <button id="btnh2">Update h2</button>
+    <br />
+    <p>
+        Quisque bibendum enim eu felis aliquet luctus. Sed porta, eros in pellentesque ornare, tortor felis consectetur tellus, nec rutrum velit sapien non nibh. Quisque non consectetur neque, quis vulputate nunc. Nam at viverra quam. Duis a sagittis tortor. Morbi eget magna et nisl egestas finibus id vitae risus. Vestibulum sagittis commodo aliquam. Cras hendrerit ligula scelerisque turpis porttitor egestas. Aliquam eu purus eu quam interdum malesuada sit amet vel nisl. Nulla dapibus tortor orci, eu congue tortor sodales vel. Cras auctor accumsan nisl, vitae fringilla velit efficitur at. Ut tempor arcu a odio tristique mollis. Etiam ullamcorper tortor eget quam pharetra, eget ultricies arcu auctor. In scelerisque augue id augue mattis, ac faucibus ligula efficitur. Aenean suscipit augue magna, ut scelerisque neque vulputate vel. Duis vulputate blandit lacus eget dignissim.
+    </p>
+    <p>
+        Quisque bibendum enim eu felis aliquet luctus. Sed porta, eros in pellentesque ornare, tortor felis consectetur tellus, nec rutrum velit sapien non nibh. Quisque non consectetur neque, quis vulputate nunc. Nam at viverra quam. Duis a sagittis tortor. Morbi eget magna et nisl egestas finibus id vitae risus. Vestibulum sagittis commodo aliquam. Cras hendrerit ligula scelerisque turpis porttitor egestas. Aliquam eu purus eu quam interdum malesuada sit amet vel nisl. Nulla dapibus tortor orci, eu congue tortor sodales vel. Cras auctor accumsan nisl, vitae fringilla velit efficitur at. Ut tempor arcu a odio tristique mollis. Etiam ullamcorper tortor eget quam pharetra, eget ultricies arcu auctor. In scelerisque augue id augue mattis, ac faucibus ligula efficitur. Aenean suscipit augue magna, ut scelerisque neque vulputate vel. Duis vulputate blandit lacus eget dignissim.
+    </p>
+    <p>
+        Quisque bibendum enim eu felis aliquet luctus. Sed porta, eros in pellentesque ornare, tortor felis consectetur tellus, nec rutrum velit sapien non nibh. Quisque non consectetur neque, quis vulputate nunc. Nam at viverra quam. Duis a sagittis tortor. Morbi eget magna et nisl egestas finibus id vitae risus. Vestibulum sagittis commodo aliquam. Cras hendrerit ligula scelerisque turpis porttitor egestas. Aliquam eu purus eu quam interdum malesuada sit amet vel nisl. Nulla dapibus tortor orci, eu congue tortor sodales vel. Cras auctor accumsan nisl, vitae fringilla velit efficitur at. Ut tempor arcu a odio tristique mollis. Etiam ullamcorper tortor eget quam pharetra, eget ultricies arcu auctor. In scelerisque augue id augue mattis, ac faucibus ligula efficitur. Aenean suscipit augue magna, ut scelerisque neque vulputate vel. Duis vulputate blandit lacus eget dignissim.
+    </p>
+    <p>
+        Quisque bibendum enim eu felis aliquet luctus. Sed porta, eros in pellentesque ornare, tortor felis consectetur tellus, nec rutrum velit sapien non nibh. Quisque non consectetur neque, quis vulputate nunc. Nam at viverra quam. Duis a sagittis tortor. Morbi eget magna et nisl egestas finibus id vitae risus. Vestibulum sagittis commodo aliquam. Cras hendrerit ligula scelerisque turpis porttitor egestas. Aliquam eu purus eu quam interdum malesuada sit amet vel nisl. Nulla dapibus tortor orci, eu congue tortor sodales vel. Cras auctor accumsan nisl, vitae fringilla velit efficitur at. Ut tempor arcu a odio tristique mollis. Etiam ullamcorper tortor eget quam pharetra, eget ultricies arcu auctor. In scelerisque augue id augue mattis, ac faucibus ligula efficitur. Aenean suscipit augue magna, ut scelerisque neque vulputate vel. Duis vulputate blandit lacus eget dignissim.
+    </p>
+    <button id="btnp">Update p</button>
+    <br />
+    <!-- scripts -->
+    <script>
+        var helloworld = "Hello, World";
+        greywrite(helloworld);
+        console.log(helloworld);
+
+        // retrieve single (first) element
+        var first = document.querySelector('h2');
+        console.log(first);
+
+        // retrieve multiple elements
+        var multiple = document.querySelectorAll('p');
+        console.log(multiple);
+        console.log(multiple.length);
+        console.log(multiple[0]);
+        console.log(multiple[1]);
+        console.log(multiple[2]);
+        console.log(multiple[3]);
+
+        $('#btnh2').on('click', function () {
+            // update single (first) element
+            first.style.background = "red";
+            first.style.color = "white";
+        })
+
+        $('#btnp').on('click', function () {
+            // update multiple elements
+            multiple[0].style.background = "pink";
+            var i;
+            for (i = 1; i < multiple.length; i++) {
+                multiple[i].style.background = "yellowgreen";
+            }
+        })
+    </script>
+</body>
+
+
+</html>
