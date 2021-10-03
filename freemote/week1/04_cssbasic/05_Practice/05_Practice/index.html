@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A page's description, usually one or two sentences." />
+    <meta name="keywords" content="freemote, css practice 1" />
+    <title>Freemote CSS Practice</title>
+    <style>
+
+        :root {
+            --pink_out:#ffe6e6;
+            --div_out: red;
+        }
+
+        h1 {
+            font-family : Tahoma;
+            font-size: 30px;
+            color: #777;
+            text-align: center;
+        }
+
+        ol {
+            font-family: Courier New, Courier, monospace;
+            font-size: 1.4rem;
+            color: #748493;
+        }
+
+        button {
+            font-size: 1.2rem;
+            padding: 5px;
+        }
+
+        .container {
+            width: 95%;
+            height: 720px;
+            margin: 30px auto;
+/*            background-color: gainsboro; */
+            position: relative;
+        }
+
+        .div {
+            /*           border: 1px solid var(--div_out); */
+        }
+
+        .hdr, .lst, .btn {
+            margin: 0 auto;
+/*            border: 1px solid var(--pink_out); */
+        }
+
+        .hdr {
+            width: 50%;
+        }
+
+        .lst {
+            width: 50%;
+        }
+
+        .btn {
+            width: 50%;
+        }
+        .learn-more-btn {
+            color: white;
+            background-color: #2F91FB;
+        }
+    </style>
+    <script>
+        function IClicked() {
+            console.log("I clicked!")
+        }
+    </script>
+</head>
+<body>
+    <!--
+        Product details
+            80% alpaca wool, 20% cotton
+            Hand-wash, Dry clean only
+            Made in Japan
+            >Learn more<
+        -->
+    <div class="container">
+        <div class="div">
+            <div class="hdr">
+                <h1>Product details</h1>
+            </div>
+        </div>
+        <div class="div">
+            <div class="lst">
+                <ol>
+                    <li>80% alpaca wool, 20% cotton</li>
+                    <li>Hand-wash, Dry clean only</li>
+                    <li>Made in Japan</li>
+                </ol>
+            </div>
+        </div>
+        <div class="div">
+            <div class="btn">
+                <button class="learn-more-btn" onclick="IClicked()">Learn more</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        /*
+        > Let's write some CSS! Simply follow these specs:
+        */
+
+        /*
+        > Create a selector for <h1>
+            and add the following attributes
+            ☑️ "Tahoma" font
+            ☑️ 30px size
+            ☑️ #777777 text color
+            ☑️ centered
+            */
+
+        /*
+        > Create a selector for <ol>
+            ☑️ "Courier New" font
+            ☑️ 1.4rem size
+            ☑️ #748493 text color
+            */
+
+        /*
+        > Create a selector for the "learn-more-btn" class
+        ☑️ Add a background color of #2F91FB
+        ☑️ white text color
+        */
+
+        /*
+        > Finally, scroll down on this page (below the embedded code editor) to check the solution image and see if your solution matches
+
+        > If not, make sure you fix it before watching the solution video 👍
+        */
+    </script>
+</body>
+</html>

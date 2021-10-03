@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta utf-8 />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A page's description, usually one or two sentences." />
+    <meta name="keywords" content="banana, banana facts" />
+    <title>Specificity Example</title>
+    <!-- Specificity: id >> class >> * >> element -->
+    <!-- Two overrides: inline ("style=") and !important -->
+    <style>
+        /* wildcard */
+        * {
+            margin: 1em !important;
+            background-color: gainsboro;
+        }
+        /* element */
+        h3 {
+            background-color: palevioletred;
+            color: white;
+        }
+
+        #h1 {
+            background-color: greenyellow;
+        }
+
+        .h2 {
+            background-color: aquamarine;
+        }
+
+        .trebuchet {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+    </style>
+</head>
+<body>
+    <!-- wildcard example -->
+    <h1>Specificity Examples</h1>
+
+    <!-- id example -->
+    <h1 id="h1">Id only Example</h1>
+
+    <!-- class example -->
+    <h2 class="h2">Class only Example</h2>
+
+    <!-- id and class conflict; id wins! -->
+    <h2 id="h1" class="h2">Id greenyellow Class aquarmarine. Specificity?</h2>
+
+    <!-- element only example-->
+    <h3>Element only Example</h3>
+
+    <!-- override 1 style background color-->
+    <h3 style="font-size: 2em;background-color:gainsboro;">Style override</h3>
+
+    <!-- override 2 margin !important-->
+    <h3 style="font-size: 2em;margin: 0">Style and !important overrides</h3>
+</body>
+</html>

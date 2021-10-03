@@ -1,0 +1,43 @@
+﻿* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 1em 0;
+}
+
+body {
+    width: 99%;
+    height: 720px;
+    padding: 15px;
+    background-color: orangered;
+    border: 1px solid red;
+}
+
+:root {
+    --gainsboro: #dcdcdc;
+    /* red green blue */
+    --gains2: rgb(220, 220, 220);
+    /* red green blue opacity*/
+    --gains3: rgba(220, 220, 220, 1);
+    /* hue saturation lightness */
+    --gains4: hsl(0, 0%, 86%);
+}
+
+#h1 {
+    color: var(--gainsboro);
+}
+
+#h2 {
+    color: var(--gains2);
+}
+
+#h3 {
+    color: var(--gains3);
+}
+
+#h4 {
+    color: var(--gains4);
+}
+
+#h5 {
+    color: var(--gainsboro);
+}

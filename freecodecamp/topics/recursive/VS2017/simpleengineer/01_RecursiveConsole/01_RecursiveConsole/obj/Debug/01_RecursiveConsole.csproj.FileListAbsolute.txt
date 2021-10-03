@@ -1,0 +1,7 @@
+C:\Users\Turner\source\repos\Scholarship\freecodecamp\topics\recursive\VS2017\simpleengineer\01_RecursiveConsole\01_RecursiveConsole\bin\Debug\01_RecursiveConsole.exe.config
+C:\Users\Turner\source\repos\Scholarship\freecodecamp\topics\recursive\VS2017\simpleengineer\01_RecursiveConsole\01_RecursiveConsole\bin\Debug\01_RecursiveConsole.exe
+C:\Users\Turner\source\repos\Scholarship\freecodecamp\topics\recursive\VS2017\simpleengineer\01_RecursiveConsole\01_RecursiveConsole\bin\Debug\01_RecursiveConsole.pdb
+C:\Users\Turner\source\repos\Scholarship\freecodecamp\topics\recursive\VS2017\simpleengineer\01_RecursiveConsole\01_RecursiveConsole\obj\Debug\01_RecursiveConsole.csprojAssemblyReference.cache
+C:\Users\Turner\source\repos\Scholarship\freecodecamp\topics\recursive\VS2017\simpleengineer\01_RecursiveConsole\01_RecursiveConsole\obj\Debug\01_RecursiveConsole.csproj.CoreCompileInputs.cache
+C:\Users\Turner\source\repos\Scholarship\freecodecamp\topics\recursive\VS2017\simpleengineer\01_RecursiveConsole\01_RecursiveConsole\obj\Debug\01_RecursiveConsole.exe
+C:\Users\Turner\source\repos\Scholarship\freecodecamp\topics\recursive\VS2017\simpleengineer\01_RecursiveConsole\01_RecursiveConsole\obj\Debug\01_RecursiveConsole.pdb

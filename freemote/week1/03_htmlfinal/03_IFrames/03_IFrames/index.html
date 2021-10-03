@@ -14,48 +14,72 @@
             padding: 0;
             margin: 0;
         }
+
         body {
             font-size: 24px;
+        }
+        h1 {
+            display: inline-block;
         }
         .container {
             width: 97%;
             height: 780px;
             padding: 15px;
             margin: 10px;
-
         }
+
         .background {
             height: 780px;
             background-color: lightsalmon;
         }
+
         .front {
             height: 500px;
             background-color: salmon;
         }
-        
     </style>
 </head>
 <body>
     <!-- An HTML iframe is used to display a web page within a web page.-->
+    <!-- NOTE: IFrame must have pre-approval for use. Without it a 404 will result. Frame was blocked!-->
     <div class="container background">
-        <h1 style="color: mediumvioletred">Hello, World!</h1>
-        <iframe src="https://www.w3schools.com/colors/colors_picker.asp"
-                height="200" width="300" title="W3Color Schools"></iframe>
+        <!-- data-* attributes allows to storing of string data for later.-->
+        <h1 id="hello" style="color: mediumvioletred" data-hello_switch="IFrame Examples">Hello, World!</h1>
+        <button id="gettitle" style="font-size: 0.8em; padding: 5px; margin: 20px; color: indianred">Get Title!</button>
+        <!-- w3school frames are BLOCKED!
+            <iframe src="ttps://www.w3schools.com/colors/colors_picker.asp"
+                    height="200" width="300" title="W3Color Schools"></iframe>
+
         <iframe src="a.html"
                 height="200" width="300" title="A Page"></iframe>
         <iframe src="b.html"
                 height="200" width="300" title="B Page"></iframe>
-        <iframe height="200" width="300" src="http://www.bbc.com" 
-                style="transform='scale(0.5)'"></iframe>>
-        <!--
-    <iframe width="1097" height="617" src="https://www.youtube.com/embed/_rNfdhUpg3g"
+        <iframe height="200" width="300" src="ttp://www.bbc.com"
+                style="transform : 'scale(0.5)'"></iframe>
+
+    <iframe width="1097" height="617" src="ttps://www.youtube.com/embed/_rNfdhUpg3g"
             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
             encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
     </iframe>
     -->
+        <br/>
+        <!-- IFrames can be used to embed local html as well.-->
+        <iframe height="200" width="300" src="a.html" title="Lets see a"></iframe>
+        <iframe height="200" width="300" src="b.html" title="Lets see b"></iframe>
+        <iframe height="200" width="300" src="c.html" title="Lets see c"></iframe>
         <iframe height="200" width="300" src="https://www.youtube.com/embed/_rNfdhUpg3g"
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-                encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                title="YouTube video player"></iframe>
+
+        <script>
+            $(function () {
+                console.log("Ready!")
+                $("#gettitle").on("click", function () {
+                    var hello_switch = $("#hello").attr("data-hello_switch");
+                    $("#hello").text(hello_switch);
+                    $(this).removeAttr("style").hide();
+                })
+            })
+        </script>
     </div>
 </body>
 </html>

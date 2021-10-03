@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A page's description, usually one or two sentences." />
+    <meta name="keywords" content="banana, banana facts" />
+    <title>CSS Flex Example</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            border: 3px solid black;
+            display: flex;
+            flex-direction: row;
+
+            /* To use align-items, align-self make sure you specify height*/
+            height: 50vh;
+        }
+        .box {
+ /*          width: 100px; */
+            flex-grow: 1;
+
+            height: 100px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .box:nth-of-type(1) {
+            background-color: darkseagreen;
+            align-self: center;
+            flex-grow: 4;
+        }
+            .box:nth-of-type(2) {
+                background-color: darkslategray;
+            }
+            .box:nth-of-type(3) {
+                background: darkturquoise;
+                align-self: center;
+            }
+            .box:nth-of-type(4) {
+                background: cadetblue;
+            }
+            .box:nth-of-type(5) {
+                background: cornflowerblue;
+            }
+            .box:nth-of-type(6) {
+                background: dimgray;
+            }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" 
+            integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" 
+            crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Flex</h1>
+    <div class="container">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+        <div class="box">Box5</div>
+        <div class="box">Box6</div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            console.log('Ready');
+        })
+    </script>
+</body>
+</html>
