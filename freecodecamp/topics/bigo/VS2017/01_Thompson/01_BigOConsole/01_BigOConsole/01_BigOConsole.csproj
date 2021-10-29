@@ -47,6 +47,7 @@
     <Compile Include="02_Linear.cs" />
     <Compile Include="03_N2nd.cs" />
     <Compile Include="04_LogN.cs" />
+    <Compile Include="05_NLogN.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

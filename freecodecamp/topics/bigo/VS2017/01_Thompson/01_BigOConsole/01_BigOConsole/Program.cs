@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,15 +17,19 @@ namespace _01_BigOConsole
             Console.WriteLine("\r\nApplication STARTED...\r\n");
 
             // Big O Examples
-            int convertHoursIntoMinutes = 60;
-            _02_Linear.PracticeTotalTime bigO = new _02_Linear.PracticeTotalTime(convertHoursIntoMinutes);
+            // O (NLogN)
 
-            //            double[] dentistHoursThisWeek = { 8, 7.5, 7.5, 10 };
-            double[] dentistHoursThisWeek = { 8, 7.5, 7.5, 10, 7.2, 9.5, 8, 8 };
-            // O(N)
-            bigO.CalculateTotalTime(dentistHoursThisWeek);
+            int[,] array = new int[3, 5] { { 1, 2, 4, 5, 6 }, { 7, 8, 9, 11, 12 }, { 14, 15, 16, 21, 22 } };
+            int[][] jagged = new int[][]
+            {
+                new int[] { 1, 2, 3 },
+                new int[] {7, 8, 9, 11, 12 }
+            };
 
-            Console.WriteLine("\r\n...Done!\r\n");
+            _05_NLogN.NLogarithmNFun bigO = new _05_NLogN.NLogarithmNFun(jagged);
+            bigO.PrintMyJaggedArray();
+
+            Console.WriteLine("\r\n...DONE!\r\n");
             Console.ReadLine();
         }
     }
