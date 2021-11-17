@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Flexbox Examples</title>
+
+    <!-- Must set the viewport or wrap doesn't work in dev tools -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="A page's description, usually one or two sentences." />
+    <meta name="keywords" content="banana, banana facts" />
+
+    <style>
+        .container {
+            max-width: 95%;
+            /* To use align-items you should specify height*/
+            height: 600px;
+
+            border: 3px solid black;
+            display: flex;
+            /* If direction is column, justify content and align items work in reverse.*/
+            flex-direction: column;
+
+/*            justify-content: flex-start; */
+/*            justify-content: center; */
+            justify-content: space-between;
+/*            align-items: flex-start; */
+            align-items: center;
+        }
+
+        .box {
+            width: 100px;
+            height: 90px;
+        }
+
+            .box:nth-of-type(1) {
+                background: darkseagreen;
+            }
+
+            .box:nth-of-type(2) {
+                background: dimgray;
+            }
+
+            .box:nth-of-type(2) {
+                background: darkslategray;
+            }
+
+            .box:nth-of-type(3) {
+                background: darkturquoise;
+            }
+
+            .box:nth-of-type(4) {
+                background: cadetblue;
+            }
+
+            .box:nth-of-type(5) {
+                background: cornflowerblue;
+            }
+
+            .box:nth-of-type(6) {
+                background: dimgray;
+            }
+    </style>
+</head>
+<body>
+    <h1>Flex</h1>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

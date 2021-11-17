@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS Practice using VSStudio IDE" />
+    <meta name="keywords" content=" css freemote vsstudio 2021" />
+    <title>CSS Practice 4</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            font-size: 24px;
+        }
+        .hero {
+            height: 60vh; /* You must set a specified height */
+
+            background-image: url("https://assets.codepen.io/6060109/window.jpg"); /* The image used */
+            background-repeat: no-repeat; /* Do not repeat the image */
+
+            background-color: #cccccc; /* Used if the image is unavailable */
+            background-position: center; /* Center the image */
+            background-size: cover; /* Resize the background image to cover the entire container */
+        }
+
+        .border {
+            border: 1px solid dimgrey;
+        }
+
+        .hero-box{
+            height: 30vh;
+            position: relative;
+        }
+        .hero-box-title {
+            width: 100%;
+            height: 12%;
+            position: absolute;
+            top: 42%;
+        }
+        .hero-box-title h4 {
+            position: relative;
+            text-align: center;
+        }
+        .section {
+            margin: 50px;
+            text-align: center;
+        }
+        .box-ctr {
+            width: 100%;
+            height: 15vh;
+            background-color: lightgrey;
+            display: flex;
+        }
+        .box {
+            width: 5%;
+            height: 30%;
+            border: 1px solid black;
+        }
+
+        .box:nth-of-type(1) {
+            background-color: red;
+        }
+
+        .box:nth-of-type(2) {
+            background-color: green;
+        }
+
+        .box:nth-of-type(3) {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-box border">
+        <div class="hero-box-title border"><h4>How to use flex box</h4></div>
+    </div>
+    <div class="section border">
+        <h4>You can center everything</h4>
+        <div class="box-ctr border">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+    <div class="section border">
+        <h4>You can space boxes evenly, at the bottom</h4>
+        <div class="box-ctr border">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+    <div class="section border">
+        <h4>Or you can align them vertically, on the right side</h4>
+        <div class="box-ctr border">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+</body>
+</html>
