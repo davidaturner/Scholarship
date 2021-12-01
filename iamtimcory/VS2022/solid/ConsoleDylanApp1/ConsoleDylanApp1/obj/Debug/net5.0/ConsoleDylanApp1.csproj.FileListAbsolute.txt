@@ -1,0 +1,16 @@
+C:\Users\Turner\source\repos\Scholarship\iamtimcory\VS2022\solid\ConsoleDylanApp1\ConsoleDylanApp1\bin\Debug\net5.0\ConsoleDylanApp1.exe
+C:\Users\Turner\source\repos\Scholarship\iamtimcory\VS2022\solid\ConsoleDylanApp1\ConsoleDylanApp1\bin\Debug\net5.0\ConsoleDylanApp1.deps.json
+C:\Users\Turner\source\repos\Scholarship\iamtimcory\VS2022\solid\ConsoleDylanApp1\ConsoleDylanApp1\bin\Debug\net5.0\ConsoleDylanApp1.runtimeconfig.json
+C:\Users\Turner\source\repos\Scholarship\iamtimcory\VS2022\solid\ConsoleDylanApp1\ConsoleDylanApp1\bin\Debug\net5.0\ConsoleDylanApp1.runtimeconfig.dev.json
+C:\Users\Turner\source\repos\Scholarship\iamtimcory\VS2022\solid\ConsoleDylanApp1\ConsoleDylanApp1\bin\Debug\net5.0\ConsoleDylanApp1.dll
+C:\Users\Turner\source\repos\Scholarship\iamtimcory\VS2022\solid\ConsoleDylanApp1\ConsoleDylanApp1\bin\Debug\net5.0\ref\ConsoleDylanApp1.dll
+C:\Users\Turner\source\repos\Scholarship\iamtimcory\VS2022\solid\ConsoleDylanApp1\ConsoleDylanApp1\bin\Debug\net5.0\ConsoleDylanApp1.pdb
+C:\Users\Turner\source\repos\Scholarship\iamtimcory\VS2022\solid\ConsoleDylanApp1\ConsoleDylanApp1\obj\Debug\net5.0\ConsoleDylanApp1.csproj.AssemblyReference.cache
+C:\Users\Turner\source\repos\Scholarship\iamtimcory\VS2022\solid\ConsoleDylanApp1\ConsoleDylanApp1\obj\Debug\net5.0\ConsoleDylanApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Turner\source\repos\Scholarship\iamtimcory\VS2022\solid\ConsoleDylanApp1\ConsoleDylanApp1\obj\Debug\net5.0\ConsoleDylanApp1.AssemblyInfoInputs.cache
+C:\Users\Turner\source\repos\Scholarship\iamtimcory\VS2022\solid\ConsoleDylanApp1\ConsoleDylanApp1\obj\Debug\net5.0\ConsoleDylanApp1.AssemblyInfo.cs
+C:\Users\Turner\source\repos\Scholarship\iamtimcory\VS2022\solid\ConsoleDylanApp1\ConsoleDylanApp1\obj\Debug\net5.0\ConsoleDylanApp1.csproj.CoreCompileInputs.cache
+C:\Users\Turner\source\repos\Scholarship\iamtimcory\VS2022\solid\ConsoleDylanApp1\ConsoleDylanApp1\obj\Debug\net5.0\ConsoleDylanApp1.dll
+C:\Users\Turner\source\repos\Scholarship\iamtimcory\VS2022\solid\ConsoleDylanApp1\ConsoleDylanApp1\obj\Debug\net5.0\ref\ConsoleDylanApp1.dll
+C:\Users\Turner\source\repos\Scholarship\iamtimcory\VS2022\solid\ConsoleDylanApp1\ConsoleDylanApp1\obj\Debug\net5.0\ConsoleDylanApp1.pdb
+C:\Users\Turner\source\repos\Scholarship\iamtimcory\VS2022\solid\ConsoleDylanApp1\ConsoleDylanApp1\obj\Debug\net5.0\ConsoleDylanApp1.genruntimeconfig.cache
