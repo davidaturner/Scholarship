@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Turner\\source\\repos\\Scholarship\\iamtimcory\\VS2022\\solid\\04_ConsoleOApp1\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {}
+    "C:\\Users\\Turner\\source\\repos\\Scholarship\\iamtimcory\\VS2022\\solid\\02_ConsoleOApp1\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Turner\\source\\repos\\Scholarship\\iamtimcory\\VS2022\\solid\\04_ConsoleOApp1\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {
+    "C:\\Users\\Turner\\source\\repos\\Scholarship\\iamtimcory\\VS2022\\solid\\02_ConsoleOApp1\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Turner\\source\\repos\\Scholarship\\iamtimcory\\VS2022\\solid\\04_ConsoleOApp1\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectUniqueName": "C:\\Users\\Turner\\source\\repos\\Scholarship\\iamtimcory\\VS2022\\solid\\02_ConsoleOApp1\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
         "projectName": "ConsoleApp1",
-        "projectPath": "C:\\Users\\Turner\\source\\repos\\Scholarship\\iamtimcory\\VS2022\\solid\\04_ConsoleOApp1\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectPath": "C:\\Users\\Turner\\source\\repos\\Scholarship\\iamtimcory\\VS2022\\solid\\02_ConsoleOApp1\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
         "packagesPath": "C:\\Users\\Turner\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Turner\\source\\repos\\Scholarship\\iamtimcory\\VS2022\\solid\\04_ConsoleOApp1\\ConsoleApp1\\ConsoleApp1\\obj\\",
+        "outputPath": "C:\\Users\\Turner\\source\\repos\\Scholarship\\iamtimcory\\VS2022\\solid\\02_ConsoleOApp1\\ConsoleApp1\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,33 +1,23 @@
 ﻿using System;
-using ConsoleApp1.Original;
+using ConsoleApp1.Clean;
 
 namespace ConsoleApp1
 {
     internal class Program
     {
+        //LSP
+        // Basic: If object S is a subtype of P
+        // Then object S may be replaced by the object P
+        // Without break anything.
+        // It can however allow side effects 
+        // See: CalculatePerHourRate().
+        // An uncaught exception is unexpected.
+        // Ask question: Is CEO ISA an Employee? Nope.
+        // Don't have a subclass have methods that it doesn't need it.
         static void Main(string[] args)
         {
-            Logger.ToConsole("Hello World!");
-            Logger.ToConsole("\r\nBeginning Application...");
-
-            Manager manager = new Manager()
-            {
-                FirstName = "Joe",
-                LastName = "Santos"
-            };
-            manager.CalculatePerHourRate(4);
-
-            Employee employee = new Employee()
-            {
-                FirstName = "Bob",
-                LastName = "Barker"
-            };
-            employee.CalculatePerHourRate(2);
-            employee.AssignManager(manager);
-
-            Logger.ToConsole($"{employee.FirstName}'s Salary is ${employee.Salary}/hour.");
-
-            Logger.ToConsole("\r\n\r\nDONE!");
+            LiskovSubstitutionExampleClean example = new LiskovSubstitutionExampleClean();
+            example.Main();
         }
     }
 }

@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS Practice 4." />
+    <meta name="keywords" content="css freemote" />
+    <title>CSS Practice 4</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .hero {
+            height: 30vh;
+            width: 100%;
+            background-image: url("https://assets.codepen.io/6060109/window.jpg");
+            background-position: center;
+            background-size: 100%;
+            position: relative;
+        }
+
+        div {
+            border: 1px solid #e0e0d1;
+        }
+
+        .container {
+            width: 1080px;
+        }
+
+        .hero-label {
+            position: absolute;
+            top: 38%;
+            left: 44%;
+        }
+
+        .section {
+            height: 30vh;
+            margin: 50px;
+            text-align: center;
+        }
+        .box-ctr {
+            height: 15vh;
+            width: 100%;
+            background: lightgrey;
+            display: flex;
+        }
+        .box-ctr-1 {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .box-ctr-2 {
+            flex-direction: row;
+            justify-content:space-around;
+            align-items: flex-end;
+        }
+        .box-ctr-3 {
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .box {
+            width: 5%;
+            height: 30%;
+            border: 1px solid black;
+
+        }
+        .box:nth-of-type(1) {
+            background: red;
+        }
+            .box:nth-of-type(2) {
+                background: green;
+            }
+            .box:nth-of-type(3) {
+                background: blue;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h4 class="hero-label">How to use flex box</h4>
+        </div>
+        <div class="section">
+            <h4>You can center everything</h4>
+            <div class="box-ctr box-ctr-1">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+        <div class="section">
+            <h4>You can space boxes evenly, at the bottom</h4>
+            <div class="box-ctr box-ctr-2">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+        <div class="section">
+            <h4>Or you can align them vertically, on the right side</h4>
+            <div class="box-ctr box-ctr-3">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>

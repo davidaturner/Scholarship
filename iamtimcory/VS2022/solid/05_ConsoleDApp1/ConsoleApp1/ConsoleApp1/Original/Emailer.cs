@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.Original
 {
-    internal class Emailer
+    public static class Emailer
     {
+        public static void SendEmail(Person owner, string message)
+        {
+            Console.WriteLine($"Mail is being sent to {owner.Email}.");
+        }
     }
 }

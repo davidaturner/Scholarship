@@ -1,0 +1,15 @@
+C:\Users\Turner\source\repos\Scholarship\pirple\csharp\04282021\VSC\01_BasicDataTypes\1.1\ConsoleApp1\bin\MCD\Debug\net6.0\ConsoleApp1.exe
+C:\Users\Turner\source\repos\Scholarship\pirple\csharp\04282021\VSC\01_BasicDataTypes\1.1\ConsoleApp1\bin\MCD\Debug\net6.0\ConsoleApp1.deps.json
+C:\Users\Turner\source\repos\Scholarship\pirple\csharp\04282021\VSC\01_BasicDataTypes\1.1\ConsoleApp1\bin\MCD\Debug\net6.0\ConsoleApp1.runtimeconfig.json
+C:\Users\Turner\source\repos\Scholarship\pirple\csharp\04282021\VSC\01_BasicDataTypes\1.1\ConsoleApp1\bin\MCD\Debug\net6.0\ConsoleApp1.dll
+C:\Users\Turner\source\repos\Scholarship\pirple\csharp\04282021\VSC\01_BasicDataTypes\1.1\ConsoleApp1\bin\MCD\Debug\net6.0\ref\ConsoleApp1.dll
+C:\Users\Turner\source\repos\Scholarship\pirple\csharp\04282021\VSC\01_BasicDataTypes\1.1\ConsoleApp1\bin\MCD\Debug\net6.0\ConsoleApp1.pdb
+C:\Users\Turner\source\repos\Scholarship\pirple\csharp\04282021\VSC\01_BasicDataTypes\1.1\ConsoleApp1\obj\MCD\Debug\net6.0\ConsoleApp1.csproj.AssemblyReference.cache
+C:\Users\Turner\source\repos\Scholarship\pirple\csharp\04282021\VSC\01_BasicDataTypes\1.1\ConsoleApp1\obj\MCD\Debug\net6.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Turner\source\repos\Scholarship\pirple\csharp\04282021\VSC\01_BasicDataTypes\1.1\ConsoleApp1\obj\MCD\Debug\net6.0\ConsoleApp1.AssemblyInfoInputs.cache
+C:\Users\Turner\source\repos\Scholarship\pirple\csharp\04282021\VSC\01_BasicDataTypes\1.1\ConsoleApp1\obj\MCD\Debug\net6.0\ConsoleApp1.AssemblyInfo.cs
+C:\Users\Turner\source\repos\Scholarship\pirple\csharp\04282021\VSC\01_BasicDataTypes\1.1\ConsoleApp1\obj\MCD\Debug\net6.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\Turner\source\repos\Scholarship\pirple\csharp\04282021\VSC\01_BasicDataTypes\1.1\ConsoleApp1\obj\MCD\Debug\net6.0\ConsoleApp1.dll
+C:\Users\Turner\source\repos\Scholarship\pirple\csharp\04282021\VSC\01_BasicDataTypes\1.1\ConsoleApp1\obj\MCD\Debug\net6.0\ref\ConsoleApp1.dll
+C:\Users\Turner\source\repos\Scholarship\pirple\csharp\04282021\VSC\01_BasicDataTypes\1.1\ConsoleApp1\obj\MCD\Debug\net6.0\ConsoleApp1.pdb
+C:\Users\Turner\source\repos\Scholarship\pirple\csharp\04282021\VSC\01_BasicDataTypes\1.1\ConsoleApp1\obj\MCD\Debug\net6.0\ConsoleApp1.genruntimeconfig.cache

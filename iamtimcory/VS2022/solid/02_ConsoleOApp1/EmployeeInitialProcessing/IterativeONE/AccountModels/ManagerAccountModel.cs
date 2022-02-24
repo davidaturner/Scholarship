@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using IterativeONE.Interfaces;
+
+namespace IterativeONE.AccountModels
+{
+    public class ManagerAccountModel : EmployeeAccountModel
+    {
+        List<EmployeeAccountModel> managed { get; set; }
+
+        void AddTotheManaged(EmployeeAccountModel employee) { }
+    }
+}

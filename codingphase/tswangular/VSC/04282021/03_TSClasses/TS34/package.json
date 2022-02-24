@@ -1,0 +1,9 @@
+{
+  "name": "typescript-sandbox",
+  "version": "1.0.0",
+  "description": "exercises in typescript",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc index.ts && node index.js"
+  }
+}

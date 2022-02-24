@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Clean\" />
+    <Folder Include="Original\Interfaces\" />
     <Folder Include="Refactored\" />
   </ItemGroup>
 

@@ -1,0 +1,20 @@
+body {
+font-family: 'Bitter', serif;
+    background-color: lightblue;
+}
+
+main {
+    width: 1000px;
+    color: white;
+}
+
+p {
+    font-size: 30px;
+    background-color: teal;
+}
+
+h1 {
+    font-size: 60px;
+    background-color: teal;
+    text-align: center;
+}

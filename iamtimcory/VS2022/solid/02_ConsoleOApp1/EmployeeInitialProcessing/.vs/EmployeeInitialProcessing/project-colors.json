@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "6de06c4d-1f15-41f3-89ff-e687b271a3bf": {
+      "ProjectGuid": "6de06c4d-1f15-41f3-89ff-e687b271a3bf",
+      "DisplayName": "Original",
+      "ColorIndex": 0
+    },
+    "804772ba-03d4-4114-8b79-284fde13c9e4": {
+      "ProjectGuid": "804772ba-03d4-4114-8b79-284fde13c9e4",
+      "DisplayName": "IterativeONE",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

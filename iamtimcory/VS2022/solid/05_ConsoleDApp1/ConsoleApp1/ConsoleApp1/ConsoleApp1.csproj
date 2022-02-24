@@ -6,8 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Clean\" />
-    <Folder Include="Refactored\" />
+    <Folder Include="CleanRefactored\" />
   </ItemGroup>
 
 </Project>
