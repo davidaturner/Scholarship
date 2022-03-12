@@ -1,0 +1,33 @@
+body {
+    font-family: 'Bitter', serif;
+    background-color: lightblue;
+    font-size: 32px;
+}
+
+h1 {
+    font-size: 1.6em;
+    background-color: teal;
+    text-align: center;
+    /* width: 1000px; */
+}
+
+p {
+    font-size: 0.8em;
+
+    background-color: teal;
+    padding-top: 25px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+main {
+    width: 1000px;
+    color: white;
+    text-align: center;
+}

@@ -1,7 +1,0 @@
-C:\Users\Turner\source\repos\Scholarship\iamtimcory\InheritanceVsInterfaces\ConsoleApp1\ConsoleAppB\bin\Debug\ConsoleAppB.exe.config
-C:\Users\Turner\source\repos\Scholarship\iamtimcory\InheritanceVsInterfaces\ConsoleApp1\ConsoleAppB\bin\Debug\ConsoleAppB.exe
-C:\Users\Turner\source\repos\Scholarship\iamtimcory\InheritanceVsInterfaces\ConsoleApp1\ConsoleAppB\bin\Debug\ConsoleAppB.pdb
-C:\Users\Turner\source\repos\Scholarship\iamtimcory\InheritanceVsInterfaces\ConsoleApp1\ConsoleAppB\obj\Debug\ConsoleAppB.csprojAssemblyReference.cache
-C:\Users\Turner\source\repos\Scholarship\iamtimcory\InheritanceVsInterfaces\ConsoleApp1\ConsoleAppB\obj\Debug\ConsoleAppB.csproj.CoreCompileInputs.cache
-C:\Users\Turner\source\repos\Scholarship\iamtimcory\InheritanceVsInterfaces\ConsoleApp1\ConsoleAppB\obj\Debug\ConsoleAppB.exe
-C:\Users\Turner\source\repos\Scholarship\iamtimcory\InheritanceVsInterfaces\ConsoleApp1\ConsoleAppB\obj\Debug\ConsoleAppB.pdb

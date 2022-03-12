@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--
+        Box Model
+        - Each element represents a rectangular box.
+        - The standard box model describes the space the element takes up
+        - Each box has four edges: content, padding, border, margin
+        
+        - Content stuff is width and height.
+        - Padding extends the content.
+        - Border equals content stuff plus padding.
+        - Margin is the area outside of the border.
+
+    -->
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background-color: orange;
+            width: 10%;
+        }
+
+        p {
+            background-color: cornflowerblue;
+            padding-top: 15px;
+            padding-right: 10px;
+            padding-bottom: 35px;
+            padding-left: 55px;
+            margin-top: 15px;
+            margin-bottom: 30px;
+            border: 5px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is a test.</h1>
+    <p>
+        Mauris et aliquet neque, ut finibus dolor. Nam congue imperdiet elit, id egestas dui efficitur at. Aliquam
+        dictum ligula a felis bibendum, non volutpat metus volutpat. Phasellus sit amet tellus a libero ornare semper in
+        non arcu.
+    </p>
+    <p>
+        Mauris et aliquet neque, ut finibus dolor. Nam congue imperdiet elit, id egestas dui efficitur at. Aliquam
+        dictum ligula a felis bibendum, non volutpat metus volutpat. Phasellus sit amet tellus a libero ornare
+        semper in
+        non arcu.
+    </p>
+    <p>
+        Mauris et aliquet neque, ut finibus dolor. Nam congue imperdiet elit, id egestas dui efficitur at.
+        Aliquam
+        dictum ligula a felis bibendum, non volutpat metus volutpat. Phasellus sit amet tellus a libero ornare
+        semper in
+        non arcu.
+    </p>
+</body>
+
+</html>
