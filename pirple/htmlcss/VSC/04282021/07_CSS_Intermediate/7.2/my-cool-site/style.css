@@ -5,12 +5,21 @@ font-family: 'Bitter', serif;
 
 main {
     width: 1000px;
+    font-size: 20px;
     color: white;
 }
 
-p {
-    font-size: 30px;
-    background-color: teal;
+/* inherit - default from parent */
+/* inherit the color from main. override font-size */
+section p {
+    font-size: 50px;
+    color: inherit;
+}
+
+/* inherit the font-size from main. NOT section p. override color */
+.p2 {
+    font-size: inherit;
+    color: teal;
 }
 
 h1 {

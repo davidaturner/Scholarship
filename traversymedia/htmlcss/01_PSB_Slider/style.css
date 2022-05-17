@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #cccccc;
+}
+
+body {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    height: 100px;
+    vertical-align: center;
+    padding-top: 30px;
+}
+.container {
+    width: 700px;
+    height: 600px;
+    background-color: lightskyblue;
+    text-align: center;
+    margin: auto;
+}
+
+.container img {
+    height: 100%;
+    width: auto;
+}

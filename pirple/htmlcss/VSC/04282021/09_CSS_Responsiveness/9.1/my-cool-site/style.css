@@ -1,0 +1,97 @@
+body {
+font-family: 'Bitter', serif;
+    background-color: lightblue;
+    font-size: 22px;
+}
+
+main section img:first-child {
+    width: 10%;
+    height: auto;
+    text-align: center;
+}
+
+nav, footer {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: teal;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 10px;
+    width: 30%;
+    display: flex;
+    background-color: burlywood;
+
+}
+
+nav li {
+    font-size: 20px;
+    margin: 0 20px 0 0;
+
+}
+
+nav ul li:hover {
+    background-color: chocolate;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0 10px;
+}
+
+header {
+    text-align: center;
+}
+
+main article {
+    display: flex;
+    flex-direction: column;
+}
+
+main article>div:first-child {
+    display: flex;
+}
+
+main article>div:first-child p {
+    font-size: 1.55em;
+}
+
+main article section {
+    width: 45%;
+    margin: 10px 50px 20px 70px;
+}
+
+#recipe div {
+    background-color: white;
+    padding: 10px 30px;
+    border: 1px solid gainsboro;
+    margin: 15px;
+    border-radius: 30px;
+}
+
+#recipe div h4 {
+    text-align: center;
+}
+
+#recipe div h2 {
+    color: burlywood;
+}
+
+#second-cake {
+    width: 22%;
+    background-color: teal;
+    padding: 5px;
+    flex: display;
+    justify-content: center;
+}
+
+#second-cake img {
+    height: 300px;
+    width: auto;
+    padding-top: 3px;
+    padding-left: 8px;
+}

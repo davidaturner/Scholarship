@@ -1,0 +1,55 @@
+body {
+font-family: 'Bitter', serif;
+    background-color: lightblue;
+    font-size: 20px;
+}
+
+img {
+    width: 12%;
+    height: auto;
+}
+
+article img {
+    width: 20%;
+    height: auto;
+}
+
+.green-background {
+    background-color: limegreen;
+}
+
+.no-red {
+    background-color: indianred;
+        color: white;
+}
+
+/* Simple styling can be placed with other class.
+Keep it simple though. */
+.cursive {
+    font-family: cursive;
+}
+
+.thick {
+    background-color: violet;
+    font-size: 1.8rem;
+}
+
+header ul {
+    color: yellow;
+}
+
+/* Apply style to all instances one property is descendant
+to the other */
+.green-background ul li {
+    color: blue;
+}
+
+header ul .green-background {
+    color: yellow;
+}
+
+/* Apply style to only the property designated. */
+h2.no-red {
+    background-color: gainsboro;
+    color: indianred;
+}

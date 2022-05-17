@@ -1,0 +1,27 @@
+body {
+font-family: 'Bitter', serif;
+    background-color: lightblue;
+}
+
+/* style all ul descendant from header */
+header ul {
+    background-color: orange;
+}
+
+/* style all h4 descendant from article, descendant from main. */
+/* same as if either - main h4 or article h4 */
+main article h4 {
+    background-color: red;
+}
+
+/* style the img in main (2 imgs). */
+main img {
+    width: 15%;
+    height: auto;
+}
+
+/* style just the img in main article img */
+main article img {
+    width: 25%;
+    height: auto;
+}

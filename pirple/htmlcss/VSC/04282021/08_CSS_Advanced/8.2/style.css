@@ -1,0 +1,18 @@
+body {
+    background-color: lightblue;
+}
+
+/* multiple elements styled */
+#example h2, h4 {
+    background-color: lightpink;
+}
+
+/* first descendent */
+#example p:first-child {
+    background-color: lime;
+}
+
+/* style next p in group; do not style first p */
+#example p + p {
+    background-color: brown;
+}

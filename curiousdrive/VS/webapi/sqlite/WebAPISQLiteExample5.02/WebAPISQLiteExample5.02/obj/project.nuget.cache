@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "5OZj++60OCMVTRwM28Pk9/9/RIJJ9tyVEnp7GY0uGmKTZfG9bMMSMZOaJ11yyiH59TTGB0XnOLN5/8zpVe2eDg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Turner\\source\\repos\\Scholarship\\curiousdrive\\VS\\webapi\\sqlite\\WebAPISQLiteExample5.02\\WebAPISQLiteExample5.02\\WebAPISQLiteExample5.02.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Turner\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Turner\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Turner\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\Turner\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\Turner\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\Turner\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
