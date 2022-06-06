@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sematics tags Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            background: gainsboro;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 50%;
+            margin-top: 10px;
+            height: 700px;
+            background: red;
+        }
+
+        .box {
+            width: 95%;
+            height: 70px;
+            margin: 10px auto;
+            padding: 10px;
+            background: #fff;
+            border: 1px solid #fff;
+        }
+
+        .header {
+            background-color: aqua;
+        }
+
+        .nav {
+            background-color: blueviolet;
+            color: #fff;
+        }
+
+        .split-panel {
+            width: 96%;
+            height: 420px;
+            margin: 5px auto;
+            display: flex;
+        }
+
+        .left-panel {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .right-panel {
+            width: 20%;
+        }
+
+        .section {
+            width: 92%;
+            background-color: indianred;
+            color: #fff;
+            height: 200px;
+        }
+
+        .article {
+            width: 92%;
+            background-color: yellow;
+            height: 200px;
+        }
+
+        .aside {
+            width: 95%;
+            height: 400px;
+            background-color: orange
+        }
+
+        .footer {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- it is encouraged to use semantic tags whenever-->
+    <!-- see https://www.w3schools.com/html/html5_semantic_elements.asp-->
+
+    <div class="container">
+        <header class="box header">Header</header>
+        <nav class="box nav">Nav</nav>
+        <div class="split-panel">
+            <div class="left-panel">
+                <!-- typically section has within it, a header -->
+                <section class="box section">Section</section>
+                <!-- typically article is just that or a post or-->
+                <article class="box article">Article</article>
+            </div>
+            <div class="right-panel">
+                <aside class="box aside">Aside</aside>
+            </div>
+
+        </div>
+        <footer class="box footer">Footer</footer>
+    </div>
+
+</body>
+
+</html>

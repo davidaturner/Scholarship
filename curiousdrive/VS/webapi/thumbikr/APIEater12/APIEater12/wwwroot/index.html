@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <button id="btnGetAll">Get All Students</button><br /><br />
+
+    <input type="text" id="textStudentId" />
+    <button id="btnGet">Get Student</button><br /><br />
+
+    <button id="btnAdd">Add Student</button><br /><br />
+
+    <input type="text" id="textStudentId2" />
+    <button id="btnRemove">Remove Student</button><br /><br />
+
+    <script>
+        $(document).ready(function () {
+            $('#btnGetAll').click(function () {
+                fetch('https://localhost:44344/api/students')
+                    .then(res => {
+                        return res.json()
+                    })
+                    .then(data => console.log(data))
+                .catch(error => console.log(error))
+            })
+        })
+    </script>
+</body>
+</html>
