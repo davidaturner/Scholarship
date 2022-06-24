@@ -50,6 +50,7 @@ namespace WindowsFormsApp1
             }
 
             MessageBox.Show(strresultset);
+
         }
 
         private void post()

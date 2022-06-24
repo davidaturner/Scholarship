@@ -1,0 +1,14 @@
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 350px 400px;
+    /* grid-auto-rows: 300px; */
+    /* grid-template-rows: minmax(150px, 300px); */
+    grid-template-rows: minmax(150px, auto);
+}
+
+.grid-item {
+    padding: 5px 12px;
+    font-weight: 700;
+    font-size: 1.8em;
+}

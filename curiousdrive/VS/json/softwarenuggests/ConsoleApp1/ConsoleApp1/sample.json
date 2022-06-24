@@ -1,0 +1,39 @@
+{
+  "cid": 750,
+  "entityName": "A Company Name",
+  "entityStockShares": {
+    "label": "Common Stock Outstanding",
+    "description": "The common stock available for trading",
+    "units": {
+      "trades": [
+        {
+          "transactionId":  2231,
+          "accountId": 101,
+          "dateOfTrade": "2021-05-19",
+          "ticker": "MSFT",
+          "transactionType": "Buy",
+          "quantity": 12,
+          "costPerShare": 304.22
+        },
+        {
+          "transactionId": 2232,
+          "accountId": 101,
+          "dateOfTrade": "2021-05-19",
+          "ticker": "MSFA",
+          "transactionType": "Buy",
+          "quantity": 36,
+          "costPerShare": 164.22
+        },
+        {
+          "transactionId": 2233,
+          "accountId": 101,
+          "dateOfTrade": "2021-05-19",
+          "ticker": "MSFT",
+          "transactionType": "Buy",
+          "quantity": 5,
+          "costPerShare": 304.22
+        }
+      ]
+    }
+  }
+}
