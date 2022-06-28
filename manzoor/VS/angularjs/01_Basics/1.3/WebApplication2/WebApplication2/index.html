@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html ng-app>
+<head>
+    <meta charset="utf-8" />
+    <title>AngularJS Exercise</title>
+    <style>
+        div {
+            margin: 5px;
+        }
+        li {
+            list-style: none;
+        }
+    </style>
+</head>
+<!--
+    Make sure you NuGet the AngularJS package.
+-->
+<!-- 
+    Most used angularjs directives:
+    ng-app      ng-true-value       ng-if
+    ng-bind     ng-false-value      ng-controller
+    ng-init     ng-options          ng-view
+    ng-show     ng-click
+    ng-hide     ng-model
+-->
+<body ng-init="a=12;b=[1,56,78,45]">
+    <div>
+        {{5+3}}
+        {{a+5}}
+        {{a*a}}
+    </div>
+
+    <div>
+        <input type="radio" ng-model="gender" value="M" />M
+        <input type="radio" ng-model="gender" value="F" />F
+        You have selected: {{gender}}
+    </div>
+
+    <div>
+        <input type="checkbox" ng-model="iagree" ng-true-value="'Ok'" ng-false-value="'No way!'" />I agree... 
+        {{iagree}}
+    </div>
+
+    <div>
+        <select ng-init="b=[1,2];">
+            <option>Select</option>
+            <option ng-repeat="k in b" value="{{k}}">{{k}}</option>
+        </select>
+    </div>
+
+    <div ng-init="b=[1,34,25,78]">
+        <p>Cntrl-click for multiple value selection:</p>
+        <select multiple="multiple" ng-model="options" ng-options="k for k in b"></select>
+        {{options}}
+    </div>
+    <script src="Scripts/angular.min.js"></script>
+</body>
+</html>
