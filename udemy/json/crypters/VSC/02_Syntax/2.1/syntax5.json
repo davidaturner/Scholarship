@@ -1,0 +1,13 @@
+{
+    "days":["Saturday", "Sunday"],
+    "multiples":[5, 10, 15],
+    "passed":[true, false],
+    "series":[[1, 2, 3, 4, 5], [10, 12, 14]],
+    "employees":
+    [
+        {"name":"Peter Kann", "id":500, "manager":"Charles Ives"},
+        {"name":"Charles Ives", "id":600, "manager":"Lala Bridget"},
+        {"name":"Lala Bridget", "id":1000, "manager":null}
+    ]
+
+}

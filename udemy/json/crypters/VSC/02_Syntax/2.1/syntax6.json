@@ -1,0 +1,15 @@
+{
+    "address": {
+        "street":"2231 Boggietime Avenue",
+        "city":"Pittsburgh",
+        "state":"Pennsylvania",
+        "zipcode":"152354152"
+    },
+
+    "phones": {
+        "mobiles":[3324425555, 3324435556, 3324445557],
+        "main": 18004457773,
+        "carrier":"Nextel"
+    }
+
+}
