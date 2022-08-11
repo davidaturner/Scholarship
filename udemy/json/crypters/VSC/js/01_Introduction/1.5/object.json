@@ -1,0 +1,13 @@
+{
+    "address":{
+        "street": "ABC Street",
+        "city": "Pittsburgh",
+        "state": "Pennsylvania",
+        "postalCode": 15235
+    },
+    "phoneNumbers":{
+        "residential":"4128832748",
+        "mobile": "4122839948",
+        "office": "4122943333"
+    }
+}

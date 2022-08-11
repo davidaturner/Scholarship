@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+header, section, div {
+    border: 1px solid pink;
+}
+
+.email {
+    max-width: 700px;
+    height: 5000px;
+    color: #ccc;
+    background-color: #fff;
+    margin: auto;
+}
+
+/* all email content has max-width */
+/* .content_max_width {
+    max-width: 600px;
+} */
+
+.container {
+    max-width: 600px;
+    height: 100%;
+
+    font-size: 0.6em;
+    margin: auto;
+    text-align:justify;
+    line-height: 15px;
+
+    background-color:lemonchiffon;
+}
+
+.header {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: yellow;
+}
+
+.heroletyou {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: goldenrod;
+}
+
+.heroletyougallery {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.worldmostadv {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+}
+
+.icons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.featuresall {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; 
+    background-color: greenyellow; 
+}
+
+.features{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    background-color: greenyellow; 
+}
+
+.moretables {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.interested {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; 
+    background-color: blueviolet;    
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; 
+    background-color: indianred;   
+}
+
+.moreicons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; 
+    background-color: indianred;   
+}
+
+.table {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+}
