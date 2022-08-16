@@ -72,19 +72,37 @@ class LinkedList:
     def insert(self, data, index):
         if index == 0:
             return self.add(data)
-        if index > 1:
-            node = Node(data)
-            position = index
-            current = self.head
 
-            while position > 1:
-                current = node.next
-                position -= 1
-            prev_node = current
-            next_node = current.next
+        node = Node(data)
+        position = index
+        current = self.head
 
-            prev_node.next = node
-            node.next = next_node
+        while position > 1:
+            current = current.next
+            position -= 1
+
+        prev_node = current
+        next_node = current.next
+
+        prev_node.next = node
+        node.next = next_node
+
+    def remove(self, key):
+        current = self.head
+        previous = None
+        found = False
+
+        while current and not found:
+            if current.data == key and current is self.head:
+                found = True
+                self.head = current.next
+            elif current.data == key:
+                found = True
+                previous.next = current.next
+            else:
+                previous = current
+                current = current.next
+        return current
 
 
 
@@ -99,4 +117,8 @@ LL.add(30)
 
 print(LL.size())
 print(LL)
-print(LL.search(10))
+# print(LL.search(10))
+LL.insert(5,3)
+print(LL)
+LL.remove(10)
+print(LL)
