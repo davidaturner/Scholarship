@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joy Shaheb</title>
+    <script>
+        /*
+            What is asynchronous javascript good for?
+            Allows you to efficiently run bigger projects
+            by breaking them down into smaller tasks.
+            Async js does not have any task depend on any task
+            to complete.
+                One hand --> completes ten tasks (one at a time)
+                Ten hands --> each complete a single tasks.
+            Multiple tasks run at their own pace.
+            Any task hung up or stopped does not necessarily affect
+            any other task.
+
+            Three treatments of async javascript.
+            1. promises
+            2. callbacks
+            3. async/await
+        */
+
+        // // But first, quick reminder on arrow functions
+        function helloWorlda() {
+            console.log("Hello, World A!")
+        }
+        // is equivalent to
+        const helloWorldb = () => console.log("Hello, World B!")
+
+        helloWorlda()
+        helloWorldb()
+    </script>
+</head>
+
+<body>
+    <p style="color:limegreen">I am learning async js!</p>
+</body>
+
+</html>

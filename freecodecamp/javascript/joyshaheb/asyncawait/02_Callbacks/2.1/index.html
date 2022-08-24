@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joy Shabheb</title>
+    <script>
+        // What is a callback?
+        // Simply, calling a function without a function.
+        function one() {
+            console.log("One called...")
+        }
+
+        function two() {
+            console.log("Two called...")
+        }
+
+        // synchronous calling
+        // one()
+        // two()
+
+        // async calling: callback
+        function onecall(call) {
+            console.log("One called... now calling two...")
+            // now call 'call'
+            call()
+        }
+
+        onecall(two)
+    </script>
+</head>
+
+<body>
+    <p style="color: gainsboro">Callbacks. Go to console.log</p>
+</body>
+
+</html>
