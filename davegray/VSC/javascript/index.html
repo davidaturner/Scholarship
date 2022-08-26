@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is javascript?</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- 
+        Four data types:
+        1. string 
+        2. number
+        3. boolean
+        4. undefined
+
+        if your variable is multi-word, use camel case.
+    -->
+    <p>I am learning javascript!</p>
+    <script>
+        const typeOf = (value) => {
+            return value + ' - ' + typeof (value)
+        }
+        // function typeOf(value) {
+        //     return value + ' - ' + typeof (value)
+        // }
+        console.log("Hello, World!")
+        console.log(typeOf("David"))
+        console.log(typeOf(99))
+        console.log(typeOf(true))
+        console.log(typeOf(undefined))
+
+        let myVariable;
+        console.log(typeOf(myVariable))
+        myVariable = 29
+        console.log(typeOf(myVariable))
+
+        console.log(42 + 4)
+        console.log(42 - 4)
+        console.log(42 * 3)
+        console.log(42 / 6)
+        console.log(42 % 4)
+
+        myVariable += 3
+        console.log(myVariable)
+        myVariable = myVariable + "Dave"
+        console.log(myVariable)
+        console.log(typeOf(myVariable))
+
+        let myNumber = 99
+        console.log(typeof (myVariable) === typeof (99))
+        console.log(myNumber === 99)
+        console.log(myNumber === 98)
+        let myBool = myNumber === 99
+        console.log(myBool)
+        console.log(myNumber !== 99)
+        console.log(myNumber >= 99)
+        console.log(myNumber < 99)
+
+        alert('Hello, World!')
+    </script>
+</body>
+
+</html>
