@@ -1,5 +1,6 @@
 # blackjack
 from random import shuffle
+from random import randint
 
 class CardDeck:
     ScoringDict = { 
@@ -10,11 +11,8 @@ class CardDeck:
     def __init__(self):
         self.Deck = []
         self.CardsLeft = 52
-        self.NeedsReset = 10
     def __repr__(self):
         return "CardsLeft : " + self.CardsLeft + " NeedsReset: " + self.NeedsReset + "\nDeck: " + self.Deck + "\n"
-    def setNeedsReset(self, number):
-        self.NeedsReset = number
     def reset(self):
         Deck = []
         a_suit = []
@@ -26,15 +24,24 @@ class CardDeck:
         shuffle(Deck)
         shuffle(Deck)
         return Deck
+    def hit(self, hand):
+        if (hand == []):
+            return randint(0, 51)
+        else:
+            notDup = False
+            while notDup == False:
+                card = randint(0, 51)
+                notDup = True
+                for h in hand:
+                    if card == h:
+                        notDup = False
+                if notDup == True:
+                    return card
     def score(self, hand):
-        return false
-    def reduce(self, card):
-        return false
-    def needsReset(self):
-        return false
+        return False
 
-newdeck = CardDeck()
-print(newdeck.reset())
+# newdeck = CardDeck()
+# print(newdeck.reset())
 
 class CardPlayer:
     def __init__(self):
@@ -43,15 +50,17 @@ class CardPlayer:
         self.money = 0
     def __repr__(self):
         return "Hand: " + self.hand + " Score: " + self.score + " Money: " + self.money
-    def getHand(self):
+
+    def dealHand(self, cardDeck):
+        self.hand = []
+        self.hand.append(cardDeck.hit(self.hand))
+        self.hand.append(cardDeck.hit(self.hand))
         return self.hand
-    def setHand(self, hand):
-        self.head = hand
-    def getScore(self):
-        return self.score
-    def updateScore(self, score):
-        self.score = score
-    def getMoney(self):
-        return self.money
-    def updateMoney(self, money):
-        self.money = money
+
+me = CardPlayer()
+myDeck = CardDeck()
+me.dealHand(myDeck)
+me.score = 5
+me.money = 100
+
+print(me.hand)
