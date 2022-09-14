@@ -1,17 +1,35 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
+import './index.css';
 
-const groceryList = (item1, item2, item3) => {
+const App = props => {
   return (
-    <ul>
-      <li>{item1}</li>
-      <li>{item2}</li>
-      <li>{item3}</li>
-    </ul>
+    <div>
+      <BankAccount initialDeposit = {25.00} />
+    </div>
   );
 };
 
-ReactDOM.render(
-  groceryList('Apples', 'Oranges', 'Mangos'),
-  document.getElementById('root')
+class BankAccount extends React.Component {
+  render() {
+    return (
+      <div>
+        <h3>Account Balance: ${this.props.initialDeposit}</h3>
+      </div>
+    );
+  }
+}
+
+const root = createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+      <App />
+  </React.StrictMode>
 );
+
+// There are two types of data that a component handles: props and state. These 
+// two types of data are similar because they are both JavaScript objects. The main 
+// difference is that props are passed to the component (similar to passing in 
+// parameters to a function) whereas state is managed within the component (similar 
+// to declaring variables within a function). State is an object that the component 
+// has access to with the ability to read and write data when necessary.

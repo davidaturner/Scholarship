@@ -1,30 +1,23 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
-import PropTypes from 'prop-types';
 
 const App = props => {
-  return (
-    <Employee name="Elizabeth" age={27}/>
-  )
-}
+  return <Text />;
+};
 
-const Employee = props => (
-  <ul>
-    <li>{props.name}</li>
-    <li>{props.age}</li>
-    <li>{props.position}</li>
-  </ul>
-);
+class Text extends React.Component {
+  constructor(props) {
+    super(props);
 
-Employee.propTypes = {
-  name: PropTypes.string.isRequired,
-  age: PropTypes.number.isRequired,
-  position: PropTypes.string
-}
-
-Employee.defaultProps = {
-  position: "employee"
+    this.state = {
+      text: 'Hello World!!'
+    };
+  
+  }
+  render() {
+    return <h1>{this.state.text}</h1>;
+  }
 }
 
 const root = createRoot(document.getElementById('root'));
@@ -34,8 +27,7 @@ root.render(
   </React.StrictMode>
 );
 
-// As you begin to add prop validations, you may find situations where if 
-// a value doesn't exist for a field within the prop object, you will need a 
-// default value. This is very helpful in cases where, if you don't have that 
-// value, an error will be produced. This can be done very similarly to .propTypes 
-// by adding a .defaultProps onto your component.
+// When updating the state, you need to use the setState() method and the state 
+// should never be updated directly, like below:
+// // NEVER DO THIS
+// this.state.accountBalance = 10000;

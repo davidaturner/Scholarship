@@ -3,47 +3,39 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 
 const App = props => {
-  const items = [
-    { name: 'Bread', price: 2.35 },
-    { name: 'Milk', price: 2.0 },
-    { name: 'Eggs', price: 3.15 },
-    { name: 'Tea', price: 4.0 }
-  ];
-
-  return (
-    <div>
-      <List items={items} />
-      <Employee name="Elizabeth" age={27} position="Sales Manager" />
-      <GroceryList item1="Apples" item2="Oranges" item3="Mangos" />
-    </div>
-  );
+  return <BankAccount />;
 };
 
-const List = props => {
-  const listItems = props.items.map((item, index) => (
-    <li key={index}>
-      {item.name}: {item.price}
-    </li>
-  ));
+class BankAccount extends React.Component {
+  constructor(props) {
+    super(props);
 
-  return <ul>{listItems}</ul>;
-};
+    this.state = {
+      accountBalance: 2222.22,
+      addAmount: 0
+    };
+  }
 
-const Employee = props => (
-  <ul>
-    <li>{props.name}</li>
-    <li>{props.age}</li>
-    <li>{props.position}</li>
-  </ul>
-);
+  increment() {
+    this.setState({
+      accountBalance: this.state.accountBalance + parseInt(this.state.addAmount)
+    });
+  }
 
-const GroceryList = props => (
-  <ul>
-    <li>{props.item1}</li>
-    <li>{props.item2}</li>
-    <li>{props.item3}</li>
-  </ul>
-);
+  render() {
+    return (
+      <div>
+        <h3>Account Balance: ${this.state.accountBalance}</h3>
+        <input
+          type="number"
+          onChange={event => this.setState({ addAmount: event.target.value })}
+          value={this.state.addAmount}
+        />
+        <button onClick={this.increment.bind(this)}>Increase Amount</button>
+      </div>
+    );
+  }
+}
 
 const root = createRoot(document.getElementById('root'));
 root.render(
@@ -51,3 +43,8 @@ root.render(
       <App />
   </React.StrictMode>
 );
+
+// When updating the state, you need to use the setState() method and the state 
+// should never be updated directly, like below:
+// // NEVER DO THIS
+// this.state.accountBalance = 10000;

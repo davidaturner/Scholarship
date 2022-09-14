@@ -1,0 +1,43 @@
+:root {
+    --bp-mobile: 480px;
+    --bp-tablet: 760px;
+    --bp-desktop: 1440px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+.container {
+    background-color: #333;
+    color: ghostwhite;
+    width: 99vw;
+    height: 98vh;
+    margin: 8px auto;
+    border: 1px solid black;
+}
+
+.box {
+    display: grid;
+    place-items: center;
+    border: 3px solid red;
+}
+/* media query template
+/* @media only screen and (max-width: 1200px) {
+    Tablets [601px -> 1200px]
+}
+
+@media only screen and (max-width: 600px) {
+    Big smartphones [426px -> 600px]
+}
+
+@media only screen and (max-width: 425px) {
+    Small smartphones [325px -> 425px]
+} */

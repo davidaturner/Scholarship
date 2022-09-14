@@ -2,30 +2,42 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
 
-const GroceryList = props => {
+const App = props => {
   return (
-    <ul>
-      <li>{props.item1}</li>
-      <li>{props.item2}</li>
-      <li>{props.item3}</li>
-    </ul>
+    <div>
+      <BankAccount />
+    </div>
   );
 };
+
+class BankAccount extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      accountBalance: 25.0
+    };
+  }
+
+  render() {
+    return (
+      <div>
+        <h3>Account Balance: ${this.state.accountBalance}</h3>
+      </div>
+    );
+  }
+}
 
 const root = createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <GroceryList item1="Apples" item2="Oranges" item3="Mangos" />
-    {/* <App /> */}
+      <App />
   </React.StrictMode>
 );
 
-// Fundamentally, a component is just a function but instead accepts 
-// props (properties) and returns JSX markup. 
-
-// The kind of component is known as a Stateless Component. Components 
-// always have a single parameter, which is the props object, and returns 
-// a React element. A stateless component is a function and can only 
-// display what's in the props object that's passed in — there is no state 
-// that is maintained (like a class).
-
+// There are two types of data that a component handles: props and state. These 
+// two types of data are similar because they are both JavaScript objects. The main 
+// difference is that props are passed to the component (similar to passing in 
+// parameters to a function) whereas state is managed within the component (similar 
+// to declaring variables within a function). State is an object that the component 
+// has access to with the ability to read and write data when necessary.

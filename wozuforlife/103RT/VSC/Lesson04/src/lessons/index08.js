@@ -3,17 +3,39 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 
 const App = props => {
-  const items = ['Bread', 'Milk', 'Eggs', 'Tea'];
-  return <List items={items} />;
+  return <BankAccount />;
 };
 
-// using map function. Note the index.
-const List = props => {
-  const listItems = props.items.map((item, index) => (
-    <li key={index}>{item}</li>
-  ));
-  return <ul>{listItems}</ul>;
-};
+class BankAccount extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      accountBalance: 2222.22,
+      addAmount: 0
+    };
+  }
+
+  increment() {
+    this.setState({
+      accountBalance: this.state.accountBalance + parseInt(this.state.addAmount)
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        <h3>Account Balance: ${this.state.accountBalance}</h3>
+        <input
+          type="number"
+          onChange={event => this.setState({ addAmount: event.target.value })}
+          value={this.state.addAmount}
+        />
+        <button onClick={this.increment.bind(this)}>Increase Amount</button>
+      </div>
+    );
+  }
+}
 
 const root = createRoot(document.getElementById('root'));
 root.render(
@@ -22,12 +44,7 @@ root.render(
   </React.StrictMode>
 );
 
-// When you are mapping over the items array, it returns another array 
-// of React.createElement() of each list item. Behind the scenes, this 
-// would look like below:
-// const listItems = [
-//   React.createElement('li', {}, 'Bread'),
-//   React.createElement('li', {}, 'Milk'),
-//   React.createElement('li', {}, 'Eggs'),
-//   React.createElement('li', {}, 'Tea')
-// ];
+// When updating the state, you need to use the setState() method and the state 
+// should never be updated directly, like below:
+// // NEVER DO THIS
+// this.state.accountBalance = 10000;

@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+ul li {
+  padding: 0 10px;
+}
+
+h3 {
+  font-weight:500;
+}
+
+img {
+  width: 425px;
+  height: 480px;
+  margin: 5px 0;
+}
+
+.healthy {
+  background-color: lime;
+}
+
+.unhealthy {
+  background-color: red;
+}
+
+.container {
+  width: 90%;
+  height: 650px;
+  padding: 5px;
+  background-color: #333;
+  color: ghostwhite;
+  position: relative;
+}
+
+.layout {
+  width: 87%;
+  height: 75%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tour-info {
+  width: 35%;
+}
+
+.image {
+  width: 63%;
+  opacity: 0.8
+}

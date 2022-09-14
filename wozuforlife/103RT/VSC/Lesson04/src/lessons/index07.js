@@ -3,19 +3,31 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 
 const App = props => {
-  return <List items={listItems} />;
+  return <BankAccount />;
 };
 
-const items = ['Bread', 'Milk', 'Eggs', 'Tea'];
+class BankAccount extends React.Component {
+  constructor(props) {
+    super(props);
 
-const listItems = [];
+    this.state = {
+      accountBalance: 2222.22
+    };
+  }
 
-// using push function.
-for (let i = 0; i < items.length; i++) {
-  listItems.push(<li key={i}>{items[i]}</li>);
+  increment() {
+    this.setState({ accountBalance: this.state.accountBalance + 1 });
+  }
+
+  render() {
+    return (
+      <div>
+        <h3>Account Balance: ${this.state.accountBalance}</h3>
+        <button onClick={this.increment.bind(this)}>Increase Amount</button>
+      </div>
+    );
+  }
 }
-
-const List = props => <ul>{props.items}</ul>;
 
 const root = createRoot(document.getElementById('root'));
 root.render(
@@ -24,8 +36,7 @@ root.render(
   </React.StrictMode>
 );
 
-// As you can see, within the render, you are not defining the paid and 
-// shipped fields. Because of the defaultProps, those fields will 
-// automatically be filled in with false. The propTypes and defaultProps 
-// are not required, but can help you make sure your application functions 
-// the way you would expect it to.
+// When updating the state, you need to use the setState() method and the state 
+// should never be updated directly, like below:
+// // NEVER DO THIS
+// this.state.accountBalance = 10000;
