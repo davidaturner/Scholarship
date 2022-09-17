@@ -9,17 +9,15 @@
     <title>My First Web Page</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
             font-family:'Times New Roman', Times, serif;
             font-size: 22px;
             background-color: #333;
             color: whitesmoke;
+        }
+
+        dt {
+            color:limegreen;
         }
     </style>
 </head>
@@ -34,20 +32,41 @@
     <p>This is my first web page</p>
 
     <h3>The Schedule</h3>
-    <p>Let me show you how...</p>
+    <p>Let me show you how...
+
+    <ol>
+        <li>I learn more about web development.</li>
+        <li>I plan out my schedule.</li>
+        <li>I use resources from <abbr title="Mozilla Developer 
+            Network">MDN</abbr>.</li>
+    </ol>
+
+    <h3>Places I'd like to visit</h3>
+    <ul>
+    <li><p>I've heard good things about the Caribbean</p></li>
+    <li><p>I've heard good things about going here:</p>
+    <address>
+        Margaritaville Island Reserve Riveria
+        Cancun<br />
+        Bahia Petempish Puerto Morelos, Mexico 
+        Colonia Morelos, Mexico 775800
+        </address></li>
+        </ul>
+
+    <h3>Places I want to avoid</h3>
+    <dl>
+        <dt>North Pole</dt>
+        <dd>I hear this is cold</dd>
+        <dt>South Pole</dt>
+        <dd>I hear this is <strong>also</strong> cold</dd>
+    </dl>
+     
+    
+     
+    
 
     <hr/>
 
-    <h2>I am ready to learn HTML</h2>
-    <p>This is my first web page</p>
-
-    <h3>The Schedule</h3>
-    <p>Let me show you how:
-        <br>This is the <em>best</em> part
-        <br>The best part  
-        <!-- Not breaking space (or hardcoded space)-->
-        <br>&nbsp;&nbsp;&nbsp;...of the <strong>part</strong>.
-    </p>
     &lt;&lt;&lt; &copy;2202 The Poggeth &gt;&gt;&gt;
 </body>
 </html>
