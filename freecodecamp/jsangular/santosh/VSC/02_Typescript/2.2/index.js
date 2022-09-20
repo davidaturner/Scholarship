@@ -1,3 +1,4 @@
-var fname = "Franklin";
-var lname = "Franklin";
+"use strict";
+let fname = "Franklin";
+let lname = "Franklin";
 console.log(fname + " " + lname);
