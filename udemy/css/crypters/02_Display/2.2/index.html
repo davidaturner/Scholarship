@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        h1, h2 {
+            display: inline;
+            background-color: green;
+        }
+
+        /* removed from display, but not from DOM */
+        div {
+            display: none;
+        }
+
+        span {
+            /* note width and height are ignored 
+            for inline (span) only. */
+            height: 50px;
+            border: 1px solid brown;
+            background-color: yellow;
+        }
+
+        span:nth-of-type(2) {
+            /* width and height is set for block */
+            /* height: 50px; */
+            display: block;
+        }
+
+        /* hidden. but content space remains. */
+        p span {
+            visibility: hidden;
+        }
+
+        /* inline-block - has inline properties with 
+        width and height. */
+        .last {
+            display: inline-block;
+            background-color: pink;
+            height: 100px;
+            border: 1px solid brown;
+        }
+    </style>
+</head>
+<body>
+    <!-- display - overrides natural/default display property of element -->
+    <!-- four types: block, inline, inline-block, none-->
+    <h1>Main Heading</h1>
+    <h2>Second Level Heading</h2>
+    <div>This is a div element</div>
+    <p>Here is a paragraph within container div!! Also added<span> a span </span>element within the paragraph!!</p>
+    <span>A different span element!! </span>
+    <span>Another span element!! </span>
+    <p class="last">Here is another paragraph!!</p>
+    <p>Done!</p>
+</body>
+</html>

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button {
+    background-color: #efefef;
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+button span {
+    display: block;
+    background-color: #999;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    margin-left: 2px;
+    transition: all 0.5s;
+}
+
+.hero {
+    background-color: #1d2026;
+    width: 100%;
+    min-height: 100vh;
+    color: #fff;
+    position: relative;
+}
+
+.menu_img {
+    width: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.logo {
+    width: 160px;
+    cursor: pointer;
+}
+
+.lamp-container {
+    position: absolute;
+    top: -20px;
+    left: 22%;
+    width: 200px;
+}
+
+.lamp {
+    width: 100%;
+}
+
+.light {
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    margin-left: -10px;
+    /* start with light 'off' */
+    opacity: 0;
+    transition: all 0.5s
+}
+
+.text-container {
+    max-width: 600px;
+    margin-top: 7%;
+    margin-left: 50%;
+}
+
+.text-container h1 {
+    font-size: 80px;
+    font-weight: 400;
+}
+
+.text-container a {
+    text-decoration: none;
+    background-color: #00986f;
+    padding: 14px 40px;
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top:  150px;
+}
+
+.control .line {
+    width: 250px;
+    height: 4px;
+    background-color: #fff;
+    margin: 0 20px;
+    border-radius: 2px;
+}
+
+.control .line span {
+    width: 50%;
+    height: 8px;
+    margin-top: -2px;
+    border-radius: 4px;
+    background-color: #00986f;
+    display: block;
+}
+
+.active {
+    background-color: green;
+}
+
+.active span {
+    background-color: #fff;
+    margin-left: 31px;
+}
+
+.on {
+    opacity: 1;
+}

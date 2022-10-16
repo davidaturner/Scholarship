@@ -445,13 +445,13 @@ For a less cluttered UI */
 
 .canvas__circle:nth-of-type(3) {
     bottom: 11.5%;
-    right: 10.4%;
+    left: 10.4%;
     cursor: sw-resize;
 }
 
 .canvas__circle:nth-of-type(4) {
     bottom: 11.5%;
-    left: 10.4%;
+    right: 10.4%;
     cursor: nw-resize;
 }
 
@@ -491,108 +491,4 @@ For a less cluttered UI */
 
 .tool__icon {
 
-}
-
-/* Media queries */
-/* Make it smaller to determine breakpoints to modify UI */
-/* Predefined breakpoints usage is no longer best practice. */
-/* Choose breakpoints when the UI is broken or could look better. */
-@media(max-width: 1200px) {
-    .panel {
-        display: none;
-    }
-    .canvas {
-        width: 67vw;
-    }
-}
-
-
-@media(max-width: 1000px) {
-    .app__container {
-        height: initial;
-        /* Test and see what this does. */
-        min-height: 100%;
-    }
-    .sidebar {
-        display: none;
-    }
-    .info-bar {
-        padding: 0 20px;
-    }
-    .artboard {
-        padding: 50px 20px;
-        /* padding: 0 20px; */
-        margin-top: 0;
-        /* must change/fix height if using vh units */
-        height: initial;
-
-    }
-    .canvas {
-        width: 100%;
-        /* must change/fix height if using vh units */
-        height: 500px;
-    }
-    .tools {
-        height: 500px;
-    }
-}
-
-@media(max-width: 580px) {
-    .dd-toggle:nth-of-type(1),
-    .dd-toggle:nth-of-type(2),
-    .dd-toggle:nth-of-type(3) {
-        display: none;
-    }
-    .artboard {
-        flex-direction: column;
-        padding: 15px 20px;
-    }
-    .canvas {
-        order: 2;
-        height: 450px;
-    }
-    .canvas__circle:nth-of-type(1) {
-        top: 11.5%;
-        left: 9.8%;
-    }
-    .canvas__circle:nth-of-type(2) {
-        top: 11.5%;
-        right: 9.8%;
-    }
-    .canvas__circle:nth-of-type(3) {
-        bottom: 11.5%;
-        right: 9.8%;
-    }
-    .canvas__circle:nth-of-type(4) {
-        bottom: 11.5%;
-        left: 9.8%;
-    }
-    .tools {
-        flex-direction: row;
-        column-gap: 5px;
-        order: 1;
-        height: initial;
-        margin-bottom: 15px;
-        align-self: flex-start;
-    }
-    .tool:last-child {
-        margin: 0;
-    }
-}
-
-@media(max-width: 440px) {
-    .header {
-        justify-content: space-between;
-    }
-    .dd-toggle:nth-of-type(4),
-    .dd-toggle:nth-of-type(5) {
-        display: none;
-    }
-    .breadcrumbs__icon,
-    .breadcrumbs__link {
-        display: none;
-    }
-    .canvas {
-        height: 400px;
-    }
 }

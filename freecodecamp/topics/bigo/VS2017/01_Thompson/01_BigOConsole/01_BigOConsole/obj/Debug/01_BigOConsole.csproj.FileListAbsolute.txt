@@ -1,7 +1,0 @@
-C:\Users\Turner\source\repos\Scholarship\freecodecamp\topics\bigo\VS2017\01_Thompson\01_BigOConsole\01_BigOConsole\bin\Debug\01_BigOConsole.exe.config
-C:\Users\Turner\source\repos\Scholarship\freecodecamp\topics\bigo\VS2017\01_Thompson\01_BigOConsole\01_BigOConsole\bin\Debug\01_BigOConsole.exe
-C:\Users\Turner\source\repos\Scholarship\freecodecamp\topics\bigo\VS2017\01_Thompson\01_BigOConsole\01_BigOConsole\bin\Debug\01_BigOConsole.pdb
-C:\Users\Turner\source\repos\Scholarship\freecodecamp\topics\bigo\VS2017\01_Thompson\01_BigOConsole\01_BigOConsole\obj\Debug\01_BigOConsole.csprojAssemblyReference.cache
-C:\Users\Turner\source\repos\Scholarship\freecodecamp\topics\bigo\VS2017\01_Thompson\01_BigOConsole\01_BigOConsole\obj\Debug\01_BigOConsole.csproj.CoreCompileInputs.cache
-C:\Users\Turner\source\repos\Scholarship\freecodecamp\topics\bigo\VS2017\01_Thompson\01_BigOConsole\01_BigOConsole\obj\Debug\01_BigOConsole.exe
-C:\Users\Turner\source\repos\Scholarship\freecodecamp\topics\bigo\VS2017\01_Thompson\01_BigOConsole\01_BigOConsole\obj\Debug\01_BigOConsole.pdb

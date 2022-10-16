@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Examples</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+        .container {
+            width: 30%;
+            height: 90%;
+            border: 1px solid red;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            gap: 5px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            color: ghostwhite;
+        }
+    </style>
+</head>
+<body>
+    <!-- Three ways to introduce JS-->
+    <!-- via external file-->
+    <!-- via in file script-->
+    <!-- via in line script-->
+    <div class="container">
+        <p>This is box1.</p>
+        <div class="box">Box1</div>
+        <p>This is box2.</p>
+        <div class="box">Box2</div>
+        <p>This is box3.</p>
+        <div onclick="console.log('In line script')" class="box">Box3</div>
+
+        <script>
+            console.log('In file script.')
+        </script>
+        <script src="app.js"></script>
+    </div>
+</body>
+</html>
