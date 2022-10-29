@@ -1,42 +1,50 @@
 from deck import CardDeck
 
 class Player:
-    def __init__(self, name, hand = [], money = 100):
+    def __init__(self, name, money = 0, hand = []):
         self.name = name
         self.hand = hand
-        self.money = money
         self.score = 0
+
+        self.money = money
+        # if betAmount not set- assume house or dealer
         self.betAmount = 0
 
     # print(Player)
     def __str__(self):
+        return self.printHand()
+
+    def printHand(self):
         currentHand = "hand: "
         for card in self.hand:
-            currentHand += card + " " 
-        return str(self.name) + " | " + currentHand + "score: " + str(self.score) + " money: " + str(self.money) + " bet: " + str(self.betAmount)
+            currentHand += card + " "
+        message = str(self.name) + " | " + currentHand + "score: " + str(self.score)
+        if self.isDealer():
+            return message
+        return  message + " money: " + str(self.money) + " bet: " + str(self.betAmount)
 
-    def addToHand(self, card, score):
-        self.hand.append(card)
-        self.score += score
-        return self
-
-    def scoreHand(self):
-        # fix calculation of self.score > 21
-        if self.score > 21:
-            aces = 0
-            for card in self.hand:
-                if card == "A":
-                    aces += 1
-            while aces > 0 and self.score > 21:
-                aces -= 1
-                self.score -=10
-        return self.score
-
-    def isStanding(self):
-        return self.score >= 17 
+    def printDealer(self):
+        isHole = True
+        currentHand = "hand: "
+        for card in self.hand:
+            if isHole == True:
+                currentHand += "X" + " "
+                isHole = False
+            else:
+                currentHand += card + " " 
+        return str(self.name) + " | " + currentHand + "score: ?"
 
     def isBusted(self):
         return self.score > 21
+
+    def hasBlackjack(self):
+        return self.score == 21 and len(self.hand) == 2
+
+    def isPushed(self, score):
+        return self.score == score
+
+    def isDealer(self):
+        return self.money == 0 and self.betAmount == 0
 
     def clearHand(self):
         self.hand = []
@@ -45,84 +53,152 @@ class Player:
 
     # do not label a variable the same as a function
     def bet(self, amount):
-        self.money -= amount
-        self.betAmount += amount
-        # self.bet += amount
+        if self.money >= amount:
+            self.money -= amount
+            self.betAmount += amount
+        else:
+            self.betAmount = self.money
+            self.money = 0
         return self
 
-    def win(self, isWinner):
-        if isWinner == True and self.score <= 21:
-            # blackjack is score 21 with only two cards in the hand
-            if self.score == 21 and len(self.hand) == 2:
-                self.money += 2.5*self.betAmount
-                return True
-            else:
-                self.money += 2*self.betAmount
-                return True
+    def pushes(self):
+        self.money += self.betAmount
         self.betAmount = 0
-        return False
+        return self
 
-def checkPlayer(pompom, newDeck):
-    if pompom.isStanding() == False:
-        print("pompom hits...")
-        newDeck.drawCard()
-        pompom.addToHand(newDeck.drawn, newDeck.drawnScore)
-        pompom.scoreHand()
-        print(pompom)
+    def loses(self):
+        self.betAmount = 0
+        return self
 
-newDeck = CardDeck().createDeck()
-print(newDeck.cards)
-print("new deal...")
-pompom = Player("pompom").clearHand()
-print("pompom bets...")
-pompom.bet(20)
-print(pompom)
+    def wins(self):
+        if self.hasBlackjack():
+            self.money += 2.5*self.betAmount
+        else:
+            self.money += 2*self.betAmount
+        self.betAmount = 0
+        return self
 
-print("dealer deals two cards...")
-newDeck.drawCard()
-pompom.addToHand(newDeck.drawn, newDeck.drawnScore)
-print(pompom)
-newDeck.drawCard()
-pompom.addToHand(newDeck.drawn, newDeck.drawnScore)
-pompom.scoreHand()
-print(pompom)
+    # def win(self, isWinner):
+    #     if isWinner == True and self.score <= 21:
+    #         # blackjack is score 21 with only two cards in the hand
+    #         if self.score == 21 and len(self.hand) == 2:
+    #             self.money += 2.5*self.betAmount
+    #             return True
+    #         else:
+    #             self.money += 2*self.betAmount
+    #             return True
+    #     self.betAmount = 0
+    #     return False
 
-checkPlayer(pompom, newDeck)
-# if pompom.isStanding() == False:
-#     print("pompom hits...")
-#     newDeck.drawCard()
-#     pompom.addToHand(newDeck.drawn, newDeck.drawnScore)
-#     pompom.scoreHand()
-#     print(pompom)
+def firstDrawforPlayer(player, draws, deck):
+    player.clearHand()
+    player.hand = deck.drawHand(draws)
+    player.score = deck.scoreHand(player.hand)
+    if player.isDealer():
+        print(player.printDealer())
+    else:
+        print(player)
 
-checkPlayer(pompom, newDeck)
-# if pompom.isStanding() == False:
-#     print("pompom hit...")
-#     newDeck.drawCard()
-#     pompom.addToHand(newDeck.drawn, newDeck.drawnScore)
-#     pompom.scoreHand()
-#     print(pompom)
+def evaluateHand(player):
+    if player.isBusted():
+        print(player.name,"busts!")
+    else:
+        print(player.name,"is standing at " + str(player.score) + ".")
 
-checkPlayer(pompom, newDeck)
-# if pompom.isStanding() == False:
-#     print("pompom hits...")
-#     newDeck.drawCard()
-#     pompom.addToHand(newDeck.drawn, newDeck.drawnScore)
-#     pompom.scoreHand()
-#     print(pompom)
+def blackjack(player, house):
+    if player.hasBlackjack():
+        print(player.name, "has blackjack!")
+        if house.hasBlackjack():
+            print(house.name, "has blackjack!")
+            print(house)
+            # print("It's a push!")
+            # player.pushes()
+        # else:
+        #     print(player.name, "wins!")
+        #     player.wins()
+        return True
+    elif house.hasBlackjack():
+            print(house.name, "has blackjack!")
+            print(house)
+            # print(player.name, "loses")
+            # player.loses()
+            return True
+    if house.isDealer() and deck.hasAceOrTen(house.hand):
+        print("No blackjack!")
+    return False
 
-if pompom.isBusted():
-    print("pompom is busted!")
-else:
-    print("pompom stands!")
+def playersTurn(player):
+    player.printHand()
+    while player.score <= 21:
+    # while True:
+        playerinput = input(player.name+", do you want another card? (y/n): ")
+        if playerinput == "y":
+            player.hand.append(deck.draw())
+            player.score = deck.scoreHand(player.hand)
+            print(player)
+        else:
+            break
+    evaluateHand(player)
 
-if (pompom.win(True)):
-    print("pompom wins!")
-else:
-    print("pompom loses...")
-print(pompom)
+def dealersTurn(dealer):
+    # print(dealer)
+    while dealer.score < 17:
+        dealer.hand.append(deck.draw())
+        dealer.score = deck.scoreHand(dealer.hand)
+        # print(dealer)
+    print(dealer)
+    evaluateHand(dealer)
 
+def playHand(deck, player, dealer):
+    bet = int(input(player.name+", please enter your bet ("+str(player.money)+"): "))
+    player.bet(bet)
 
-            
+    firstDrawforPlayer(player, 2, deck)
+    firstDrawforPlayer(dealer, 2, deck)
 
+    if not blackjack(player, dealer):
+        playersTurn(player)
+        dealersTurn(dealer)
+
+    if player.isBusted():
+        if dealer.isBusted():
+            print("It's a push!")
+            player.pushes()
+        else:
+            print(player.name, "loses.")
+            player.loses()
+    else:
+        if dealer.isBusted() or player.score > dealer.score:
+            print(player.name, "wins!")
+            player.wins()
+        elif player.score == dealer.score:
+            print("It's a push!")
+            player.pushes()
+        else:   
+            print(player.name, "loses.")       
+            player.loses()
+    print(player.name+ " money: "+str(player.money))
+    return True
+
+# Play Blackjack!
+deck = CardDeck().createDeck()
+# print(deck)
+
+p1 = input("please enter your name: ")
+p1money = int(input("please enter the pot: "))
+player1 = Player(p1, p1money)
+house = Player("house")
+
+while True and int(player1.money) > 0:
+    print("cards left:", len(deck.cards))
+    if len(deck.cards) < 20:
+        print("creating a new deck...")
+        deck = CardDeck().createDeck()
+  
+    playHand(deck, player1, house)
+    if int(player1.money) > 0:
+        userinput = input("\nwould you like to play again, " + player1.name + "? (y/n): ")
+        if not userinput == "y":
+            break
+print("Have a good evening, sir!")
 
