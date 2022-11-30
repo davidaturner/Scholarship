@@ -1,0 +1,10 @@
+span {
+    color: red;
+    /* visibility means the element still occupies the space. */
+    visibility: hidden;
+}
+
+p {
+    display: inline; 
+}
+

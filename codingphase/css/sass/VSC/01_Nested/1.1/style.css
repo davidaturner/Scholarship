@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: red;
+}
+
+.header ul {
+    padding: 0;
+    margin: 0;
+}
+
+.header ul li {
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.header:hover {
+    background-color: yellow;
+}
+
+.background {
+    background-color: orangered;
+}
+
+.color {
+    color: #fff;
+}
+
+.border {
+    border: 5px solid pink;
+}
+
+.padding {
+    padding: 15px 5px;
+}
+
+.submenu ul li {
+    list-style-type: none;
+    margin: 5px;
+}
+
+.submenu ul li:hover {
+    background-color: yellow;
+    color: black;
+}

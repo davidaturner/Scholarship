@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--  
+Two essential things exist on this page that will break your project if not included.
+
+xmlns:th="http://www.thymeleaf.org" 
+
+- is needed to handle th= which will be shown later.
+
+http-equiv="Content-Type" content="text/html; charset=UTF-8" 
+
+- inside the meta tag is needed so 
+Thymeleaf knows how to handle the html markup.
+-->
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Home Page</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+</head>
+<body>
+<h1>Hello world!</h1>
+<p>This page is the root view served whena visiting <a href="/" >localhost:8080/</a></p>
+</body>
+</html>

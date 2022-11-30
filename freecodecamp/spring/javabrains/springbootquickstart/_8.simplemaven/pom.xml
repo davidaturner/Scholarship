@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.javabrains.springbootquickstart</groupId>
+  <artifactId>simplemaven</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Maven project using the simple archetype.</name>
+  
+<!-- Step1: Add spring parent dependencies -->
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.7.5</version>
+	</parent>
+
+<!--  Step2: Add additional dependencies -->
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+	    <dependency>
+	        <groupId>javax.servlet</groupId>
+	        <artifactId>jstl</artifactId>
+	    </dependency>
+	    <dependency>
+	        <groupId>org.apache.tomcat.embed</groupId>
+	        <artifactId>tomcat-embed-jasper</artifactId>
+	        <scope>provided</scope>
+	    </dependency>
+	</dependencies>
+	
+<!-- Step3: Update property selecting Java version -->
+	<properties>
+		<java.version>11</java.version>
+	</properties>
+
+<!--  Right click project. Update Maven project. -->
+</project>

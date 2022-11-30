@@ -1,0 +1,16 @@
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.12.handson\bin\MCD\Debug\net5.0\2.12.handson.exe
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.12.handson\bin\MCD\Debug\net5.0\2.12.handson.deps.json
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.12.handson\bin\MCD\Debug\net5.0\2.12.handson.runtimeconfig.json
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.12.handson\bin\MCD\Debug\net5.0\2.12.handson.runtimeconfig.dev.json
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.12.handson\bin\MCD\Debug\net5.0\2.12.handson.dll
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.12.handson\bin\MCD\Debug\net5.0\ref\2.12.handson.dll
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.12.handson\bin\MCD\Debug\net5.0\2.12.handson.pdb
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.12.handson\obj\MCD\Debug\net5.0\2.12.handson.csproj.AssemblyReference.cache
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.12.handson\obj\MCD\Debug\net5.0\2.12.handson.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.12.handson\obj\MCD\Debug\net5.0\2.12.handson.AssemblyInfoInputs.cache
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.12.handson\obj\MCD\Debug\net5.0\2.12.handson.AssemblyInfo.cs
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.12.handson\obj\MCD\Debug\net5.0\2.12.handson.csproj.CoreCompileInputs.cache
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.12.handson\obj\MCD\Debug\net5.0\2.12.handson.dll
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.12.handson\obj\MCD\Debug\net5.0\ref\2.12.handson.dll
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.12.handson\obj\MCD\Debug\net5.0\2.12.handson.pdb
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.12.handson\obj\MCD\Debug\net5.0\2.12.handson.genruntimeconfig.cache

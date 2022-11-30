@@ -1,0 +1,16 @@
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.7\bin\MCD\Debug\net5.0\2.7.exe
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.7\bin\MCD\Debug\net5.0\2.7.deps.json
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.7\bin\MCD\Debug\net5.0\2.7.runtimeconfig.json
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.7\bin\MCD\Debug\net5.0\2.7.runtimeconfig.dev.json
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.7\bin\MCD\Debug\net5.0\2.7.dll
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.7\bin\MCD\Debug\net5.0\ref\2.7.dll
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.7\bin\MCD\Debug\net5.0\2.7.pdb
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.7\obj\MCD\Debug\net5.0\2.7.csproj.AssemblyReference.cache
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.7\obj\MCD\Debug\net5.0\2.7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.7\obj\MCD\Debug\net5.0\2.7.AssemblyInfoInputs.cache
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.7\obj\MCD\Debug\net5.0\2.7.AssemblyInfo.cs
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.7\obj\MCD\Debug\net5.0\2.7.csproj.CoreCompileInputs.cache
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.7\obj\MCD\Debug\net5.0\2.7.dll
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.7\obj\MCD\Debug\net5.0\ref\2.7.dll
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.7\obj\MCD\Debug\net5.0\2.7.pdb
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\02_Operations\2.7\obj\MCD\Debug\net5.0\2.7.genruntimeconfig.cache
