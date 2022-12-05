@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid basics</title>
+    <style>
+        *,
+        *::before,
+        *::after
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color_yellow: yellow;
+            --backg_gains: gainsboro;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 
+        An important difference using grid is that of other systems like
+        like bootstrap it that other systems essentially create a single
+        grid for all the elements in a website. Grid instead allows only 
+        direct descendants to be placed on a grid. A website can then 
+        use multiple grids anywhere on the website.
+    -->
+    <header></header>
+    <main>
+        <article>
+            <h1></h1>
+            <p></p>
+            <figure></figure>
+            <p></p>
+    </main>
+    <aside></aside>
+    <footer></footer>
+</body>
+</html>

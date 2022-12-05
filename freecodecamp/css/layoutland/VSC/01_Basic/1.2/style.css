@@ -1,0 +1,22 @@
+/* 
+Since multiple grids (using grid) works independently from their grandparent, 
+we use nested (flexbox) grids to supply coordination.  
+*/
+body {
+    background-color: var(--backg_gains);
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 0.5rem 1rem;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    order: -1;
+}

@@ -1,0 +1,14 @@
+/* 
+As seen in this example the body grid is independent from 
+the article grid. main would be part of the body grid even though 
+its child article would not be. NOTE: you would not be able to line
+up elements of the article grid with either body or main. 
+*/
+body {
+    background-color: var(--backg_gains);
+    display: grid;
+}
+
+article {
+    display: grid;
+}

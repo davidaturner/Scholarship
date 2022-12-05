@@ -1,0 +1,8 @@
+/*
+    npm install sass
+    npm run sass:compile
+    (sass --no-source-map --watch main.scss style.css)
+*/
+body {
+  background-color: yellow;
+}

@@ -1,10 +1,14 @@
 /*
-Switching over to SASS 
-
-Benefits of using SASS
-1. Style nesting (ie. search)
-2. Use of variables (vs root variables).
-3. Can now use // for comments.
+To make more fully responsive 
+    Use rem, em values instead of px values.
+    NOTE: Each browser has a setting for selecting root font-size.
+    Use em values for media breakpoints.
+    All others use rem.
+    Conversion: 1 rem == 1 em == 16px (divide px values by 16)
+    If you set root to font-size: 100% use conversion on both rem and em
+        (em must be used for breakpoints due to Safari known bug).
+    Otherwise, set root to font-size: 62.5% then divide px values by 10 for rem.
+    Test by using Chrome browser setting.
 */
 
 // to run
@@ -18,12 +22,23 @@ $color-grey-medium: #a9b4b7;
 $color-grey-dark: #555a5b;
 $ts: all 0.2s;
 
+$breakpt_large: 1100px;
+$breakpt_large_sm: 1050px;
+$breakpt_medium: 773px;
+$breakpt_medium_sm: 604px;
+$breakpt_small: 355px;
+$breakpt_smallest: 320px;
+
 *,
 *::before,
 *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 /* Note input does not automatically inherit font styles. */
@@ -52,7 +67,7 @@ a {
 @keyframes fade-in {
     0% {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(2rem);
     }
     100% {
         opacity: 1;
@@ -83,7 +98,7 @@ a {
 /* base styles */
 .page {
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -101,25 +116,27 @@ a {
 }
 
 .app {
-    width: 1024px;
-    height: 1030px;
+    width: 102.4rem;
+    height: 103rem;
     background-color: #fff;
     /* box-shadow: 0 30px 100px rgba(0, 0, 0, 0.35); */
-    box-shadow: 0 25px 150px rgba(0, 0, 0, 0.65);
-    margin: 80px 0;
+    box-shadow: 0 2.5rem 15rem rgba(0, 0, 0, 0.65);
+    margin: 8rem 0;
 
     display: grid;
-    grid-template-columns: 355px 1fr;
-    grid-template-rows: 65px 724px 1fr;
+    grid-template-columns: 35.5rem 1fr;
+    grid-template-rows: 6.5rem 72.4rem 1fr;
 
     /* Responsive. Remove background as needed. */
-    @media (max-width: 1100px) {
+    @media (max-width: $breakpt_large) {
+    // @media (max-width: 1100px) {
         width: 100%;
         margin: 0;
     }
 
     // Responsive. Reduce grid to one column as needed.
-    @media (max-width: 355px) {
+    @media (max-width: $breakpt_small) {
+    // @media (max-width: 355px) {
         grid-template-columns: 1fr;
     }
 }
@@ -134,8 +151,8 @@ a {
 }
 
 .logo {
-    margin-left: 26px;
-    margin-right: 48px;
+    margin-left: 2.6rem;
+    margin-right: 4.8rem;
 }
 
 .search {
@@ -143,17 +160,17 @@ a {
 
     &__input {
         background-color: $color-grey-light;
-        height: 34px;
-        width: 405px;
-        border-radius: 500px;
-        font-size: 13px;
+        height: 3.4rem;
+        width: 40.5rem;
+        border-radius: 50rem;
+        font-size: 1.3rem;
         color: $color-grey-dark;
-        padding-left: 20px;
+        padding-left: 2rem;
         outline: 0;
         transition: $ts;
 
         &:focus {
-            width: 425px;
+            width: 42.5rem;
         }
             
         &::placeholder {
@@ -162,13 +179,13 @@ a {
     }
 
     &__submit {
-        font-size: 15px;
+        font-size: 1.5rem;
         color: $color-grey-medium;
         cursor: pointer;
         transition: $ts;
         position: absolute;
         top: 8px;
-        right: 13px;
+        right: 1.3rem;
 
         &:focus {
             color: $color-grey-dark;
@@ -178,7 +195,8 @@ a {
     &__icon {}
 
     // Responsive. Remove search as needed.
-    @media (max-width: 773px) {
+    @media (max-width: $breakpt_medium) {
+    // @media (max-width: 773px) {
         display: none;
     }
 }
@@ -193,9 +211,9 @@ a {
     &__item {}
     
     &__link {
-        padding: 0 20px;
+        padding: 0 2rem;
         transition: $ts;
-        height: 65px;
+        height: 6.5rem;
         display: block;
 
         &:hover,
@@ -206,8 +224,8 @@ a {
        
     &__icon {
         color: $color-grey-medium;
-        font-size: 22px;
-        line-height: 65px;
+        font-size: 2.2rem;
+        line-height: 6.5rem;
     }
 }
 
@@ -220,19 +238,20 @@ a {
     // Responsive. Remove entire gallery as needed.
     // Test this down 320px. Small phone. Display sidebar only.
     // Then 'flip' for landscape.
-    @media (max-width: 604px) {
+    @media (max-width: $breakpt_medium_sm) {
+    // @media (max-width: 604px) {
         grid-column: 1 / -1;
     }
 }
 
 .intro {
-    padding: 48px 35px 45px;
-    border-bottom: 1px solid rgba(#fff, 0.1);
+    padding: 4.8rem 3.5rem 4.5rem;
+    border-bottom: 0.1rem solid rgba(#fff, 0.1);
 
     &__text {
         color: $color-grey-light;
-        font-size: 16px;
-        margin-top: 12px;
+        font-size: 1.6rem;
+        margin-top: 1.2rem;
         line-height: 1.8 /* for h, 1.6 in typical */
     }
 }
@@ -240,10 +259,11 @@ a {
 .first-heading {
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 34px;
+    font-size: 3.4rem;
     line-height: 1;
 
-    @media (max-width: 355px) {
+    @media (max-width: $breakpt_small) {
+    // @media (max-width: 355px {
         font-size: 30px;
     }
 
@@ -252,41 +272,41 @@ a {
 .social {
     display: flex;
     justify-content: center;
-    margin: 25px 0 30px;
+    margin: 2.5rem 0 3.0rem;
 
     &__img {
-        height: 35px;
-        width: 35px;
+        height: 3.5rem;
+        width: 3.5rem;
         object-fit: cover;
         border-radius: 50%;
-        border: 2px solid #fff;
+        border: 0.2rem solid #fff;
 
         &:not(:first-child) {
-            margin-left: -8px;
+            margin-left: -0.8rem;
         }
     }
 
     &__container {
-        margin-left: 10px;
+        margin-left: 1rem;
     }
 
     &__number {
-        font-weight: 500px;
+        font-weight: 50rem;
     }
 
     &__text {
-        font-size: 12px;
+        font-size: 1.2rem;
         color: $color-grey-medium;
-        margin-top: -5px;
+        margin-top: -0.5rem;
     }
 }
 
 .auth {
     &__text {
         color: $color-grey-medium;
-        font-size: 12px;
+        font-size: 1.2rem;
         text-align: center;
-        margin-top: 8px;
+        margin-top: 0.8rem;
     }
 
     &__link {
@@ -297,11 +317,11 @@ a {
 
 .btn {
     background-color: #16b47f;
-    padding: 12px 0;
+    padding: 1.2rem 0;
     display: block;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 500px;
+    font-weight: 50rem;
     transition: $ts;
 
     &:hover, &:focus {
@@ -309,19 +329,19 @@ a {
     }
 
     &__icon {
-        margin-left: 2px;
+        margin-left: 0.2rem;
     }
 }
 
 .upload {
-    padding: 45px 35px;
-    border-bottom: 1px solid rgba(#fff, 0.1);
+    padding: 4.5rem 3.5rem;
+    border-bottom: 0.1rem solid rgba(#fff, 0.1);
     color: $color-grey-medium;
 
     &__container {
         background-color: rgba(#fff, 0.03);
-        height: 330px;
-        border-radius: 3px;
+        height: 33rem;
+        border-radius: 0.3rem;
         cursor: pointer;
         display: flex;
         flex-direction: column;
@@ -339,40 +359,40 @@ a {
         // building a 1px border.
         &::before {
             content:'';
-            border: 2px dashed #434747;
+            border: 0.2rem dashed #434747;
             position: absolute;
-            top: -1px;
-            bottom: -1px;
-            left: -1px;
-            right: -1px;
+            top: -0.1rem;
+            bottom: -0.1rem;
+            left: -0.1rem;
+            right: -0.1rem;
         }
     }
 
     &__icon {
-        font-size: 23px;
+        font-size: 2.3rem;
     }
 
     &__text {
         color: #fff;
-        margin-top: 8px;
+        margin-top: 0.8rem;
     }
 
     &__alternative {
-        font-size: 12px;
-        margin-top: -2px;
+        font-size: 1.2rem;
+        margin-top: -0.2rem;
     }
 }
 
 .footer {
-    padding-top: 50px;
-    padding-left: 35px;
-    font-size: 11px;
+    padding-top: 5rem;
+    padding-left: 3.5rem;
+    font-size: 1.1rem;
     color: rgba($color-grey-medium, 0.6);
 
     &__list {
         display: flex;
-        column-gap: 15px;
-        margin-top: 10px;
+        column-gap: 1.5rem;
+        margin-top: 1rem;
     }
 
     &__item {
@@ -398,22 +418,23 @@ a {
     // constructing the gallery grid.
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 272px 60px 90px 64px 30px 208px;
+    grid-template-rows: 27.2rem 6rem 9rem 6.4rem 3rem 20.8rem;
 
     // Responsive. Remove third column as needed.
-    @media (max-width: 1050px) {
+    @media (max-width: $breakpt_large_sm) {
+    // @media (max-width: 1050px) {
         grid-template-columns: 1fr 1fr;
     }
 
     // Responsive. Extend gallery to fit empty steps.
-    @media (max-width: 773px) {
+    @media (max-width: $breakpt_medium) {
         grid-row: 2 / 4;
-        grid-template-rows: 272px 60px 90px 64px 30px 208px 1fr;
+        grid-template-rows: 27.2rem 6rem 9rem 6.4rem 3rem 20.8rem 1fr;
         grid-template-columns: 1fr;
     }
 
     // Responsive. Remove entire gallery as needed.
-    @media (max-width: 604px) {
+    @media (max-width: $breakpt_medium_sm) {
         display: none;
     }
         // place the photos into the grid.
@@ -438,7 +459,8 @@ a {
                 animation: fade-in 1s 0.2s backwards; // delay 0.2s
 
                 // Responsive. Remove 2nd col as needed.
-                @media (max-width: 773px) {
+                @media (max-width: $breakpt_medium) {
+                // @media (max-width: 773px) {
                     display: none;
                 }
             }
@@ -448,7 +470,8 @@ a {
                 grid-row: 1 / 2;
                 animation: fade-in 1s 0.3s backwards; // delay 0.3s
 
-                @media (max-width: 1050px) {               
+                @media (max-width: $breakpt_large_sm) {  
+                // @media (max-width: 1050px) {
                     display: none;
                 }
             }
@@ -465,7 +488,8 @@ a {
                 animation: fade-in 1s 0.5s backwards; // delay 0.5s
 
                 // Responsive. Remove 2nd col as needed.
-                @media (max-width: 773px) {
+                @media (max-width: $breakpt_medium) {
+                // @media (max-width: 773px) {
                     display: none;
                 }
             }
@@ -475,7 +499,8 @@ a {
                 grid-row: 2 / 5;
                 animation: fade-in 1s 0.6s backwards; // delay 0.6s
  
-                @media (max-width: 1050px) {
+                @media (max-width: $breakpt_large_sm) {
+                // @media (max-width: 1050px) {
                     display: none;
                 }
             }
@@ -491,7 +516,8 @@ a {
                 grid-row: 5 / -1;
                 animation: fade-in 1s 0.8s backwards; // delay 0.8s
 
-                @media (max-width: 1050px) {
+                @media (max-width: $breakpt_large_sm) {
+                // @media (max-width: 1050px) {
                     display: none;
                 }
             }
@@ -518,42 +544,42 @@ a {
     
         &__comment {
             background-color: #fff;
-            font-size: 12px;
+            font-size: 1.2rem;
             color: $color-grey-dark;
-            padding: 4px 10px;
-            border-radius: 500px;
+            padding: 0.4rem 1rem;
+            border-radius: 50rem;
             position: absolute; // make comments displayed on top.
     
             &--1 {
-                top: 15px;
-                right: 15px;
+                top: 1.5rem;
+                right: 1.5rem;
             }
     
             &--2 {
-                bottom: 15px;
-                right: 15px;
+                bottom: 1.5rem;
+                right: 1.5rem;
             }
     
             &--3 {
-                top: 15px;
-                left: 15px;
+                top: 1.5rem;
+                left: 1.5rem;
             }
     
             &--4 {
-                bottom: 15px;
-                left: 15px;
+                bottom: 1.5rem;
+                left: 1.5rem;
             }
         }
     
         &__icon {
             color: $color-accent;
-            font-size: 11px;
+            font-size: 1.1rem;
         }
     
         &__number {
-            font-size: 11px;
+            font-size: 1.1rem;
             font-weight: 600;
-            margin-right: 2px;
+            margin-right: 0.2rem;
         }
 }
 
@@ -567,23 +593,24 @@ a {
     align-items: center;
 
     // Responsive. Remove bottom steps as needed.
-    @media (max-width: 773px) {
+    @media (max-width: $breakpt_medium) {
+    // @media (max-width: 773px) {
         display: none;
     }
 }
 
 .step {
     text-align: center;
-    padding: 0 20px;
+    padding: 0 2rem;
 
     &__icon {
-        font-size: 20px;
-        height: 50px;
-        width: 50px;
+        font-size: 2rem;
+        height: 5rem;
+        width: 5rem;
         border-radius: 50%;
         background-color: #fff;
-        margin-bottom: 17px;
-        line-height: 50px;
+        margin-bottom: 1.7rem;
+        line-height: 5rem;
 
         // design trick. offset colors.
         &--1 {
@@ -602,12 +629,13 @@ a {
 
     &__text {
         color: $color-grey-dark;
-        font-size: 12px;
+        font-size: 1.2rem;
         line-height: 1.8;
     }
 
     // Responsive. Remove third step w/ icon as needed.
-    @media (max-width: 955px) {
+    @media (max-width: 59.6875rem) {
+    // @media (max-width: 955px) {
         &:nth-child(3){
             display: none;
         }
@@ -616,7 +644,7 @@ a {
 
 .second-heading {
     color: #161616;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 500;
-    margin-bottom: 6px;
+    margin-bottom: 0.6rem;
 }
