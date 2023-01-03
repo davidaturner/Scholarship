@@ -1,0 +1,19 @@
+interface Person {
+    age: number;
+    name: string;
+}
+const fred = {} as Person;
+fred.age = 57;
+fred.name = 'Fred Wilkenson';
+console.log(fred.name + " is " + fred.age + " years old.")
+// type assertion
+const personName: any = 'Fred Wilkenson';
+const fredName = <string>personName;
+console.log(`Introducing ${fredName}. Welcome.`);
+
+const firstName = 'John';
+const lastName = 'Smit';
+
+const output = `Name: Mr. ${firstName} ${lastName}, hamburger`;
+console.log(output);
+

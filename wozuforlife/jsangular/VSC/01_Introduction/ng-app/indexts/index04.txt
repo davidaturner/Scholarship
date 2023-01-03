@@ -1,0 +1,13 @@
+const age: number = 32;
+const ageAsString: string = age.toString();
+
+const greeting: string = "Hello, my age is " + ageAsString + ".";
+
+console.log(greeting)
+
+const age2: string = "55";
+const ageAsNumber: number = parseInt(age2);
+
+const numberCalculation: number = ageAsNumber * 10;
+
+console.log(numberCalculation)

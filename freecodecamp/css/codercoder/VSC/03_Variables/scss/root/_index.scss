@@ -1,0 +1,9 @@
+// CSS custom properties.
+:root {
+    --background-color: hsl(0, 0%, 11%);
+    --text-color: hsl(0, 0%, 100%);
+    // --text-color: red;
+}
+
+// Sass variable. 
+$font: "Montserrat", sans-serif;

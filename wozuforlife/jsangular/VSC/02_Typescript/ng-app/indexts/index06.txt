@@ -1,0 +1,21 @@
+// using interfaces without classes MAKES sense if only
+// attributes are being used.
+// need more information.
+
+// In Lesson 1, you learned about Type Assertion where 
+// you can define the type using the <> syntax. You can do 
+// this as well with interfaces! The type is the interface 
+// itself.
+interface Shape {
+    sides: number;
+}
+
+interface Triangle extends Shape {
+    angles: number[];
+}
+
+let equilateral = <Triangle>{};
+equilateral.sides = 3;
+equilateral.angles = [60, 60, 60];
+
+console.log(equilateral);

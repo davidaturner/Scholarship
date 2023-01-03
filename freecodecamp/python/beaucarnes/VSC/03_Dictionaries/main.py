@@ -6,7 +6,8 @@ def get_choices():
     return choices
 
 choices = get_choices()
-print(choices)
+print(f'Player chose: {choices["player"]}. Computer chose: {choices["computer"]}')
+
 
 dict = {"name" : "beau carnes", "choices" : choices}
 print(dict)

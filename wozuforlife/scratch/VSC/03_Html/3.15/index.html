@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
+        }
+        table {
+            border: 3px solid salmon;
+        }
+        td {
+            border: 1px solid pink;
+        }
+    </style>
+</head>
+<body>
+<form>
+  First Name: <input type="text" name="firstname" placeholder="First Name"><br>
+  Last Name: <input type="text" name="firstname" placeholder="Last Name"><br>
+  Gender:
+  <select name="gender">
+    <option selected value="M">Male</option>
+    <option value="F">Female</option>
+    <option value="O">Other</option>
+  </select><br>
+  Age: <br>
+  <input type="radio" id="Child" name="age" value="0-17"/>
+  <label for="Child">0-17</label><br>
+  <input type="radio" id="Adult1" name="age" value="18-40"/>
+  <label for="Adult1">18-40</label><br>
+  <input type="radio" id="Adult2" name="age" value="41-60"/>
+  <label for="Adult2">41-60</label><br>
+  <input type="radio" id="Adult3" name="age" value="61 and above"/>
+  <label for="Adult3">61 and above</label><br>
+  <button type="submit">Submit Me</button>
+</form>
+</body>
+</html>

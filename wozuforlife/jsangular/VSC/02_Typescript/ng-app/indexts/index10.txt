@@ -1,0 +1,40 @@
+// function taking a generic argument.
+function identitya(argument: any): any {
+    return argument;
+}
+console.log(identitya("Yummy"));
+
+// generic function
+// It works over a range of types. This function works almost the same way 
+// as using type any, except now it won't lose the information of the argument 
+// that was passed in. If a number or a string is passed in, it will know what 
+// type the argument is.
+function identityt<T>(argument: T): T {
+    console.log(typeof argument);
+    return argument;
+}
+
+identityt("Polish");
+identityt("Collins");
+identityt(20);
+
+function identifyType<T>(argument: T): string {
+    let argType: string = '';
+
+    switch (typeof argument) {
+        case 'number':
+            argType = 'number';
+            break;
+        case 'string':
+            argType = 'string';
+            break;
+        default:
+            argType = 'neither a number nor a string';
+    }
+
+    return 'You passed in a ' + argType + ', whose value is ' + argument;
+}
+
+console.log(identifyType(42));
+console.log(identifyType("Barb"));
+console.log(identifyType(false));

@@ -1,0 +1,16 @@
+// Class expression - unnamed class
+const Rectangle = class {
+    height: number;
+    width: number;
+    constructor(height: number, width: number) {
+        this.height = height;
+        this.width = width;
+    }
+
+    perimeter() {
+        return this.height * 2 + this.width * 2;
+    }
+};
+
+var rect = new Rectangle(11, 12);
+console.log(`Height: ${rect.height} Width: ${rect.width} Perimeter: ${rect.perimeter()}`);

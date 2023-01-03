@@ -1,0 +1,21 @@
+html {
+    box-sizing: border-box;
+    // font-size is set to being 100% of the default font-size 
+    // in your browser. equivalent = 16px;
+    font-size: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    // default the website but keep element defaults
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(0, 0%, 11%);
+    color: hsl(0, 0%, 100%);
+    color: yellowgreen;
+}

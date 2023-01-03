@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
+        }
+        table {
+            border: 3px solid salmon;
+        }
+        td {
+            border: 1px solid pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- Checkboxes will give three options: selected, unselected, and indeterminate. 
+    The value attribute is used to hold the value submitted to the server.
+
+    A group of checkboxes can be individually named, or all have the same name. 
+    Additionally, the value attribute is optional. If the value attribute is set, 
+    then that information gets returned with the name in a key value pair like so: 
+    ColorRed=Red. -->
+<form>
+    <input type="checkbox" id="red" name="ColorRed" value="Red"/>
+    <label for="red">Red</label><br>
+    <input type="checkbox" id="blue" name="ColorBlue" value="Blue"/>
+    <label for="blue">Blue</label><br>
+    <input type="checkbox" id="white" name="ColorWhite" value="White"/>
+    <label for="white">White</label>
+    <br /><br />
+    <input type="checkbox" id="colorRed" name="Red"/>
+    <label for="colorRed">Red</label><br>
+    <input type="checkbox" id="colorBlue" name="Blue"/>
+    <label for="colorBlue">Blue</label><br>
+    <input type="checkbox" id="colorWhite" name="White"/>
+    <label for="colorWhite">White</label>
+</form>
+</body>
+</html>

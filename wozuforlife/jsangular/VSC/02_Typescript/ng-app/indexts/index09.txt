@@ -1,0 +1,48 @@
+class pubRectangle {
+    public height: number;
+    public width: number;
+    public constructor(height: number, width: number) {
+        this.height = height;
+        this.width = width;
+    }
+
+    public perimeter() {
+        return this.height * 2 + this.width * 2;
+    }
+}
+
+class priRectangle {
+    height: number;
+    width: number;
+    constructor(height: number, width: number) {
+        this.height = height;
+        this.width = width;
+    }
+
+    private doubleThe(length:number) {
+        return 2 * length;
+    }
+    perimeter() {
+        return this.doubleThe(this.height) + this.doubleThe(this.width);
+    }
+}
+
+class proRectangle {
+    height: number;
+    width: number;
+    constructor(height: number, width: number) {
+        this.height = height;
+        this.width = width;
+    }
+
+    protected perimeter() {
+        return this.height * 2 + this.width * 2;
+    }
+}
+
+class Square extends proRectangle {
+    // Can access perimeter() method
+    area() {
+        return this.height * this.width;
+    }
+}

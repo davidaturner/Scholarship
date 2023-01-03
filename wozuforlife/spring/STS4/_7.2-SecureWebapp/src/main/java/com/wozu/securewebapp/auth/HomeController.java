@@ -13,7 +13,7 @@ public class HomeController {
 	private UserRepository userRepository;
 	
 	@Autowired
-	private MySQLUserDetailsService userService;
+	private CustomUserDetailsService userService;
 	
     @GetMapping("/")
     public String getHomePage() {
@@ -42,7 +42,7 @@ public class HomeController {
     		User newUser = new User();
     		newUser.setUsername(username);
     		newUser.setPassword(password);
-    		userService.Save(newUser);
+//    		userService.Save(newUser);
     		return "login";
     	}
     	else {

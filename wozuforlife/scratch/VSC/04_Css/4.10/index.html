@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedoclasses</title>
+    <style>
+        div:hover {
+            color: yellow;
+        }
+
+        #topic-link {
+            color: red;
+        }
+
+        #topic-link:visited {
+            color: magenta;
+        }
+
+        #topic-link:hover {
+            color: white;
+        }
+
+        .header :first-child {
+            color: red;
+            font-size: large;
+        }
+
+        .highlights :nth-child(odd) {
+            color: red;
+            font-size: large;
+        }
+
+    </style>
+</head>
+<body>
+    <div>Hover here!</div>
+    <a id="topic-link" href="mypage.com">Link to a page</a>
+
+    <ul class="header">
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+        <li>Fourth</li>
+    </ul>
+
+    <ul class="highlights">
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+        <li>Fourth</li>
+    </ul>
+
+</body>
+</html>

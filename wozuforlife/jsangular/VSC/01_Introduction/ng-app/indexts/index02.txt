@@ -1,0 +1,17 @@
+// Ts types
+var isMarried = true;
+
+var age = 29;
+
+var yougotthis = "You got this!";
+
+var list1: number[] = [1, 2, 3];
+let list2: Array<number> = [1, 2, 3];   // translates into number[]
+
+var whybother: any;
+
+var dontbother: void;   // translates to any
+
+var tarkus: undefined;  // translates to any
+var elp: null;          // translates to any
+

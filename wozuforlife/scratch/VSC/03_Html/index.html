@@ -7,94 +7,31 @@
     <title>Document</title>
     <style>
         body {
-            width: 100vw;
-            height: 90vh;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
         }
-        .container {
-            width: 96%;
-            margin: 43px 23px;
-            height: 98%;
-            color: #fff;
-            background-color: rgb(35, 74, 181);
-            display: flex;
-            flex-direction: column;
+        table {
+            border: 3px solid salmon;
         }
-        .header {
-            width: 95%;
-            margin: 25px auto;
-            height: 15%;
-            background-color: orange;
-        }
-        .nav {
-            width: 95%;
-            height: 50%;
-            background-color: rgb(229, 255, 0);
-            margin: 25px 40px;
-        }
-        .sections {
-            width: 95%;
-            margin: 15px auto;
-            height: 65%;
-            display: flex;
-            flex-direction: row;
-        }
-        .section-left {
-            width: 68%;
-            height: 100%;
-            margin-right: 50px;
-            background-color: green;
-        }
-
-        .header-section-left, .header-section-right {
-            width: 95%;
-            height: 10%;
-            margin: 25px auto 0;
-            background-color: orange;
-        }
-
-        .article-section-left {
-            width: 95%;
-            height: 65%;
-            margin: 25px auto 0;
-            background-color: rgb(121, 90, 121);
-        }
-        .footer-section-left {
-            width: 95%;
-            height: 7%;
-            margin: 25px auto 0;
-            background-color: rgb(124, 124, 212);
-        }
-
-        .section-right {
-            width: 30%;
-            height: 100%;
-            background-color: green;
-        }
-
-        .footer {
-            width: 95%;
-            height: 6%;
-            margin: 10px auto;
-            background-color: rgb(124, 124, 212);
+        td {
+            border: 1px solid pink;
         }
     </style>
 </head>
-<body>pur
-    <div class="container">
-    <header class="header">
-        <nav class="nav"></nav>
-    </header>
-    <div class="sections">
-        <section class="section-left">
-            <header class="header-section-left"></header>
-            <article class="article-section-left"></article>
-            <footer class="footer-section-left"></footer>
-        </section>
-        <section class="section-right">
-            <header class="header-section-right"></header>
-        </section>
-    </div>
-    <footer class="footer"></footer>
-    </div>
+<body>
+<form>
+    First Name: <input type="text" name="firstname" placeholder="First Name">
+    Last Name: <input type="text" name="firstname" placeholder="Last Name"><br />
+    <h4><strong>My Dream Developer Positions</strong></h4>
+    <input type="radio" id="pos1" name="pos"/>
+    <label for="pos1">C# full stack</label><br />
+    <input type="radio" id="pos2" name="pos"/>
+    <label for="pos2">Java/Spring</label><br />
+    <input type="radio" id="pos3" name="pos"/>
+    <label for="pos3">Web Developer</label><br />
+    <input type="radio" id="pos4" name="pos"/>
+    <label for="pos4">Python/Django</label><br /><br />
+    <button type="submit">Submit Me</button>
+</form>
 </body>
 </html>

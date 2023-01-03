@@ -1,0 +1,55 @@
+interface LengthDimension {
+    length: number;
+}
+
+interface WidthDimension {
+    width: number;
+}
+
+interface ShapeCalc {
+    shape: string;
+
+    perimeter():number;
+    area():number;
+}
+
+class Square implements LengthDimension, ShapeCalc {
+    length: number;
+    shape: string;
+    constructor(length:number) {
+        this.length = length;
+        this.shape = "SQUARE";
+    }
+    perimeter() {
+        return this.length * 4;
+    }
+    area() {
+        return this.length * this.length;
+    }
+
+    showCalc() {
+        console.log(this.shape + ": Area: " + this.area() + 
+                        " Perimeter: " + this.perimeter());       
+    }
+}
+
+class Rectangle extends Square implements WidthDimension {
+    width: number;
+    constructor(length: number, width: number) {
+        super(length);
+        this.width = width;
+        this.shape = "RECTANGLE";
+    }
+    perimeter() {
+        return this.length * 2 + this.width * 2;
+    }
+    area() {
+        return this.length * this.width;
+    }
+}
+
+const newRect = new Rectangle(4, 5);
+newRect.showCalc();
+
+const newSquare = new Square(5);
+newSquare.showCalc();

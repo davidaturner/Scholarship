@@ -1,0 +1,17 @@
+console.log(multiplyValues(5, 6));
+
+// functions are automatically hoisted to the top.
+function multiplyValues(a:number, b:number) {
+    return a * b;
+}
+
+// class must be defined before it is used.
+// not automatically hoisted (neither are the functions 
+// WITHIN a class)
+class mathExample {
+    multiplyValues(a:number, b:number) {
+        return a * b;
+    }
+}
+var example = new mathExample();
+console.log(example.multiplyValues(5, 6));
