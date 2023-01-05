@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin: 0 20px;
+        }
+        .container {
+            width: 500px;
+            height: 600px;
+            margin: 30px 50px;
+            background-color: gainsboro;
+            position: relative;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin-top: 30px;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Margin clears an area around the border that separates it from other boxes. 
+    The CSS margin properties allow you to set the margins around the sides of an 
+    element's box. The margins do not have a background-color, they are entirely 
+    transparent. -->
+
+        <!-- This shorthand notation can take one, two, three, or four whitespace separated 
+        values:
+        If one value is set, this is applied to all of the four sides.
+        If two values are specified, the first value is applied to the top and bottom, 
+        and the second value is applied to the right and left side.
+        If three values are specified, the first value is applied to the top, the second 
+        value is applied to left and right side and the last value is applied to the bottom.
+        If four values are specified, they are applied to the top, right, bottom, and left 
+        side respectively in the specified order. -->
+    <div class="container">
+        <h1>A couple of Boxes!</h1>
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+    </div>
+</body>
+</html>

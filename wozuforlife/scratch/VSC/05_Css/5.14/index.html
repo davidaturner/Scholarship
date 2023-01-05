@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-size: 22px;
+        }
+
+        .container {
+            width: 800px;
+            height: 700px;
+            font-size: 22px;
+            padding: 10px;
+            border: 1px solid gainsboro;
+        }
+
+        p.first {
+            width: 350px;
+            padding: 10px;
+            color: greenyellow;
+        }
+
+        p.second {
+            width: 300px;
+            padding: 10px 10px 10px 0;
+            float: left;
+            color: red;
+        }
+        div.second {
+            width: 300px;
+            padding: 10px 0, 10px 10px;
+            float: right;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="first">
+            Programming involves activities such as; analysis, developing understanding, 
+            generating algorithms, verification of requirements of algorithms including 
+            their correctness and resources consumption, and implementation of algorithms 
+            in a target programming language.
+        </p>
+        <div class="first">
+            The source code is written in one or more programming languages. The purpose 
+            of programming is to find a sequence of instructions that will automate 
+            performing a specific task or solve a given problem.
+        </div>
+        <p class="second">
+            Programming involves activities such as; analysis, developing understanding, 
+            generating algorithms, verification of requirements of algorithms including 
+            their correctness and resources consumption, and implementation of algorithms 
+            in a target programming language.
+        </p>
+        <div class="second">
+            The source code is written in one or more programming languages. The purpose 
+            of programming is to find a sequence of instructions that will automate 
+            performing a specific task or solve a given problem.
+        </div>
+    </div>
+
+
+</body>
+</html>

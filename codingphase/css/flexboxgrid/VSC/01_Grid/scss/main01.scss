@@ -1,0 +1,58 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 50px;
+}
+
+.wrapper {
+    display: grid;
+    // // two columns.
+    // grid-template-columns: 1fr 1fr;
+    // // three columns.
+    // grid-template-columns: 1fr 1fr 1fr;
+    // // four columns.
+    // grid-template-columns: 1fr 1fr 1fr 1fr;
+    // // five columns.
+    // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    // equal parts.
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    // // 3rd twice the size
+    // grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr;
+    // // bootstrap - 12 equal parts.
+    // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.box {
+
+}
+
+.box-1 {
+    background-color: red;
+}
+
+.box-2 {
+    background-color: yellow;
+}
+
+.box-3 {
+    background-color: purple;
+    color: ghostwhite;
+}
+
+.box-4 {
+    background-color: blue;
+    color: ghostwhite;
+}
+
+.box-5 {
+    background-color: orange;
+}
+
+.box-6 {
+    background-color: grey;
+    color: ghostwhite;
+}
