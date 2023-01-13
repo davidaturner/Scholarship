@@ -10,20 +10,20 @@ h1 {
 
 .wrapper {
     display: grid;
-    // four columns.
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 20px;
-    row-gap: 30px; // bootstrap uses 30px gaps
-    grid-template-rows: minmax(200px, end);
+    // two columns. lines 1, 2, 3
+    grid-template-columns: 1fr 1fr;
+    // three rows. lines 1, 2, 3, 4
+    grid-auto-rows: minmax(200px, auto);
 }
 
 .box {
-    border: 5px solid green;
-    padding: 15px;
+
 }
 
 .box-1 {
     background-color: red;
+    // stretch the moved Box 1 down two slots.
+    grid-row: 1 / 4;
 }
 
 .box-2 {
@@ -38,6 +38,9 @@ h1 {
 .box-4 {
     background-color: blue;
     color: ghostwhite;
+    // move box to first row, first column.
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
 .box-5 {

@@ -12,18 +12,19 @@ h1 {
     display: grid;
     // four columns.
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 20px;
-    row-gap: 30px; // bootstrap uses 30px gaps
-    grid-template-rows: minmax(200px, end);
+    grid-template-rows: 600px 175px;
+    // make all rows a minimum of 200px
+    // or as high as it needs to cover content.
+    // grid-auto-rows: minmax(200px, auto);
 }
 
 .box {
-    border: 5px solid green;
-    padding: 15px;
+
 }
 
 .box-1 {
     background-color: red;
+    // height: 200px;
 }
 
 .box-2 {

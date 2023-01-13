@@ -10,16 +10,24 @@ h1 {
 
 .wrapper {
     display: grid;
-    // four columns.
+    // // two columns.
+    // grid-template-columns: 1fr 1fr;
+    // // three columns.
+    // grid-template-columns: 1fr 1fr 1fr;
+    // // four columns.
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 20px;
-    row-gap: 30px; // bootstrap uses 30px gaps
-    grid-template-rows: minmax(200px, end);
+    // // five columns.
+    // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    // equal parts.
+    // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    // // 3rd twice the size
+    // grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr;
+    // // bootstrap - 12 equal parts.
+    // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .box {
-    border: 5px solid green;
-    padding: 15px;
+
 }
 
 .box-1 {

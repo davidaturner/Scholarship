@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>2D transform</title>
+<style> 
+.transform {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: translate(0, 0);
+  /* transform: translate(50px,100px); */
+  transition: all 1s;
+}
+.transform:hover {
+      transform: translate(50px,100px);
+}
+</style>
+</head>
+<body>
+
+<h1>The translate() Method</h1>
+<p>The translate() method moves an element from its current position:</p>
+
+<div class="transform">
+This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
+</div>
+
+</body>
+</html>
