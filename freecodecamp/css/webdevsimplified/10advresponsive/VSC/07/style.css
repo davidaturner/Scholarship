@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    margin: 0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    /* margin: 20px; */
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 5px;
+}
+

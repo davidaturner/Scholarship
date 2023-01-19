@@ -22,10 +22,11 @@
 </head>
 <body>
     <div class="container"></div>  
+        <!-- if breakpoint is specified, for breakpoint greater it is the value-->
         <div class="row">
-            <!-- you can add space between columns by offset X number of cols-->
-            <div class="col-3"><div class="box"></div></div>
-            <div class="col-4 offset-5"><div class="box"></div></div>
+            <!-- if LG breakpoint, go 4 columns, otherwise fill it up to eight columns-->
+            <div class="col-lg-4 col-8"><div class="box"></div></div>
+            <div class="col-4"><div class="box"></div></div>
         </div>
     </div>
 </body>

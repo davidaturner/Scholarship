@@ -11,7 +11,7 @@ h1 {
 
 .container {
     max-width: 1200px;
-    // margin: 0 auto;
+    margin: 0 auto;
 }
 
 // to make grid system emulate bootstrap 
@@ -74,7 +74,6 @@ h1 {
 }
 
 .box-4 {
-    font-size: 1.35rem;
     background-color: blue;
     color: ghostwhite;
     grid-column: 1 / 10;
@@ -92,43 +91,4 @@ h1 {
     color: ghostwhite;
     grid-column: 1 / 13;
     grid-row: 7 / 11;
-}
-
-@media screen and (max-width: 1200px) {
-    .box-2 {
-        grid-column: 1 / 13;
-        grid-row: 7 / 18;
-    }
-    .box-3 {
-        grid-column: 1 / 6;
-    }
-    .box-4 {
-        grid-column: 1 / 13;
-    }
-    .box-5 {
-        grid-column: 6 / 13;
-    }
-    .box-6 {
-        grid-row: 18 / 20;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .box-3 {
-        grid-column: 1 / 13;
-        grid-row: 4 / 7;
-    }
-    .box-4 {
-        font-size: 1.1remm;
-    }
-    .box-5 {
-        grid-column: 1 / 13;
-        grid-row: 3 / 4;
-    }
-}
-
-@media screen and (max-width: 567px) {
-    .box4 {
-        font-size: 0.9rem;
-    }
 }

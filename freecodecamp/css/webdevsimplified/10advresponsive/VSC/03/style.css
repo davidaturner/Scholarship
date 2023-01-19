@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: rebeccapurple;
+    border: 10px solid pink;
+}
+
+/* media query ranges */
+/* use css parameters and comparison ops. */
+/* may not have browser support - safari */
+@media (150px < width <= 400px) {
+    .box {
+        background-color: red;
+    }
+}
