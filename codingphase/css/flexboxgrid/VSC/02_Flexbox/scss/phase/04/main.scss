@@ -6,17 +6,15 @@
     background-color: gainsboro;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around; // space evenly in between only. 
-    height: 575px;
-    align-items: stretch; // make sure .box height: 0px to see effect.
-    // align-items: center;
-    // align-items: flex-end;
-    // align-items: flex-start;
+    justify-content: space-evenly; // space evenly with space in start and end
+    // justify-content: center;    // push to middle of container
+    // justify-content: flex-end;  // push to end of container
+    // justify-content: flex-start;   // push to beginning of container
 }
 
 .box {
     width: 100px;
-    // height: 100px;
+    height: 100px;
     background-color: red;
     border: 1px solid black;
 }

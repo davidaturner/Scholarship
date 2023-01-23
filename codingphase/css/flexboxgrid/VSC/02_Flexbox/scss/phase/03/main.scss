@@ -3,20 +3,15 @@
 }
 
 .wrapper {
-    background-color: gainsboro;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around; // space evenly in between only. 
-    height: 575px;
-    align-items: stretch; // make sure .box height: 0px to see effect.
-    // align-items: center;
-    // align-items: flex-end;
-    // align-items: flex-start;
+    // flex-flow: row; // shortcut of flex-direction and flex-wrap;
+    // flex-flow: column;
+    flex-flow: row wrap-reverse;
 }
 
 .box {
     width: 100px;
-    // height: 100px;
+    height: 100px;
     background-color: red;
     border: 1px solid black;
 }
