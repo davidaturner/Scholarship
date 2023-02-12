@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background-color: gainsboro;
+    height: 700px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    // align-items: center;             // align items on the row.
+    align-content: stretch;             // align rows
+    // align-content: space-around;
+    // align-content: space-between;
+    // align-content: center;
+    // align-content: flex-end;
+    // align-content: flex-start;
+}
+
+.box {
+    width: 100px;
+    // height: 100px;
+    background-color: red;
+    border: 1px solid black;
+}
+
+.box1 {
+    background-color: red;
+}
+
+.box2 {
+    background-color: red;
+}
+
+.box3 {
+    width: 400px;
+    background-color: blue;
+}
+
+.box4 {
+    background-color: red;
+}
+
+.box5 {
+    background-color: red;
+}
+
+.box6 {
+    width: 250px;
+    background-color: yellow;
+}
