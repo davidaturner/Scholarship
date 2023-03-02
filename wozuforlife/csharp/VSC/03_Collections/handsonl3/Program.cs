@@ -1,4 +1,5 @@
 ﻿using System;
+using handsonl3.solutions;
 
 namespace handsonl3
 {
@@ -6,7 +7,9 @@ namespace handsonl3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // Console.WriteLine("Hello World!");
+            HaveYouSeenMe hysm = new HaveYouSeenMe();
+            hysm.runSolution1();
         }
     }
 }

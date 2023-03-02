@@ -1,0 +1,16 @@
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\10_Final\finalproject\bin\MCD\Debug\net5.0\finalproject.exe
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\10_Final\finalproject\bin\MCD\Debug\net5.0\finalproject.deps.json
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\10_Final\finalproject\bin\MCD\Debug\net5.0\finalproject.runtimeconfig.json
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\10_Final\finalproject\bin\MCD\Debug\net5.0\finalproject.runtimeconfig.dev.json
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\10_Final\finalproject\bin\MCD\Debug\net5.0\finalproject.dll
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\10_Final\finalproject\bin\MCD\Debug\net5.0\ref\finalproject.dll
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\10_Final\finalproject\bin\MCD\Debug\net5.0\finalproject.pdb
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\10_Final\finalproject\obj\MCD\Debug\net5.0\finalproject.csproj.AssemblyReference.cache
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\10_Final\finalproject\obj\MCD\Debug\net5.0\finalproject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\10_Final\finalproject\obj\MCD\Debug\net5.0\finalproject.AssemblyInfoInputs.cache
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\10_Final\finalproject\obj\MCD\Debug\net5.0\finalproject.AssemblyInfo.cs
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\10_Final\finalproject\obj\MCD\Debug\net5.0\finalproject.csproj.CoreCompileInputs.cache
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\10_Final\finalproject\obj\MCD\Debug\net5.0\finalproject.dll
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\10_Final\finalproject\obj\MCD\Debug\net5.0\ref\finalproject.dll
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\10_Final\finalproject\obj\MCD\Debug\net5.0\finalproject.pdb
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\10_Final\finalproject\obj\MCD\Debug\net5.0\finalproject.genruntimeconfig.cache

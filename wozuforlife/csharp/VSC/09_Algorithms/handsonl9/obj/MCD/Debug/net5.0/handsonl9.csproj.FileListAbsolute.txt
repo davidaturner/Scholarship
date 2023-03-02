@@ -1,0 +1,16 @@
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\09_Algorithms\handsonl9\bin\MCD\Debug\net5.0\handsonl9.exe
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\09_Algorithms\handsonl9\bin\MCD\Debug\net5.0\handsonl9.deps.json
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\09_Algorithms\handsonl9\bin\MCD\Debug\net5.0\handsonl9.runtimeconfig.json
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\09_Algorithms\handsonl9\bin\MCD\Debug\net5.0\handsonl9.runtimeconfig.dev.json
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\09_Algorithms\handsonl9\bin\MCD\Debug\net5.0\handsonl9.dll
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\09_Algorithms\handsonl9\bin\MCD\Debug\net5.0\ref\handsonl9.dll
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\09_Algorithms\handsonl9\bin\MCD\Debug\net5.0\handsonl9.pdb
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\09_Algorithms\handsonl9\obj\MCD\Debug\net5.0\handsonl9.csproj.AssemblyReference.cache
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\09_Algorithms\handsonl9\obj\MCD\Debug\net5.0\handsonl9.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\09_Algorithms\handsonl9\obj\MCD\Debug\net5.0\handsonl9.AssemblyInfoInputs.cache
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\09_Algorithms\handsonl9\obj\MCD\Debug\net5.0\handsonl9.AssemblyInfo.cs
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\09_Algorithms\handsonl9\obj\MCD\Debug\net5.0\handsonl9.csproj.CoreCompileInputs.cache
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\09_Algorithms\handsonl9\obj\MCD\Debug\net5.0\handsonl9.dll
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\09_Algorithms\handsonl9\obj\MCD\Debug\net5.0\ref\handsonl9.dll
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\09_Algorithms\handsonl9\obj\MCD\Debug\net5.0\handsonl9.pdb
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\09_Algorithms\handsonl9\obj\MCD\Debug\net5.0\handsonl9.genruntimeconfig.cache

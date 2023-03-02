@@ -11,8 +11,8 @@ namespace lessons
          */
         static void Main(string[] args)
         {
-            _01_10.run();
-            // Console.WriteLine("Hello World!");
+            // _01_10.run();
+            Console.WriteLine("Hello World!");
         }
     }
 }

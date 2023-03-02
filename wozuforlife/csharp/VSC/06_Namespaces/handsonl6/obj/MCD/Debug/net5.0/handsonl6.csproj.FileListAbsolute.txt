@@ -1,0 +1,16 @@
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\06_Namespaces\handsonl6\bin\MCD\Debug\net5.0\handsonl6.exe
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\06_Namespaces\handsonl6\bin\MCD\Debug\net5.0\handsonl6.deps.json
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\06_Namespaces\handsonl6\bin\MCD\Debug\net5.0\handsonl6.runtimeconfig.json
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\06_Namespaces\handsonl6\bin\MCD\Debug\net5.0\handsonl6.runtimeconfig.dev.json
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\06_Namespaces\handsonl6\bin\MCD\Debug\net5.0\handsonl6.dll
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\06_Namespaces\handsonl6\bin\MCD\Debug\net5.0\ref\handsonl6.dll
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\06_Namespaces\handsonl6\bin\MCD\Debug\net5.0\handsonl6.pdb
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\06_Namespaces\handsonl6\obj\MCD\Debug\net5.0\handsonl6.csproj.AssemblyReference.cache
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\06_Namespaces\handsonl6\obj\MCD\Debug\net5.0\handsonl6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\06_Namespaces\handsonl6\obj\MCD\Debug\net5.0\handsonl6.AssemblyInfoInputs.cache
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\06_Namespaces\handsonl6\obj\MCD\Debug\net5.0\handsonl6.AssemblyInfo.cs
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\06_Namespaces\handsonl6\obj\MCD\Debug\net5.0\handsonl6.csproj.CoreCompileInputs.cache
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\06_Namespaces\handsonl6\obj\MCD\Debug\net5.0\handsonl6.dll
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\06_Namespaces\handsonl6\obj\MCD\Debug\net5.0\ref\handsonl6.dll
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\06_Namespaces\handsonl6\obj\MCD\Debug\net5.0\handsonl6.pdb
+C:\Users\Turner\source\repos\Scholarship\wozuforlife\csharp\VSC\06_Namespaces\handsonl6\obj\MCD\Debug\net5.0\handsonl6.genruntimeconfig.cache
