@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Examples</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    <style>
+        div {
+            border: 1px solid pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- Many forms use labels to give some context of what an input is for. In HTML you'd 
+    add the for attribute to associate a label with an input based on its id. However, 
+    Bootstrap does not know about this relationship, so you'll define it by wrapping 
+    the label and input together into a Form-Group. This will provide optimum spacing 
+    between the label and input when Bootstrap tries to apply styles to your controls.
+
+    To group form elements together, you can create a wrapper element with the class 
+    form-group. Then put the form elements inside of the wrapper.  -->
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="form-group">
+                    <label for="input1">Sample label</label>
+                    <input type="text" class="form-control" id="input1" placeholder="Sample Text">
+                </div>
+                <div class="form-group">
+                    <label for="input2">Another label</label>
+                    <input type="text" class="form-control" id="input2" placeholder="Sample Text">
+                </div>
+            </div>
+        </form>
+        <!-- <form>
+            <div class="form-group row">
+                <label for="input1">Sample label</label>
+                <input type="text" class="form-control" id="input1" placeholder="Sample Text">
+            </div>
+            <div class="form-group">
+                <label for="input2">Another label</label>
+                <input type="text" class="form-control" id="input2" placeholder="Sample Text">
+            </div>
+        </form> -->
+    </div>
+</body>
+</html>

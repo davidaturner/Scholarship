@@ -1,0 +1,12 @@
+/* Breakpoints sm-md-lg-xl: 576px 768px 992px 1200px */
+@media (max-width: 576px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+.container,
+.container-fluid {
+    height: 250px;
+    border: 1px solid pink;
+}

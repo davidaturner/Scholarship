@@ -1,0 +1,34 @@
+/* Did you figure out which CSS property was not working correctly? 
+
+If not, it was because the body property was not changing the background of 
+the page to whatever color you chose (in this example, aquamarine). 
+
+The reason for this is not all CSS will live within the app.component.css file. 
+In this application, the index.html file is located under src and not under src/app, 
+this is the HTML file that is actually being served to the webpage. Keep in mind 
+that as new components are generated, they will all live under src/app in their own 
+containing folder. 
+
+When using CSS with this type of project, you must be sure the element exists within 
+the context of the component. 
+
+For example, if you copy and paste the CSS provided from the previous example above,
+the body attributes will be ignored, this is because there is no body element within 
+the context of this component. To get the body to change color, move the rule into 
+the style.css file located in src like so.
+*/
+
+/* body {
+    background-color: aquamarine;
+} */
+
+#header {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header img {
+    max-width: 300px;
+    border: 1px solid black;
+    box-shadow: 2px 5px 2px rgb(166, 166, 166);
+}

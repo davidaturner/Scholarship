@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-container {
+    color: white;
+    background-color: blue;
+    padding: 20px 0;
+
+    display: flex;
+    /* The justify-content: center property has the same effect as adding a 
+    margin: 0 auto to the menu element. Did you notice that you added this property 
+    to the parent element, menu-container, instead of directly to the element you 
+    wanted to center, menu? Manipulating flex items through their parent container 
+    is a common theme in Flexbox. There are five values for the justify-content 
+    property. 
+    center 
+    flex-start 
+    flex-end 
+    space-around 
+    space-between 
+    Try playing with 
+    the other justify-content values, replace center with flex-start and refresh 
+    the browser. */
+    justify-content: center;
+}
+
+.menu {
+    border: 1px solid white;
+    width: 900px;
+}

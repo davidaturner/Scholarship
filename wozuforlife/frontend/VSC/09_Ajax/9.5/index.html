@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery and Ajax</title>
+    <script type="text/javascript" 
+        src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+    <p>Click on the button to load info.html file</p>
+
+    <div id="stage" style="background-color:yellow;">
+        LOAD INFORMATION HERE
+    </div>
+
+    <input type="button" id="driver" value="Load Data" />
+    <script>
+        // The load() method is constructed like so:
+        // [selector].load(URL, [data], [callback]);
+        // Each parameter is described in-depth below:
+
+        // URL - The URL of the server-side resource to which the request is sent. 
+        // It could be CGI, ASP, JSP, or PHP script which generates data dynamically 
+        // or out of a database.
+        // data - This optional parameter represents an object whose properties are 
+        // serialized into properly encoded parameters to be passed to the request. If 
+        // specified, the request is made using the POST method. If omitted, the GET 
+        // method is used.
+        // callback - A callback function invoked after the response data has been 
+        // loaded into the elements of the matched set. The first parameter passed 
+        // to this function is the response text received from the server and second 
+        // parameter is the status code.
+
+        $(function() {
+            $("#driver").click(function(event) {
+                $("#stage").load("info.html");
+            });
+        });
+    </script>
+</body>
+</html>

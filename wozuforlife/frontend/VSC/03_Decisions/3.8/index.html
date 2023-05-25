@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    Enter:  <input type="text" id="demo">
+    <input type="button" id="clicked" onClick="hello()" value="Click Me!">
+    <h1 id="message"></h1>
+
+    <script defer>
+
+        function hello() {
+            // console.log("Hello, James!");
+            let demo = document.getElementById("demo").value.toString();
+            let message = document.getElementById("message");
+            // message.innerHTML = "<h1 style='color:red'>Hello, Thurber!</h1>";
+            message.innerHTML = "<h1 style='color:green'>Hello, " + 
+                                demo.toUpperCase() + "!</h1>";
+        }
+    </script>
+</body>
+</html>

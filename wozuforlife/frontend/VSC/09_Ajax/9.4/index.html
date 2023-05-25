@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- AJAX stands for Asynchronous JavaScript and XML. This technology helps to 
+    load data from the server without refreshing the browser page. Ajax uses XHTML 
+    for content, CSS for presentation, along with the DOM and JavaScript for 
+    dynamic content display. Conventional web applications transmit information to 
+    and from the server using simultaneous requests. It means that once you fill 
+    out a form and have hit the submit button, you will be directed to a new page 
+    with new information that has come from the server.
+
+    With AJAX, when you hit submit, JavaScript will make a request to the server, 
+    decipher the results, and then update the current screen. This process allows 
+    the user to continue using the application while the client program requests 
+    information from the server in the background. -->
+    <h2>Using the XMLHttpRequest Object</h2>
+
+    <div id="demo">
+        <button type="button" onclick="loadXMLDoc()">Change Content</button>
+    </div>
+
+    <script>
+        function loadXMLDoc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("demo").innerHTML =
+                this.responseText;
+                }
+        };
+        xhttp.open("GET", "xmlhttp_info.txt", true);
+        xhttp.send();
+        }
+    </script>
+</body>
+</html>

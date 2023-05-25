@@ -1,0 +1,11 @@
+{
+  "name": "2.1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start" : "tsc --target ES2016 && node app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

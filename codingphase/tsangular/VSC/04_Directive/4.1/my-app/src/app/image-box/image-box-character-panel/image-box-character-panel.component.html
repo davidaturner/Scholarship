@@ -1,0 +1,16 @@
+<div style="color:yellow">
+    <h3>Cast of Characters</h3>
+
+    <!-- ngFor-->
+    <ul>
+        <li *ngFor="let character of characters; index as i; 
+        first as myfirst;
+        last as mylast">
+            {{i+1}}. Name: {{character.name}} <br/>
+            Planet: {{character.planet}}
+            <div *ngIf="myfirst" style="width:20px;height:20px;background:red"></div>
+            <div *ngIf="mylast" style="width:20px;height:20px;background:olivedrab"></div>
+        </li>
+    </ul>
+</div>
+

@@ -1,0 +1,16 @@
+<div id="image-box">
+    <!-- <h4>{{this.characters[0].name}}</h4> -->
+    <div class="left">
+        <img src="../../assets/WIN_20150713_121138.JPG" alt="photo">
+        <app-title></app-title>
+    </div>
+    <div class="right">
+        <h3>Characters</h3>
+        <ul>
+            <li *ngFor="let character of characters">Name: {{character.name}}<br/>Planet: {{character.planet}}</li>
+            <!-- <li>Name: Goku<br/>Planet: Earth</li> -->
+        </ul>
+    </div>
+</div>
+
+

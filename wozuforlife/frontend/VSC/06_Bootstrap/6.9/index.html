@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Examples</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .container,
+        .container-fluid {
+            background-color: lightseagreen;
+        }
+        .col {
+            border: 1px solid pink;
+        }
+    </style>
+</head>
+<body>
+<!-- If you want each column within a row to align itself vertically separate from the 
+rest of the columns, you can use one of the following classes on the column itself.
+
+align-self-start: Aligns the column to the top of the row.
+align-self-center: Aligns the column to the center of the row.
+align-self-end: Aligns the column to the bottom of the row. -->
+<div class="container">
+    <div class="row" style="height: 200px; border: 1px dotted blue;">
+        <div class="col align-self-start">One of three columns</div>
+        <div class="col align-self-center">One of three columns</div>
+        <div class="col align-self-end">One of three columns</div>
+    </div>
+</div>
+</body>
+</html>

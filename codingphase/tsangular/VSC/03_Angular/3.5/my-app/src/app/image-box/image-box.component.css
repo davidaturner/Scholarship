@@ -1,0 +1,30 @@
+#image-box {
+    max-width: 600px;
+    border: 2px solid pink;
+    color: green;
+    background-color:yellowgreen;
+    margin: 0;
+    display: flex;
+}
+
+#image-box h4 {
+    padding-left: 10px;
+}
+
+#image-box img {
+    width: 95%;
+    padding: 10px;
+}
+
+.left {
+    background-color: lightgreen;
+    max-width: 300px;
+    /* padding: 20px; */
+}
+
+.right {
+    color: ghostwhite;
+    background-color: darkolivegreen;
+    padding: 20px;
+    width: 300px;
+}

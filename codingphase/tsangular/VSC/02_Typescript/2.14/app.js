@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const manager_1 = require("./classes/manager");
+const worker_1 = require("./classes/worker");
+let billy = new manager_1.Manager("Billy", 32, "New York City", "New York");
+billy.fullwelcome();
+billy.giveorders();
+let momer = new worker_1.Worker("Momer", 47, "Chicago", "Illinois");
+momer.fullwelcome();
+momer.takesorders();

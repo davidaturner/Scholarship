@@ -1,0 +1,14 @@
+<!-- Components, signified by the decorator @Component, are the most fundamental 
+building blocks in developing the User Interface of an Angular application. 
+An Angular application is simply a collection of Angular components. -->
+<div>
+  <h3>Skills: </h3>
+  
+  <ul>
+    <li *ngFor="let skill of skills">
+        <p>{{skill.id + 1}}. {{skill.name}}: {{skill.level}}</p>
+    </li>
+    <!-- <li *ngFor="let skill of skills">{{skill.name}}</li> -->
+  </ul>
+  <!-- <p>{{ skills }}</p> -->
+</div>

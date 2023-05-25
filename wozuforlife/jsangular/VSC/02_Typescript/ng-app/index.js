@@ -1,35 +1,23 @@
 "use strict";
-// function taking a generic argument.
-function identitya(argument) {
-    return argument;
-}
-console.log(identitya("Yummy"));
-// generic function
-// It works over a range of types. This function works almost the same way 
-// as using type any, except now it won't lose the information of the argument 
-// that was passed in. If a number or a string is passed in, it will know what 
-// type the argument is.
-function identityt(argument) {
-    console.log(typeof argument);
-    return argument;
-}
-identityt("Polish");
-identityt("Collins");
-identityt(20);
-function identifyType(argument) {
-    let argType = '';
-    switch (typeof argument) {
-        case 'number':
-            argType = 'number';
-            break;
-        case 'string':
-            argType = 'string';
-            break;
-        default:
-            argType = 'neither a number nor a string';
+class Entry {
+    constructor(firstName, lastName, birthday) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthday = birthday;
     }
-    return 'You passed in a ' + argType + ', whose value is ' + argument;
 }
-console.log(identifyType(42));
-console.log(identifyType("Barb"));
-console.log(identifyType(false));
+const newPerson = new Entry("Albert", "Einstein", new Date());
+// First Name: Albert, Last Name: Einstein, Birthday: Wed May 14 1879 00:00:00 GMT-0700 (MST)
+console.log(`First Name: ${newPerson.firstName} Last Name: ${newPerson.lastName}  Birthday: ${newPerson.birthday}`);
+console.log(newPerson.birthday);
+console.log("" + newPerson.birthday);
+const numbers = ['twelve', 'one-hundred', 'sixteen', 'forty-four',
+    'seventy-three', 'three-million'];
+// const numbers = ['twelve', 'one-hundred', 'sixteen', 'forty-four', 
+// 'seventy-three', 'three-million'];
+function sortArray(array) {
+    return array.sort();
+}
+console.log(`Before: ${numbers}`);
+// const after = numbers.sort();
+console.log(`After: ${sortArray(numbers)}`);

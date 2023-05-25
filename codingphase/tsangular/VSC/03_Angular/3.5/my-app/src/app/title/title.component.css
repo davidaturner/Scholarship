@@ -1,0 +1,12 @@
+div {
+    width: 500px;
+    height: 150px;
+    background-color: olivedrab;
+    color: ghostwhite;
+}
+
+div h3 {
+    width: 95%;
+    margin:0;
+    padding: 10px;
+}

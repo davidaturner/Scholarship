@@ -1,0 +1,19 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+div {
+    width: 90%;
+    margin: 5px auto;
+    border: 1px solid red;
+}
+
+.fullname {
+    color: red;
+    font-size: 22px;
+}
+
+.secondline {
+    font-size: 18px;
+}

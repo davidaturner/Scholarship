@@ -1,0 +1,59 @@
+// Decorators provide a way to add functionality to parts of an application or program 
+// and are used extensively in Angular. Decorators, denoted by the @ sign, are 
+// functions (including necessary parameters, explained further on) that are evaluated 
+// by another function at runtime with information about the declaration. To better 
+// understand decorators, some points first need to be understood:
+
+// Decorators are called when the class is declared, not when an object is instantiated.
+// A valid decorator should be:
+
+// Assignable to one of the following decorator types: 
+// (Class | Property | Method | Parameter)
+// Return a value that is assignable to the decorated value.
+// When implementing decorators, there are different parameters needed based on the 
+// type of decorator. In this lesson, you will only focus on the prominent three: 
+// Class, Property, and Method decorators.
+
+// Method decorator
+// A method decorator requires the three following parameters:
+
+// target: The prototype (Object) of the class.
+// propertyKey: The name (string) of the method being decorated.
+// descriptor: A descriptor (PropertyDescriptor) of the given property if it 
+// exists on the object, otherwise undefined.
+function methodDecorator(target: Object, propertyKey: string, 
+    descriptor: PropertyDescriptor): any {
+    // store the original class method in `oldValue`
+    let oldValue = descriptor.value;
+
+    // re-define the class method
+    descriptor.value = function() {
+        // when the class method is called, log the fact to the console
+        console.log(`Calling ${propertyKey} with `, target);
+
+        // call the original class method passing in the caller's two arguments
+        // -- this point is where the console logging in the class
+        // method will occur
+        // apply()
+        let value = oldValue.apply(null, [arguments[1], arguments[0]]);
+
+        // log that the function was executed and return the result with some added text
+        console.log(`Function is executed`);
+        return value + '; Decorators are crazy!';
+    };
+
+    return descriptor;
+}
+
+class MyClass {
+    //add the below decorator expression
+    //to use decorators, set tsconfig.json - experimentalDecorators, allowJs
+    @methodDecorator
+    exampleFunction(arg1: string, arg2: string) {
+        // log the arguments and return their concatenation
+        console.log(`Arguments Received: ${arg1} and ${arg2}`);
+        return `${arg1} ${arg2}`;
+    }
+}
+const run = new MyClass();
+console.log(run.exampleFunction('Hello', 'World'));

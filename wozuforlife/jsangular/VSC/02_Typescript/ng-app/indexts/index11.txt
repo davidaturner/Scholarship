@@ -1,0 +1,27 @@
+function identityCheckt<T>(argument: T[]): T[] {
+    console.log(argument.length);
+    return argument;
+}
+
+let groceryList: string[] = ['bread', 'milk', 'butter', 'cookies'];
+
+let mygroceries: Array<string> = ['bread', 'milk', 'butter', 'cookies', 'olives'];
+
+interface lengthProperty {
+    length: number;
+}
+
+// using array structure.
+// function identityCheck<T>(argument: T[]): T[] {
+//     console.log(argument.length);
+//     return argument;
+// }
+
+// using interfaces to add length property.
+function identityCheck<T extends lengthProperty>(argument: T): T {
+    console.log(argument.length);
+    return argument;
+}
+
+identityCheck(groceryList);
+identityCheck(mygroceries);

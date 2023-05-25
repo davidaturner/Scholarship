@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-container {
+    color: white;
+    background-color: blue;
+    padding: 20px 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login {
+    margin-left: 20px;
+}
+
+.header-container {
+    color: black;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.image-grid-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-grid {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.image-grid-item {
+    width: 235px;
+    height: 250px;
+}
+
+.image-grid {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.first-item {
+    order: 1;
+}
+
+.last-item {
+    order: -1;
+}
+
+/* .subscribe, */
+.icons {
+    /* If you want to align items individually,
+        you would need to use the align-self property. Adding this property 
+        overrides the align-items value from the container. Align the social 
+        icons and Subscribe to the bottom of the header. */
+    align-self: flex-end;
+    /* margin-bottom: 20px; */
+}
