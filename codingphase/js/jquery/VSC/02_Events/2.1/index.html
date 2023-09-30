@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- https://api.jquery.com/click/#on1 -->
+
+    <button id="target">Click here</button><br/><br/>
+
+    <button id="other">Trigger the handler</button>
+
+    <script>
+        // Two syntaxes can be used for this:
+        // $( document ).ready(function() {
+        // console.log( "ready!" );
+        // });
+
+        // Or the shorthand (recommended) version:
+        $(function() {
+        // console.log( "ready!" );
+            // click
+            $( "#target" ).on( "click", function() {
+                alert( "Handler for `click` called." );
+            } );
+        
+            // trigger another event.
+            $( "#other" ).on( "click", function() {
+                $( "#target" ).trigger( "click" );
+            } );
+        });
+
+    </script>
+</body>
+</html>

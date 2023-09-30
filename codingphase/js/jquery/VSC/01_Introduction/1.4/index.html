@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="box"><p>Box1</p></div>
+    <div class="box"><p>Box2</p></div>
+    <div class="box" id="last"><p>Box3</p></div>
+    <script>
+        // jQuery
+        // jQuery('body').css({background:'olive'});
+        // jQuery (recommended)
+        $('.box').css({background:'blue'});
+        // can chain jquery
+        $('#last p').css({background:'red'}).fadeOut("slow", function() {
+            console.log("hey its finished.")
+        });
+        $('#last').css({background: 'black', padding: '20px'});
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+$font1: 'Inconsolata', monospace;
+$font2: 'Roboto', sans-serif;
+$pad1015: 10px 15px;
+$pad1: 30;
+$color1: rgb(76, 114, 130);
+// Sass exercises.
+.header {
+    background: red;
+
+    ul {
+        padding: 0;
+        margin-right: 0;
+        li {
+            font-family: $font1;
+            display: inline-block;
+            padding: $pad1015;
+            list-style: none;
+        }
+    }
+}
+
+.submenu {
+    &.blue {
+        background: yellow;
+    }
+    &.sky {
+        background: $color1;
+        li {
+            font-family: $font2;
+            padding: $pad1 + px;
+        }
+    }
+    &:hover {
+        background: yellowgreen;
+    }
+}

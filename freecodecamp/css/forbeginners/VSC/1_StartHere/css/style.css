@@ -1,0 +1,10 @@
+/* can validate file with
+    css-validator 
+    
+https: //jigsaw.w3.org/css-validator/    
+*/
+
+p {
+    font-size: 64px;
+    color: purple;
+}

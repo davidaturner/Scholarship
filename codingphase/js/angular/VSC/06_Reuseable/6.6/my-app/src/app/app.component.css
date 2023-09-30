@@ -1,0 +1,21 @@
+.testing-box {
+    width: 1000px;
+    height: 600px;
+    font-size: 1.2rem;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.psb {
+    margin-bottom: 10px;
+    border: 1px solid blueviolet;
+}
+
+.label {
+    width: 230px;
+    padding-left: 12px;
+    font-size: 1.7rem;
+    border: 1px solid blueviolet;
+}

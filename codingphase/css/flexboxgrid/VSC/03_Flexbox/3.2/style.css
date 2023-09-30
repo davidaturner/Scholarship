@@ -1,0 +1,41 @@
+nav {
+    width: 400px;
+    margin: 0 auto;
+}
+
+nav a {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid gray;
+    background: gainsboro;
+}
+
+.wrapper {
+    display: flex;
+    /* maintain each box width by specifying wrap. */
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    /* force all elements on single line/column. */
+    flex-wrap: nowrap;
+}
+
+.box {
+    width: 100px;
+}
+
+.box-2 {
+    width: 300px;
+    /* note how all other boxes are width compressed */
+    width: 500px;
+}
+
+.box-3 {
+    width: 200px;
+    /* note how all other boxes are width compressed */
+    width: 400px;
+}

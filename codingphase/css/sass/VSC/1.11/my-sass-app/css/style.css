@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
+.box {
+  width: 200px;
+  height: 100px;
+  font-size: 22px;
+}
+
+.red {
+  background: red;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.olive {
+  background: olivedrab;
+}
+
+.message1 {
+  color: blue;
+}
+
+.message2 {
+  color: orangered;
+}
+
+.message3 {
+  color: yellow;
+}
+
+.box p {
+  background-color: black;
+}
+
+div > p {
+  color: white;
+}
+
+div + p {
+  color: black;
+}
+
+p + p {
+  color: brown;
+}
+
+p ~ .olive {
+  font-size: 48px;
+}

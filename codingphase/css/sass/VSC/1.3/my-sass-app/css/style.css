@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
+.header {
+  background: red;
+}
+.header ul {
+  padding: 0;
+  margin-right: 0;
+}
+.header ul li {
+  font-family: "Inconsolata", monospace;
+  display: inline-block;
+  padding: 10px 15px;
+  list-style: none;
+}
+
+.submenu.blue {
+  background: yellow;
+}
+.submenu.sky {
+  background: rgb(76, 114, 130);
+}
+.submenu.sky li {
+  font-family: "Roboto", sans-serif;
+  padding: 30px;
+}
+.submenu:hover {
+  background: yellowgreen;
+}

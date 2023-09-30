@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+@keyframes fadeinUp {
+    0% {
+        transform: translate3d(0, 500px, 0);
+        opacity: 0;
+        background: ghostwhite;
+    }
+    /* 25% {
+        transform: translate3d(300px, 0, 0);
+        background: olive;
+    }
+    75% {
+        transform: translate3d(600px, 0, 0);
+        background: yellow;
+    } */
+    100% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+        background: black;
+    }
+}
+
+/* @keyframes moveright {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(500px, 0, 0);
+    }
+} */
+
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+.button {
+    width: 75px;
+    height: 30px;
+    padding: 5px;
+    margin: 0 auto 100px;
+    border-radius: 4px;
+    background: red;
+    color: white;
+}
+
+.box {
+    /* background: black; */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    transition: all 0.6 ease-in-out;
+    transform: translate3d(0, 0, 0);
+    /* animation: fadeinUp 1.2s ease-in-out 0.3s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-play-state: running; */
+}
+
+.fadeinUp2 {
+    animation: fadeinUp 1.2s ease-in-out 0.3s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 4;
+}

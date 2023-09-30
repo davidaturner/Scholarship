@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete SASS</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <!-- to compile scss to css:
+        npx gulp -->
+    <div class="container">
+        <div class="button">
+            Click me.
+        </div>
+        <div class="box"></div>
+    </div>
+
+    <script>
+        var state = 0;
+
+        $(document).on('click', '.button', function() {
+
+            // update state
+            if (state >= 4) {
+                state = 1;
+            } else {
+                state++;
+            }
+            // do movement
+            switch(state) {
+
+                case 1:
+                    $('.box').toggleClass('moveright');
+                    break;
+                case 2: 
+                    $('.box').toggleClass('moveright');
+                    $('.box').toggleClass('movedown');
+                    break;    
+                case 3:
+                    $('.box').toggleClass('movedown');
+                    $('.box').toggleClass('moveleft');
+                    break;
+                case 4:
+                    $('.box').toggleClass('moveleft');
+                    $('.box').toggleClass('moveup');
+                    $('.box').toggleClass('moveup');
+                    break;
+                default: 
+                    break;
+            }
+        })
+    </script>
+</body>
+</html>

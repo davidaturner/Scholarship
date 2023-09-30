@@ -1,0 +1,43 @@
+nav {
+    width: 400px;
+    margin: 0 auto;
+}
+
+nav a {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid gray;
+    background: gainsboro;
+}
+
+.wrapper {
+    /* reduce height for flex column effect; */
+    height: 600px;
+    display: flex;
+    /* combining row-direction and flex-wrap */
+    flex-flow: column nowrap;
+    flex-flow: column wrap;
+    flex-flow: column wrap-reverse;
+    flex-flow: row nowrap;
+}
+
+.box {
+    width: 100px;
+}
+
+.box-2 {
+    width: 300px;
+    /* note how all other boxes are width compressed */
+    width: 500px;
+}
+
+.box-3 {
+    width: 200px;
+    /* note how all other boxes are width compressed */
+    width: 400px;
+}

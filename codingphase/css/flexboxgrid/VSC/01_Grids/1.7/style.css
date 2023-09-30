@@ -1,0 +1,22 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(200px, auto);
+
+    grid-gap: 30px;
+    /* grid-gap: 30px 0; */
+    /* grid-column-gap: 20px;
+    grid-row-gap: 40px; */
+    /* note: bootstrap gaps are 30px typically. */
+}
+
+.box-1 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+    padding: 10px;
+}
+
+.box-4 {
+    grid-column: 1 / 3; /* move box4 to grid column start 1 end 3 */
+    grid-row: 1 / 2; /* move box4 to row column start 1 end 2 */
+}

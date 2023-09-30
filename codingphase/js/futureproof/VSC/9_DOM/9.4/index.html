@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Exploration</title>
+</head>
+<body>
+    <button>Click me</button>
+    <!-- <button onclick="myFunction()">Click me</button> -->
+
+    <p id="demo"></p>
+
+    <script>   
+        var button = document.querySelector("button")
+        button.onclick = () => {
+            myFunction();
+        }
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Hello World";
+        }
+    </script>
+
+</body>
+</html>

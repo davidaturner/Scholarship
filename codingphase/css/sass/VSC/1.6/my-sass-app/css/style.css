@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background: black;
+  padding: 20px;
+}
+
+ul {
+  background: yellow;
+  padding: 20px;
+}
+ul li {
+  list-style: none;
+}
+
+/*
+  The basic difference is the syntax. While SASS has a loose syntax
+  with white space (no curly braces -- using instead python indentation) and 
+  no semicolons, the SCSS resembles more to CSS.
+  SASS stands for Syntactically Awesome StyleSheets. 
+  It is an extension of CSS that adds power and elegance to the basic language.
+
+  There's more differences but too much for me! Fortunately, someone
+  else asked the same question over in StackOverflow! Here's a link
+  to their answer:
+  https://stackoverflow.com/questions/5654447/whats-the-difference-between-scss-and-sass
+*/

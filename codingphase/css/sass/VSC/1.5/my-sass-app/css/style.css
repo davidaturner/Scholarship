@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+article {
+  width: 33.3333333333%;
+  float: left;
+  padding: 5 20px;
+}
+
+aside {
+  width: 66.6666666667%;
+  float: right;
+}
+aside img {
+  width: 100%;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+.container:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.btn, .success, .warning, .danger, .primary {
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 10px 0;
+  color: white;
+  display: inline-block;
+}
+
+.primary {
+  background: blue;
+}
+
+.danger {
+  background: red;
+}
+
+.warning {
+  background: yellow;
+  color: black;
+}
+
+.success {
+  background: green;
+}

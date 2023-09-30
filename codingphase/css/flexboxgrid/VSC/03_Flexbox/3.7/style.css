@@ -1,0 +1,59 @@
+nav {
+    width: 400px;
+    margin: 0 auto;
+}
+
+nav a {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 100px auto;
+    border: 1px solid gray;
+}
+
+.wrapper {
+    background: black;
+    height: 700px;
+
+    display: flex;
+    flex-flow: row wrap;
+    flex-flow: row nowrap;
+    flex-flow: column wrap;
+    flex-flow: column nowrap;
+
+    align-content: flex-start;
+    /* align-content: space-between; */
+}
+
+.box {
+    flex-grow: 1;
+}
+
+/* .box-1 {
+    flex-grow: 1;
+}
+
+.box-2 {
+    flex-grow: 1;
+}
+
+.box-3 {
+    flex-grow: 1;
+}
+*/
+.box-4 {
+    /* shorthand */
+    flex: 1 75px;
+    /* flex-basis: 75px; */
+}
+
+.box-5 {
+    flex-grow: 2;
+}
+
+.box-6 {
+    flex-grow: 1;
+}

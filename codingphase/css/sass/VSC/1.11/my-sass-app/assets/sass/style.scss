@@ -1,0 +1,59 @@
+@import "variables";
+.box {
+    width: 200px;
+    height: 100px;
+    font-size: 22px;
+}
+
+.red {
+    background: red;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.olive {
+    background: olivedrab;
+}
+
+.message1 {
+    color: blue;
+}
+
+.message2 {
+    color: orangered;
+}
+
+.message3 {
+    color: yellow;
+}
+
+// The descendant selector matches all elements that are 
+// descendants of a specified element.
+.box p {
+    background-color: black;
+}
+
+// The child selector selects all elements that are the 
+// children of a specified element.
+div > p {
+    color: white;
+}
+
+// The adjacent sibling selector is used to select an element that is 
+// directly after another specific element. Sibling elements must have the 
+// same parent element, and "adjacent" means "immediately following".
+div + p {
+    color: black;
+}
+
+p + p {
+    color: brown;
+}
+
+// The general sibling selector selects all elements that are next 
+// siblings of a specified element.
+p ~ .olive {
+    font-size: 48px;
+}

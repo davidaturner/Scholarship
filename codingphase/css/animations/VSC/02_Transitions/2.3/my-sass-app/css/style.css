@@ -1,0 +1,44 @@
+ul.menu {
+  padding: 0;
+  margin: 0;
+  background: black;
+  color: white;
+}
+ul.menu li {
+  list-style: none;
+  padding: 20px;
+  border: 1px solid black;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+}
+
+ul.file_menu_1 {
+  width: 200px;
+  position: absolute;
+  top: 58px;
+  left: -2px;
+  background: red;
+}
+ul.file_menu_1 li {
+  display: block;
+}
+
+ul.file_menu_2 {
+  width: 200px;
+  position: absolute;
+  top: -1px;
+  left: 100%;
+  background: yellow;
+}
+ul.file_menu_2 li {
+  display: block;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background: ghostwhite;
+  display: flex;
+  justify-content: center;
+}

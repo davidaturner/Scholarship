@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#greeting {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    color: blue;
+    font-size: 50px;
+    margin: 0;
+    padding: 10px;
+    border:1px solid lightseagreen;
+    transition-property: font-size;
+    transition-duration: 1s;
+    /*increase speed toward middle then slow to end */
+    transition-timing-function: ease;
+
+    /*start slow increase speed till end*/
+    /*You should use this ease when an object is outgoing.*/
+    /* transition-timing-function: ease-in; */
+
+    /*start quick decrease speed till end*/
+    /*You should use this ease when an object is incoming.*/
+    /* transition-timing-function: ease-out; */
+
+    /*start slow, speeding up, decrease speed till end*/
+    /* transition-timing-function: ease-in-out; */
+
+    /*animates at an even speed.*/
+    /* transition-timing-function: linear; */
+    transition-delay: 250ms;
+
+    /* shorthand  */
+    transition: font-size 1s ease 250ms,
+                color 1s ease 250ms,
+                left 1s ease 250ms;
+}
+
+/* using css hover as transition trigger
+#greeting:hover {
+    font-size: 100px;
+    color: red;
+    left: 120px;
+} */
+
+/* using jquery as transition trigger  */
+#greeting:hover {
+    cursor:pointer;
+}
+/* when class 'transition' is added/appended.*/
+#greeting.transition {
+    font-size: 100px;
+    color: red;
+    left: 220px;
+}

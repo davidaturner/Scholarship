@@ -1,0 +1,22 @@
+<div>
+    <div>
+        <label for="firstname">First Name: </label>
+        <input [(ngModel)]="firstname">
+    </div>
+    <div>
+        <label for="lastname">Last Name: </label>
+        <input [(ngModel)]="lastname">
+    </div>
+    <div>
+    {{firstname}} {{lastname}}
+    </div>
+    <button (click)="showbox()" 
+    [style.backgroundColor]="testingbox?'gainsboro':'royalblue'"
+    [style.color]="testingbox?'black':'white'"
+    >Save</button>
+    <div class="parent" (click)="parentevent($event)">
+        <div class="testing-box" (click)="childevent($event)"></div>
+    </div>
+</div>
+
+

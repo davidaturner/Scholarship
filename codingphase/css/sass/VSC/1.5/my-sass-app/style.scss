@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+$font1: 'Inconsolata', monospace;
+$font2: 'Roboto', sans-serif;
+$pad1015: 10px 15px;
+$pad1: 30;
+$color1: rgb(76, 114, 130);
+
+* {
+    box-sizing: border-box;
+}
+
+// Sass exercises.
+article {
+    width: calc(400px / 1200px) * 100%;
+    float: left;
+    padding: 5 20px;
+}
+
+aside {
+    width: calc(800px / 1200px) * 100%;
+    img {
+        width: 100%;
+    }
+    float: right;
+}
+
+.container {
+    width: 4 * 200 + px;
+    margin: 0 auto;
+    // is this necessary to clear floats?
+    // yes, um, is there a better (clearer) way?
+    &:after {
+        clear: both;
+        content: '';
+        display: table;
+    }
+}
+
+.btn {
+    padding: $pad1015;
+    border-radius: 5px;
+    margin: 10px 0;
+    color: white;
+    display: inline-block; // make more like real buttons.
+}
+
+.primary {
+    // copy everything in from btn class
+    @extend .btn;
+    background: blue;
+}
+
+.danger {
+    @extend .btn;
+    background: red;
+}
+
+.warning {
+    @extend .btn;
+    background: yellow;
+    color: black;
+}
+
+.success {
+    @extend .btn;
+    background: green;
+}
+
+// .btn.primary {
+//     background: blue;
+//     padding: $pad1015;
+//     border-radius: 5px;
+//     margin: 10px 0;
+// }
+
+// .btn.danger {
+//     background: red;
+//     padding: $pad1015;
+//     border-radius: 5px;
+//     margin: 10px 0;
+// }
+
+// .btn.warning {
+//     background: yellow;
+//     padding: $pad1015;
+//     border-radius: 5px;
+//     margin: 10px 0;
+// }
+
+// .btn.success {
+//     background: green;
+//     padding: $pad1015;
+//     border-radius: 5px;
+//     margin: 10px 0;
+// }

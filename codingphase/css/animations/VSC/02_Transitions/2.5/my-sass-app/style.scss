@@ -1,0 +1,37 @@
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+.button {
+    border-radius: 4px;
+    background: red;
+    color: white;
+    display: inline-block;
+    padding: 15px 20px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: black;
+    transition: all 0.6s ease-in-out;
+    transform: translate3d(0, 0, 0);
+
+    &.moveright {
+        background: red;
+        transform: translate3d(500px, 0, 0);
+    }
+    &.movedown {
+        background: yellow;
+        transform: translate3d(500px, 500px, 0);
+    }
+    &.moveleft {
+        background: blueviolet;
+        transform: translate3d(0, 500px, 0);
+    }
+    &.moveup {
+        background: red;
+        transform: translate3d(0, 0, 0);
+    }
+}

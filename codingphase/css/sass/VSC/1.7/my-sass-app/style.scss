@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+$font1: 'Inconsolata', monospace;
+$font2: 'Roboto', sans-serif;
+$pad1015: 10px 15px;
+$pad1: 30;
+$color1: rgb(76, 114, 130);
+
+* {
+    box-sizing: border-box;
+}
+
+// Sass exercises.
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+
+    border-bottom: 25px solid black;
+}
+
+@mixin create-arrow-up($sizeInPX) {
+    width: 0;
+    height: 0;
+    border-left: $sizeInPX solid transparent;
+    border-right: $sizeInPX solid transparent;
+
+    border-bottom: $sizeInPX solid black;
+}
+
+.create-arrow-up-25px{ 
+    @include create-arrow-up(25px)
+}
+
+.create-arrow-up-50px {
+    @include create-arrow-up(50px)
+}
+// Review more useful mixins online.
+// https: //engageinteractive.co.uk/blog/top-10-scss-mixins

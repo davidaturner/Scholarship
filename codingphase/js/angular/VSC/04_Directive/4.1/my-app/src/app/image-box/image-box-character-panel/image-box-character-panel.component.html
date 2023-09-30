@@ -1,0 +1,21 @@
+<div class="image-box-listing">
+    <h3>Cast of Characters</h3>
+    <div>
+        <ul>
+            <li *ngFor="let character of characters">
+                Name: {{character.name}}<br/>
+                Planet: {{character.planet}}
+            </li>
+        </ul>
+        <div class="button" (click)="togglebox()" 
+        [ngStyle] = "{
+            'backgroundColor': testingbox?'olivedrab': 'red'
+        }"
+        >Save</div>
+        <div class="testing-box" 
+        [ngClass] ="{'active': testingbox}"
+        ></div>
+    </div>
+
+</div>
+

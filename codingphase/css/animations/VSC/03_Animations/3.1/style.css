@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+@keyframes moveright {
+    from {
+        transform: translate3d(0, 0, 0);
+        /* background-color: red; */
+    }
+
+    to {
+        transform: translate3d(500px, 0, 0);
+        /* background-color: yellow; */
+    }
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+.button {
+    width: 75px;
+    height: 30px;
+    padding: 5px;
+    margin: 0 auto;
+    border-radius: 4px;
+    background: red;
+    color: white;
+}
+
+.box {
+    background: black;
+    width: 200px;
+    height: 200px;
+    transition: all 0.6 ease-in-out;
+    transform: translate3d(0, 0, 0);
+    animation: moveright 0.7s ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 2; /* 1 cycle */
+    /* animation-iteration-count: infinite; */
+    animation-play-state: running;
+}

@@ -1,0 +1,8 @@
+.testing-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background: gainsboro;
+    border: 1px solid pink;
+}

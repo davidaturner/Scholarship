@@ -1,0 +1,31 @@
+#master-button {
+    width: 600px;
+    height: 600px;
+    padding: 20px 40px;
+    /* color: white;
+    background: black; */
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin: 0 3px;
+}
+
+.primary {
+    background: blue;
+    color: white;
+}
+
+.danger {
+    background: red;
+    color: white;
+}
+
+.warning {
+    background: yellow;
+    color: black;
+}
+
+.success {
+    background: green;
+    color: white;
+}
+

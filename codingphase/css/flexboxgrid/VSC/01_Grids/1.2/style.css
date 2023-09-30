@@ -1,0 +1,15 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* stretch each row with col of largest content */
+    grid-auto-rows: minmax(0, auto);
+    /* stretch each row a minimum height of 200px */
+    grid-auto-rows: minmax(200px, auto);
+    /* force a height of 200px */
+    /* grid-auto-rows: 200px; */
+
+    /* change to 3 rows 2 boxes each */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 50px auto;
+    grid-template-rows: 100px 200px 50px;
+}

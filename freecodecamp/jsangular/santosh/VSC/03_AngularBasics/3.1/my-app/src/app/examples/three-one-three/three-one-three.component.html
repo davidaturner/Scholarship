@@ -1,0 +1,48 @@
+<h1 (click)="consolelog()">Welcome to {{hotelName}}</h1>
+
+<p>
+    {{ rooms.numberAvailable ?? 'No rooms available!'}}
+</p>
+
+<!-- <div *ngIf="rooms.numberAvailable>0"> -->
+<div *ngIf="rooms.numberAvailable">
+    <div [hidden]="hideRooms">
+        Number of Rooms: 
+        <span [innerText] = "rooms.numberAvailable"></span>
+    </div>
+
+    Here are the rooms available!
+
+        <!-- Table listing-->
+        <!--
+        roomNumber : number;
+        roomType: string;
+        amenities: string[];
+        price: number;
+        photos: Photo[];
+        checkInTime?: Date;
+        checkOutTime?: Date;
+        -->
+        <!-- <div *ngFor="let room of this.roomListing">
+            <p>{{room.roomNumber}}</p>
+        </div> -->
+        <table>
+            <tr>
+                <th>Index</th>
+                <th>Even/Odd</th>
+                <th>Room Number</th>
+                <th>Room Type</th>
+                <th>Room Price</th>
+            </tr>
+            <tr *ngFor="let room of roomListing; let e=even; let o=odd; 
+                    let i=index">
+                <td>{{i+1}}</td>
+                <td>{{e ? "Odd" : "Even"}}</td>
+                <td>{{room.roomNumber}}</td>
+                <td>{{room.roomType}}</td>
+                <td>{{room.price}}</td>
+            </tr>
+        </table>
+
+    <button (click)="toggleRooms()">Hide Rooms</button>
+</div>

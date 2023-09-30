@@ -1,0 +1,47 @@
+nav {
+    width: 400px;
+    margin: 0 auto;
+}
+
+nav a {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 100px auto;
+    border: 1px solid gray;
+}
+
+.wrapper {
+    background: black;
+    height: 700px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: stretch;
+    /* align-content: space-between; */
+}
+
+.box {
+    width: 100px;
+}
+
+.box-2 {
+    width: 300px;
+}
+
+.box-3 {
+    width: 100px;
+}
+
+.box-5 {
+    width: 300px;
+}

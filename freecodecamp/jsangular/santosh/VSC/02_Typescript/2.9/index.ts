@@ -1,42 +1,77 @@
-import * as Employee from './employee';
-// import {User, SalariedEmployee} from './employee';
+// import {  User, SalariedUser, Login, Address } from "./interfaces";
+import * as b from "./interfaces";
 
-class AcmeSalariedEmployee implements Employee.SalariedEmployee {
-    name: string;
-    age? : number;
-    id: number;
-    empid: number;
-    email: string;
-    salary: number;
+class Employee {
 
-    constructor(name: string, age: number, id: number, 
-                empid: number, email:string, salary:number) {
-                    this.name = name;
-                    this.age = age;
-                    this.id = id;
-                    this.empid = empid;
-                    this.email = email;
-                    this.salary = salary;
-                }
+    #id: number;
 
-    login() : Employee.User {
-            return { name: this.name, age: this.age, id: this.id
-        }
+    protected name: string;
+
+    // address: string;
+    address: b.Address;
+
+    constructor(id: number, name: string, address: b.Address) {
+        this.#id = id;
+        this.name = name;
+        this.address = address;
     }
+
+    getEmployeeId() {
+        return this.#id;
+    }
+
+    setId( id:number ) {
+        this.#id = id;
+    }
+
+    static getEmployeeRole(): string {
+        return "Employee";
+    } 
+
 }
 
-let john = new AcmeSalariedEmployee("John", 29, 1, 1001, "jsmite@acme.com", 60000);
-let james = new AcmeSalariedEmployee("James", 29, 1, 1001, "jspaeder@acme.com", 60000);
-let grant = new AcmeSalariedEmployee("Grant", 29, 1, 1001, "gmotion@acme.com", 60000);
-let amy = new AcmeSalariedEmployee("Amy", 29, 1, 1001, "apond@acme.com", 60000);
+let tami: Employee = new Employee(1, 
+            "tami", 
+            {
+                street: "1313 Mockingbird Ln",
+                city: "Pittsburgh",
+                zip: "15223-4433",
+                email: "tamiflu@gmail.com"
+            });
 
-let users : Employee.User[] = [john.login(), james.login(), grant.login(), amy.login()];
-// console.log(users)
-// deconstruction
-let [user0, user1, ...restOfUsers] : Employee.User[] = users;
-console.log(user0);
-console.log(user1);
-console.log(restOfUsers);
-// let [user0, user1, user2, user3] : Employee.User[] = users;
-// console.log(user1);
+let joe: b.User = {
+  name: "John",
+  age: 26,
+  id: 1,
+  email: "johnsmith@email.com"
+}
 
+// object deconstructing.
+let {name: username, age, id, email } : b.User = joe;
+console.log(username);
+console.log(age);
+console.log(id);
+console.log(email);
+
+let crabb: b.SalariedUser = {
+    name: "Crabb",
+    age: 39,
+    id: 10,
+    email: "crabbbob@email.com",
+    salary: 20000
+}
+
+// spread
+let [userj, userc, ...restOfTheUsers]: b.User[] = [
+    joe, 
+    crabb, 
+    {name: "smiley", age: 32, id:100, email: "smileytodd@gmail.com"},
+    {name: "pawpau", age: 31, id:101, email: "pawpauolink@gmail.com"}
+];
+
+console.log(userj);
+console.log(userc);
+console.log(restOfTheUsers);
+
+// filter
+let result = restOfTheUsers.filter((user) => user.id > 100);

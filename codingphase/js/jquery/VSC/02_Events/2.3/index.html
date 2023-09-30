@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handler</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <div class="box1">hey this is joe</div>
+    <div class="box2">hey this is joe</div>
+    <div class="box3">hey this is joe</div>
+
+    <script>
+        // three ways to handle events.
+        // 1. class on.
+        // $(function() {
+        //     $('.box1').on('click', function() {
+        //         $('.box1').css({color:'yellow'});
+        //     })
+        // })
+        //2. document on.
+        // $(function() {
+        //     $(document).on('click', '.box1', function() {
+        //         $('.box2').css({color:'blue'});
+        //     })
+        // })
+        // 3. class event listerners
+        $('.box1').on({
+
+            click: function() {
+                $('.box3').css({color: 'green'})
+            },
+            dblclick: function() {
+                alert('dblclick detected!')
+            }
+
+        })
+
+    </script>
+</body>
+</html>
