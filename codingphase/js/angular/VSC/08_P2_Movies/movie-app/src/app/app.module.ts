@@ -13,6 +13,7 @@ import { FooterComponent } from './layouts/shared/footer/footer.component';
 import { PageExampleComponent } from './layouts/shared/page-example/page-example.component';
 import { PageHeaderComponent } from './layouts/shared/page-header/page-header.component';
 import { MainLayoutComponent } from './layouts/shared/main-layout/main-layout.component';
+import { MoviesService } from './core/services/movies.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,9 @@ import { MainLayoutComponent } from './layouts/shared/main-layout/main-layout.co
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    MoviesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

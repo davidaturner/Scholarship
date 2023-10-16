@@ -1,1 +1,15 @@
-<p>app-home works!</p>
+<div id="movie-list">
+    <div class="row">
+        <div class="col-md-3" *ngFor="let movie of moviesData">
+            <div class="movie-box" [ngStyle]="{
+                'background-image' : 'url(' + movie.image + ')'
+            }">
+                <div class="tks_available sold-out">
+                    <div class="status">
+                        Ticket Available
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

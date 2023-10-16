@@ -12,10 +12,6 @@ const routes: Routes = [
     component: AppHomeComponent
   },
   {
-    path: 'movie',
-    component: MovieComponent
-  },
-  {
     path: 'movie/:title',
     component: MovieComponent
   },

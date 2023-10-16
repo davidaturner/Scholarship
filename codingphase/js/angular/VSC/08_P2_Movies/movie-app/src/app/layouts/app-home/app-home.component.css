@@ -1,0 +1,52 @@
+#movie-list {
+    padding: 0 5%;
+}
+
+.movie-box {
+    border-radius: 10px;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    margin-bottom: 100px;
+    overflow: hidden;
+    position: relative;
+    transform: scale(0.8);
+    transition: all 0.4s ease-in-out;
+
+    -webkit-box-shadow: 14px 10px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 10px 14px 0px rgba(0,0,0,0.75);
+    box-shadow: 14px 10px 14px 0px rgba(0,0,0,0.75);
+}
+
+.movie-box .tks_available {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 2;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: green;
+
+    transform: translate(0, 100%);
+        transition: all 0.4s ease-in-out;
+}
+
+/* .movie-box:hover .tks_available.sold-out {
+    background: red;
+} */
+
+.movie-box:hover .tks_available {
+    transform: translate(0, 0);
+    transition: all 0.4s ease-in-out;
+}
+
+.tks_available .status {
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 4px;
+    color: white;
+    font-size: 0.8rem;
+}
