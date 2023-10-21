@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MoviesService } from 'src/app/core/services/movies.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,12 +9,14 @@ import { MoviesService } from 'src/app/core/services/movies.service';
 })
 export class AppHomeComponent implements OnInit {
   moviesData: any[];
-  constructor(service: MoviesService) {
-    // this.moviesData = service.getAllMoviesImageURLs();
+  constructor(service: MoviesService, private route: Router) {
     this.moviesData = service.getAllMovies();
   }
 
   ngOnInit(): void {
   }
 
+  clickedMovie(slug:string) {
+    this.route.navigate(['movie', slug]);
+  }
 }

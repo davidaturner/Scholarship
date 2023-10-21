@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { MoviesService } from 'src/app/core/services/movies.service';
+import { MoviesService, Movie } from 'src/app/core/services/movies.service';
 
 @Component({
   selector: 'app-movie',
@@ -9,13 +9,21 @@ import { MoviesService } from 'src/app/core/services/movies.service';
 })
 export class MovieComponent implements OnInit {
 
-  movieSelected: string | null = "";
-  constructor(service: MoviesService, private route: ActivatedRoute) {
-    this.movieSelected = service.getMovieBySlug('star-wars-the-rise-of-skywalker')[0];
-    console.log(this.movieSelected);
+  movieSelected: Movie = {
+    title: null,
+    slug: null,
+    image: null,
+    releaseDate: null,
+    synopsis: null,
+    tktsAvailable : 0
   }
 
-  ngOnInit(): void {
+  constructor(service: MoviesService, private route: ActivatedRoute) {
+    this.route.params.subscribe(() => {
+      this.movieSelected = service.getMovieBySlug(this.route.snapshot.params['title'])[0];
+    })
   }
+
+  ngOnInit(): void { }
 
 }
