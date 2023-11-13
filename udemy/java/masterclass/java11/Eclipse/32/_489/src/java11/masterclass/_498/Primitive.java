@@ -3,8 +3,6 @@ package java11.masterclass._498;
 public class Primitive {
 
 	public static void main(String[] args) {
-		// eight types: boolean, byte, char, short, int, long, float and double.
-		int myValue = 10000;
 		
 		// width = 32
 		int myIntMaxValue = Integer.MAX_VALUE;
@@ -44,6 +42,9 @@ public class Primitive {
 		int myNewValue = myIntMinValue / 2;
 		byte myNewByteValue = (byte)(myByteMinValue / 2);
 		short myNewShortValue = (short)(myShortMinValue / 2);
+		System.out.println(myNewValue);
+		System.out.println(myNewByteValue);
+		System.out.println(myNewShortValue);
 		
 
 	}

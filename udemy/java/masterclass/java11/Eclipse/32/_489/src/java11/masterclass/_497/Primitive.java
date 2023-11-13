@@ -6,6 +6,7 @@ public class Primitive {
 
 		// eight types: boolean, byte, char, short, int, long, float and double.
 		int myValue = 10000;
+		System.out.println(myValue);
 		
 		// width = 32
 		int myIntMaxValue = Integer.MAX_VALUE;
