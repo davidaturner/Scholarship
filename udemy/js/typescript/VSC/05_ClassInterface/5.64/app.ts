@@ -1,13 +1,10 @@
 class Department {
-    // alternate constructor. without 'property'.
-    // name: string;
     private employees: string[] = [];
-    // constructor(n:string) {
-    constructor(public name :string) {
-        // this.name = n;
+    // readonly
+    constructor(private readonly id : string, public name :string) {
     }
     describe() {
-        console.log("Department: " + this.name);
+        console.log("Department: (${this.id}): ${this.name}");
     }
     addEmployee(e: string) {
         this.employees.push(e);
@@ -20,7 +17,7 @@ class Department {
     }
 }
 
-const accounting = new Department("Accounting");
+const accounting = new Department("101", "Accounting");
 console.log(accounting);
 
 accounting.addEmployee('Joe');

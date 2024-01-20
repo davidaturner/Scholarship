@@ -1,14 +1,13 @@
 var Department = /** @class */ (function () {
-    // constructor(n:string) {
-    function Department(name) {
+    // readonly
+    function Department(id, name) {
+        this.id = id;
         this.name = name;
-        // alternate constructor. without 'property'.
-        // name: string;
         this.employees = [];
-        // this.name = n;
     }
     Department.prototype.describe = function () {
-        console.log("Department: " + this.name);
+        // console.log("Department: ${this.id}: " + this.name);
+        console.log("Department: (${this.id}): ${this.name}");
     };
     Department.prototype.addEmployee = function (e) {
         this.employees.push(e);
@@ -21,7 +20,7 @@ var Department = /** @class */ (function () {
     };
     return Department;
 }());
-var accounting = new Department("Accounting");
+var accounting = new Department("101", "Accounting");
 console.log(accounting);
 accounting.addEmployee('Joe');
 accounting.addEmployee('James');
