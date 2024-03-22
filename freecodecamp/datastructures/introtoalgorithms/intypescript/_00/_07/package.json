@@ -1,0 +1,12 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start" : "tsc -target es6 app.ts && node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

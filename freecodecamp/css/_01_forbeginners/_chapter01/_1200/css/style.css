@@ -1,0 +1,13 @@
+/* p - selector
+color - property
+purple - property value 
+color : purple - declaration
+whole - ruleset, or simply rule  */
+
+p {
+    font-size: 64px;
+    color: purple;
+}
+
+/* use w3c css validation service
+ttps: //jigsaw.w3.org/css-validator/ */
