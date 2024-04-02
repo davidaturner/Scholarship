@@ -1,4 +1,4 @@
-package _541;
+package _534;
 
 public class Functions {
 
@@ -54,6 +54,11 @@ public class Functions {
 			System.out.println("Your final score is " + finalScore);
 		}	
 	}
+
+//	public static int calculateScore(boolean isGameOver, int score, int levelCompleted, int bonusScore) { 
+//		return (isGameOver)?score + (levelCompleted * bonusScore):-1;
+//
+//	}
 	
 	public static int calculateScore(int score, int levelCompleted, int bonusScore) { 
 		return score + (levelCompleted * bonusScore);

@@ -1,4 +1,4 @@
-package java11.masterclass._500;
+package java11.masterclass._504;
 
 public class Primitive {
 
