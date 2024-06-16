@@ -1,0 +1,106 @@
+Return-Path: <ischicagoisnotchicago19@gmail.com>
+Received: from noehlo.host ([10.149.109.252])
+	by mdl-prod8.sys.elnk.net (EarthLink SMTP Server) with SMTP id 1S4tmj6Vnc12Me0; Tue, 7 May 2024 18:32:27 -0400 (EDT)
+Received: from nmtai105.earthlink-vadesecure.net ([51.81.61.70])
+	by mx-a-prod15 (EarthLink SMTP Server) with SMTP id 1S4tmi8jjec12Ow0
+	for <turnin19@earthlink.net>; Tue, 7 May 2024 18:32:26 -0400 (EDT)
+Authentication-Results: earthlink-vadesecure.net; iprev=pass ip=209.85.218.46;
+ spf=Pass client-ip=209.85.218.46 smtp.mailfrom=ischicagoisnotchicago19@gmail.com;
+ dkim=pass;
+ dmarc=pass action=none;
+Received-DKIM: success
+Received-SPF: pass
+X-VadeSecure-Originating-IP: 209.85.218.46
+X-VadeSecure-Malware: Clean
+X-VadeSecure-Verdict: clean
+X-VadeSecure-Status: clean
+X-VadeSecure-Cause: gggruggvucftvghtrhhoucdtuddrgedvledrvddvledgudduucetufdote
+ ggodetrfdotffvucfrrhhofhhilhgvmecugfettffvjffnkffpmfdpggftfghnshhusghstghrihg
+ svgenuceurghilhhouhhtmecufedtudenucenucfjughrpegghfffkffuvfgtsegrtderredttdej
+ necuhfhrohhmpeffrghvihguucfvuhhrnhgvrhcuoehishgthhhitggrghhoihhsnhhothgthhhit
+ ggrghhoudelsehgmhgrihhlrdgtohhmqeenucggtffrrghtthgvrhhnpeevueevvdekiedvtdelue
+ fhuddvvefhhfdvheffheffvedvfefhvdejtdehieefffenucffohhmrghinhepnhihthhimhgvshd
+ rtghomhenucfkphepvddtledrkeehrddvudekrdegieenucevlhhushhtvghrufhiiigvpedtnecu
+ rfgrrhgrmhepihhnvghtpedvtdelrdekhedrvddukedrgeeipdhhvghlohepmhgrihhlqdgvjhduq
+ dhfgeeirdhgohhoghhlvgdrtghomhdpmhgrihhlfhhrohhmpehishgthhhitggrghhoihhsnhhoth
+ gthhhitggrghhoudelsehgmhgrihhlrdgtohhmpdhnsggprhgtphhtthhopedupdhrtghpthhtohe
+ pthhurhhnihhnudelsegvrghrthhhlhhinhhkrdhnvghtpdhmohguvgepshhmthhppdhgvghtqdfu
+ rghfvggfnhhsuhgsshgtrhhisggvpdhgvghokffrpehushdpshhpfhgphhgvlhhopehnohhnvgdps
+ hhpfhepphgrshhs
+X-VadeSecure-Score: 0
+X-VadeSecure-SID: 4dc3802b-17cd55987097c437
+Received: from mail-ej1-f46.google.com ([209.85.218.46])
+ by vsel1nmtai05p.internal.vadesecure.com with ngmta
+ id 4dc3802b-17cd55988ef6d6ec; Tue, 07 May 2024 22:32:26 +0000
+Received: by mail-ej1-f46.google.com with SMTP id a640c23a62f3a-a59a64db066so941526866b.3
+        for <turnin19@earthlink.net>; Tue, 07 May 2024 15:32:26 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1715121145; x=1715725945; darn=earthlink.net;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=F9LQ7Uu2NAnAsX7uFijljY58r7GW8mAJ2domL+BlrWg=;
+        b=JKO5z0p41JfTYG3vCJ3XeRb6Qzb/15eHkaocQjCiEnaMgHuZt5oBUdtBCAJ/Khwi+e
+         IhAvXiPU5cwOZ5i0Pu++diVtVTXwdRmBTtmb97pDJTSROvvM2n7WH6FDKI8FMkI9bggT
+         GHw+TrJp6Gt87SDSTSQ19+K83mXyVhlDxc32f6kw7a6DkalDV18dGwF9c0LK9Ue0MdLI
+         ZiFfLXHBuHCmqnD3cKoxTqRu30D3qKv964Nu+8zgQI4yeSyF2hcy6nyL0MMU+HGNzenu
+         bkItDA3mugdskTN0cc7w02RTfym+wBa6NG5QTBKiZckvMbCKPmW4BluRqkTgr22fRRUn
+         3/tw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1715121145; x=1715725945;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=F9LQ7Uu2NAnAsX7uFijljY58r7GW8mAJ2domL+BlrWg=;
+        b=cCYwShVlf6iqynrEUxCD+O4hg7IKOLFj2Q37B2cyWF4ho23VM6JfqKdpXgqdC+RiIa
+         glAK7QFaukUk1QX80mTWvMSzOgjAHSN53PykdM7zFE/LEaMjAWSbeOlFz9oA/54CXxjQ
+         n0bFgfkRlqWGPc0uIOddS5terKOSD4ezLlCSgvrRkk+Yq20U/NEWl4wQDOPkxGyFxytQ
+         X+vvapPwrZXV3HoZ8E+z8A2ru0HUioPFqgNZsY3Dk7Td+aodVyECAEAf785YRZ5pkt9W
+         L7CNIG5/afajKN4OYIhidm/PqHja+iyt8Nyn8V79/tlRG3taKcfebHRBZFnbX3GLDhjx
+         C+tQ==
+X-Gm-Message-State: AOJu0YxHfqpzH9lBCx6c5BiF2mgTnVznLERFvAI73df1eEH+DvFliIbZ
+	uh2M8Gj029PmvGRT6Ee9eJfZr9msbWFFsAp+pcPLR6JU4MfZ5wBVJOykcAvflaDOBO2LNecQMM3
+	t1qd+bWX5YZvh0d405ZRW8ENL4OvQm9ex
+X-Google-Smtp-Source: AGHT+IEUcFO1bXnZ4xYsL1JmijbCEdXpYeS88DaXdcMWYgX/8qA50FAfMINE0vrcdOCOEvxyY6IRiHIpNMjbyBF3NqU=
+X-Received: by 2002:a50:a45d:0:b0:572:d1e1:b4b3 with SMTP id
+ 4fb4d7f45d1cf-5731d9ce4f1mr643877a12.7.1715121145328; Tue, 07 May 2024
+ 15:32:25 -0700 (PDT)
+MIME-Version: 1.0
+From: David Turner <ischicagoisnotchicago19@gmail.com>
+Date: Tue, 7 May 2024 18:32:13 -0400
+Message-ID: <CAMD+bf8ZdJMF0LXJbvGizuB6DkRP9Jmv0zbDjjST0W74NQCzdw@mail.gmail.com>
+Subject: NYTimes.com: When Prison and Mental Illness Amount to a Death Sentence
+To: David Turner <turnin19@earthlink.net>
+Content-Type: multipart/alternative; boundary="0000000000009d3b000617e4c297"
+X-ELNK-Received-Info: spv=0;
+X-ELNK-AV: 0
+X-ELNK-Info: sbv=1; sbrc=-0; sbf=cb0; sbw=000;
+
+--0000000000009d3b000617e4c297
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Explore this gift article from The New York Times. You can read it for free
+without a subscription.
+
+When Prison and Mental Illness Amount to a Death Sentence
+
+The downward spiral of one inmate, Markus Johnson, shows the larger
+failures of the nation=E2=80=99s prisons to care for the mentally ill.
+
+https://www.nytimes.com/2024/05/05/us/politics/prison-mental-health-care.ht=
+ml?unlocked_article_code=3D1.qE0.Wg4A.1WiurFrC3362&smid=3Dem-share
+
+--0000000000009d3b000617e4c297
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Explore this gift article from The New York Times. You can=
+ read it for free without a subscription.<br><br>When Prison and Mental Ill=
+ness Amount to a Death Sentence<br><br>The downward spiral of one inmate, M=
+arkus Johnson, shows the larger failures of the nation=E2=80=99s prisons to=
+ care for the mentally ill.<br><br><a href=3D"https://www.nytimes.com/2024/=
+05/05/us/politics/prison-mental-health-care.html?unlocked_article_code=3D1.=
+qE0.Wg4A.1WiurFrC3362&amp;smid=3Dem-share">https://www.nytimes.com/2024/05/=
+05/us/politics/prison-mental-health-care.html?unlocked_article_code=3D1.qE0=
+.Wg4A.1WiurFrC3362&amp;smid=3Dem-share</a></div>
+
+--0000000000009d3b000617e4c297--
